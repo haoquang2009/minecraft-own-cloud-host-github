@@ -1,0 +1,271 @@
+menu_title: '%gpextention_title% &7(&2/ᴄʟᴀɪᴍɪɴꜰᴏ&7)'
+open_command: 'gpclaiminfo'
+register_command: true
+args:
+  - "claimid"
+args_usage_message: "missing arg"
+update_interval: 1
+size: 54
+data:
+  version: 1.1
+items:
+  'blue_glass_pane':
+    priority: 3
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 0-44
+  'white_glass_pane':
+    priority: 3
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 1
+    - 3
+    - 4
+    - 17
+    - 18
+  'white_glass':
+    priority: 3
+    material: WHITE_STAINED_GLASS
+    display_name: " &r "
+    slots:
+    - 0
+    - 2
+    - 8
+    - 9
+  'tall_grass':
+    priority: 3
+    material: TALL_GRASS
+    display_name: " &r "
+    slots:
+    - 45
+    - 47
+    - 48
+    - 49
+    - 51
+    - 52
+    - 53
+  'rose':
+    priority: 3
+    material: ROSE_BUSH
+    display_name: " &r "
+    slots:
+    - 46
+  'dark_oak':
+    priority: 3
+    material: DARK_OAK_SAPLING
+    display_name: " &r "
+    slots:
+    - 50
+  'goback':
+    material: OAK_DOOR
+    display_name: "&7⟰ &aɢᴏ ʙᴀᴄᴋ"
+    click_commands:
+      - "[sound] BLOCK_WOODEN_DOOR_OPEN"
+      - "[player] claim"
+    slot: 45
+  'info':
+    display_name: "&7ᴄʟᴀɪᴍ ɪɴꜰᴏ &7(&aᴠɪᴇᴡ&7)"
+    material: MAP
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '   &7%gpextention_getbyid_claimdescription_{claimid}%'
+      - ''
+      - '   &8• &7ʟᴏᴄᴀᴛɪᴏɴ: &f%gpextention_getbyid_location_{claimid}%'
+      - '   &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{player_uuid}%'
+      - '   &8• &7ᴛʀᴜꜱᴛ: &f%gpextention_getbyid_trustsize_{claimid}%'
+      - '   &8• &7ʙɪᴏᴍᴇ: &f%gpextention_getbyid_biome_{claimid}%'
+      - '   &8• &7ɪᴄᴏɴ (ᴄᴇɴᴛᴇʀ ʙʟᴏᴄᴋ): &f%gpextention_getbyid_centerblock_{claimid}%'
+      - ''
+    click_commands:
+      - "[refresh] UI_BUTTON_CLICK"
+    slot: 49
+  '1':
+    material: BEACON
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    priority: 1
+    display_name: "&7ꜱᴇᴛᴛɪɴɢꜱ &7(&aꜰʟᴀɢꜱ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴜᴘɢʀᴀᴅᴇ ᴛʜɪꜱ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{player_uuid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_requirement:
+      requirements:
+        req:
+          type: string equals
+          input: "%gpextention_getbyid_editaccess_{claimid}_{player_uuid}%"
+          output: "true"
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴜᴘɢʀᴀᴅᴇ ᴄʟᴀɪᴍ</red></gray> "
+    click_commands:
+      - "[player] cupgrade {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 21
+  '5':
+    material: OAK_SIGN
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - DURABILITY;1
+    priority: 1
+    view_requirement:
+      requirements:
+        buyenabled:
+          type: '!string equals'
+          input: '%gpextention_getbyid_issubdiv_{claimid}%'
+          output: 'true'
+    display_name: "&7ꜱᴜʙᴅɪᴠɪꜱɪᴏɴꜱ &7(&aᴠɪᴇᴡ&2&l|&aᴇᴅɪᴛ&2&l|&aᴜᴘɢʀᴀᴅᴇ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴛʜɪꜱ ɪɴᴄʟᴜᴅᴇꜱ ᴀʟʟ ᴛʜᴇ'
+      - '   &7ꜱᴜʙᴅɪᴠɪꜱɪᴏɴꜱ ᴏꜰ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7size: &f%gpextention_getbyid_subsize_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_requirement:
+      requirements:
+        req:
+          type: string equals
+          input: "%gpextention_getbyid_isbuild_{claimid}%"
+          output: "true"
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴠɪᴇᴡ ꜱᴜʙᴅɪᴠɪꜱɪᴏɴꜱ</red></gray> "
+    click_commands:
+      - "[player] claimlist {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 22
+  '2':
+    material: CHEST
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    priority: 1
+    display_name: "&7ᴍᴀɴᴀɢᴇ ᴛʀᴜꜱᴛ &7(&aᴠɪᴇᴡ&2&l|&aᴇᴅɪᴛ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴠɪᴇᴡ ᴛʜᴇ ᴛʀᴜꜱᴛ ʟɪꜱᴛ ᴏꜰ ᴛʜɪꜱ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{player_uuid}%'
+      - '    &8• &7ᴛʀᴜꜱᴛ: &f%gpextention_getbyid_trustsize_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] trustlist {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 23
+    click_requirement:
+      requirements:
+        req:
+          type: string equals
+          input: "%gpextention_getbyid_istrusted_{claimid}%"
+          output: "true"
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ɴᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ</red></gray> "
+  '3':
+    material: ENDER_PEARL
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    priority: 1
+    display_name: "&7Teleport &7(&aᴠɪᴇᴡ&2&l|&aᴇᴅɪᴛ&7)"
+    view_requirement:
+      requirements:
+        buyenabled:
+          type: string equals
+          input: "%gpextention_isenabled_teleport%"
+          output: "true"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴛᴇʟᴇᴘᴏʀᴛ ᴛᴏ ᴄʟᴀɪᴍꜱ ᴛʜᴀᴛ ʏᴏᴜ ᴏᴡɴ'
+      - '   &7ᴏʀ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ'
+      - ''
+      - '    &8• &7ʟᴏᴄᴀᴛɪᴏɴ: &f%gpextention_getbyid_location_{claimid}%'
+      - '    &8• &7ʙɪᴏᴍᴇ: &f%gpextention_getbyid_biome_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] claim tp {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 31
+    click_requirement:
+      requirements:
+        istrusted:
+          type: string equals ignorecase
+          input: "%gpextention_getbyid_istrusted_{claimid}%"
+          output: "true"
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴛᴇʟᴇᴘᴏʀᴛ</red></gray> "
+  '04':
+    material: RED_CONCRETE
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    priority: 1
+    display_name: "&7ᴄʟᴀɪᴍ ᴅᴇʟᴇᴛᴇ &7(&aᴜɴᴄʟᴀɪᴍ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʟᴀɪᴍ ᴅᴇʟᴇᴛᴇ &2{claimid}&7.'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴅᴇʟᴇᴛᴇ'
+    click_commands:
+      - "[player] unclaim {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 53
+    view_requirement:
+      requirements:
+        istrusted:
+          type: string equals ignorecase
+          input: "%gpextention_getbyid_owner_{claimid}%"
+          output: "%player_name%"
+  '4':
+    material: RED_CONCRETE
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    priority: 2
+    display_name: "&7ʟᴇᴀᴠᴇ ᴄʟᴀɪᴍ"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ʟᴇᴀᴠᴇ ᴛʜɪꜱ ᴄʟᴀɪᴍ.'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ʟᴇᴀᴠᴇ'
+    click_commands:
+      - "[player] leaveclaim {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 53
+    click_requirement:
+      requirements:
+        istrusted:
+          type: string equals ignorecase
+          input: "%gpextention_getbyid_istrusted_{claimid}%"
+          output: "true"
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ</red></gray> "
+
+# Downloaded from https://nullforums.net/resources/grief-prevention-gui-addon.6973/
+# 70228A6Y7ZUCF909N1MW4N3HJK94N6

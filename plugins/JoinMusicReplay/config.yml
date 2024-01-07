@@ -1,0 +1,8 @@
+# auther: EcoMineVN_pT        
+# Name: JoinMusicReplay    
+# Ver: 1.1
+Sound:
+  Sound1: nhacnen
+  ReplaySound1: 18
+  Sound2: bluecheck
+  Replay_OFFON: true

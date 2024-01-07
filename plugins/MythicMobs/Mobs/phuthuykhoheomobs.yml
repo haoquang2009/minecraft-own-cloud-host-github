@@ -1,0 +1,36 @@
+Khoheo:
+  Mobtype: witherskeleton
+  Display: '&3&lPhù hủy &6Cỗi Chết'
+  Health: 200
+  Damage: 10
+  Faction: Renegade
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 RandomLookAround
+  - 3 LookAtPlayers
+  - 4 RandomStroll
+  - 5 Float
+  - 6 opendoors
+  - 7 fleesun
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  Skills: 
+  - skill{s=RenegadeDarkBeam} @Target ~onTimer:300 1
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - DiamondHoe:0
+  - RHelmIII:4
+  - RChest:3
+  - RLegsIII:2
+  - RFeet:1
+  Options:
+    Despawn: true
+    FollowRange: 40
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.1
+    MovementSpeed: 0.3
+    PreventOtherDrops: true

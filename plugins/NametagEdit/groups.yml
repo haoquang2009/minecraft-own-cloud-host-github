@@ -1,0 +1,41 @@
+Groups:
+  phi-thăng-thần-giới:
+    Permission: phi-thăng-thần-giới
+    Prefix: '&d&k&l|||||&c&l&nPHITHĂNGTHẦNGIỚI&d&k&l|||||'
+    Suffix: ''
+    SortPriority: -1
+  thái-ất-kim-tiên:
+    Permission: thái-ất-kim-tiên
+    Prefix: '&b&k&l||||&d&l&nTHÁIẤTKIMTIÊN&b&k&l||||'
+    Suffix: ''
+    SortPriority: -1
+  hiên-đạo-thánh-nhân:
+    Permission: hiên-đạo-thánh-nhân
+    Prefix: '&e&k&l||&a&l&nHIÊNĐẠOTHÁNHNHÂNN&e&k&l||'
+    Suffix: ''
+    SortPriority: -1
+  đại-la-kim-tiên:
+    Permission: nte.đại-la-kim-tiên
+    Prefix: '&f&k&l|&e&l&nĐẠILAKIMTIÊN&f&k&l|'
+    Suffix: ''
+    SortPriority: -1
+  default:
+    Permission: nte.default
+    Prefix: '&f[&f&l&nNHẬPMÔN&f]'
+    Suffix: ''
+    SortPriority: -1
+  Admin:
+    Permission: nte.admin
+    Prefix: '&c'
+    Suffix: '&f'
+    SortPriority: 1
+  Moderator:
+    Permission: nte.moderator
+    Prefix: '&2'
+    Suffix: '&f'
+    SortPriority: 2
+  đại-đạo-thánh-nhân:
+    Permission: đại-đạo-thánh-nhân
+    Prefix: '&a&k&l|||&b&l&nĐẠIĐẠOTHÁNHNHÂN&a&k&l|||'
+    Suffix: ''
+    SortPriority: -1

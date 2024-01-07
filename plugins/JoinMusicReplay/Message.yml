@@ -1,0 +1,11 @@
+PREFIX: '&6JoinMusicReplay &7>>'
+Message:
+  OpenGUi: '{prefix} &bBạn đã mở GUI nhạc'
+  PLAYSOUND: '{prefix} &bBạn đã mở bài nhạc &6{Sound} &bcho bạn!'
+  msg_ErrCmd: '{prefix} &6Vui lòng gõ &c/jmrplay &f<Player> &f<Sound>'
+  msg_PlayerOffline: '{prefix} &cNgười chơi không ONLINE!'
+  msg_perm: '{prefix} &cBạn không có quyền sử dụng lệnh này'
+  msg_reload: '{prefix} &aReload Plugin thành công'
+  msg_PlaySound_Playsend: '{prefix} &bĐã mở bản nhạc &6{sound} &bcho người chơi &6{player}'
+  msg_PlaySound_Receive: '{prefix} &bBạn đã được &6{Player_Send} &bmở bản nhạc &6{sound}'
+  msg_PlaySound_PlayAll: '{prefix} &6{Player_Send} &bĐã mở bản nhạc &6{sound} &bcho toàn bộ người chơi'

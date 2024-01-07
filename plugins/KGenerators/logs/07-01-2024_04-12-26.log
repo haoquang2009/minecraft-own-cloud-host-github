@@ -1,0 +1,1577 @@
+[07-01-2024 02:48:23] Settings: Loading settings
+[07-01-2024 02:48:23] WorldGuard: Registering kgenerators-pick-up flag
+[07-01-2024 02:48:23] WorldGuard: Registering kgenerators-only-gen-break flag
+[07-01-2024 02:48:36] !!! WARNING !!! KGenerators will be loaded in post init check, check for more informations futher in this log
+[07-01-2024 02:48:39] [Debug] Dependencies: Setting up dependencies
+[07-01-2024 02:48:39] [Debug] Dependencies: Detected Vault economy. Hooked into it.
+[07-01-2024 02:48:39] [Debug] Dependencies: Detected Vault permissions. Hooked into it.
+[07-01-2024 02:48:39] [Debug] Dependencies: Detected plugin WorldEdit. Hooking into it.
+[07-01-2024 02:48:39] [Debug] Dependencies: Detected plugin PlaceholderAPI. Hooking into it.
+[07-01-2024 02:48:39] [Debug] Dependencies: Detected plugin MMOItems. Hooking into it.
+[07-01-2024 02:48:39] [Debug] Dependencies: Detected plugin WorldGuard. Hooked into it.
+[07-01-2024 02:48:39] [Debug] Dependencies: Detected plugin HolographicDisplays. Hooked holograms into it.
+[07-01-2024 02:48:39] [Debug] GeneratorsManager: Setting up manager
+[07-01-2024 02:48:39] [Debug] GeneratedObjectsManager: Loaded GeneratedBlock with type block
+[07-01-2024 02:48:39] [Debug] GeneratedObjectsManager: Loaded GeneratedItem with type item
+[07-01-2024 02:48:39] [Debug] GeneratedObjectsManager: Loaded GeneratedEntity with type entity
+[07-01-2024 02:48:39] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 02:48:39] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 02:48:39] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 02:48:39] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:48:39] Generators file: Loaded 1 generators!
+[07-01-2024 02:48:39] [Debug] Lang: Loading lang files
+[07-01-2024 02:48:39] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 02:48:39] [Debug] RecipesManager: Setting up manager
+[07-01-2024 02:48:39] Recipes file: Recipes are disabled. You can enable them in recipes.yml
+[07-01-2024 02:48:39] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostMoney
+[07-01-2024 02:48:39] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExp
+[07-01-2024 02:48:39] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExpLevel
+[07-01-2024 02:48:39] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostItems
+[07-01-2024 02:48:39] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 02:48:39] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 02:48:39] [Debug] LimitsManager: Setting up manager
+[07-01-2024 02:48:39] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 02:48:39] [Debug] DatabaseManager: Setting up manager
+[07-01-2024 02:48:39] Database SQLITE: Connected to SQLITE database
+[07-01-2024 02:48:39] [Debug] HologramsManager: Setting up manager
+[07-01-2024 02:48:39] [Debug] Holograms: Enabling HolographicDisplaysProvider
+[07-01-2024 02:48:39] [Debug] SchedulesManager: Setting up manager
+[07-01-2024 02:48:39] [Debug] MenusManager: Setting up manager
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Starting chunk management task
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Loading generators from already loaded chunks
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Loaded 0 generators from world ASkyBlock_nether (289 chunks)
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Loaded 0 generators from world world_nether (289 chunks)
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Loaded 0 generators from world ASkyBlock (289 chunks)
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Loaded 0 generators from world gen1 (289 chunks)
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Loaded 0 generators from world world (289 chunks)
+[07-01-2024 02:48:39] [Debug] PlacedGenerators: Loaded 0 generators from world world_the_end (289 chunks)
+[07-01-2024 02:48:39] [Debug] MainManager: Loading listeners
+[07-01-2024 02:48:39] [Debug] MainManager: Loading Metrix
+[07-01-2024 02:48:39] MainManager: KGenerators loaded successfully
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, 6 took more than 500ms! (505ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, -7 took more than 500ms! (505ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, 3 took more than 500ms! (506ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, -4 took more than 500ms! (506ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 2 took more than 500ms! (507ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, -3 took more than 500ms! (507ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, 4 took more than 500ms! (509ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, -5 took more than 500ms! (510ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 1 took more than 500ms! (510ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, -2 took more than 500ms! (511ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 8 took more than 500ms! (512ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, -3 took more than 500ms! (513ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, 2 took more than 500ms! (514ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, 5 took more than 500ms! (514ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, -6 took more than 500ms! (515ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, 6 took more than 500ms! (516ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, -7 took more than 500ms! (517ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, -4 took more than 500ms! (519ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, 3 took more than 500ms! (519ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, 4 took more than 500ms! (520ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, -5 took more than 500ms! (520ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 2 took more than 500ms! (521ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, -3 took more than 500ms! (521ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 4 took more than 500ms! (522ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, -5 took more than 500ms! (522ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 3 took more than 500ms! (523ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, -4 took more than 500ms! (523ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, -3 took more than 500ms! (524ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, 2 took more than 500ms! (524ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -3 took more than 500ms! (525ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 2 took more than 500ms! (525ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 6 took more than 500ms! (525ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -7 took more than 500ms! (526ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, -5 took more than 500ms! (526ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, 4 took more than 500ms! (527ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, -6 took more than 500ms! (527ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, 5 took more than 500ms! (528ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, -4 took more than 500ms! (528ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, 3 took more than 500ms! (529ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 4 took more than 500ms! (529ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, -5 took more than 500ms! (530ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, -2 took more than 500ms! (531ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, 1 took more than 500ms! (531ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 3 took more than 500ms! (532ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, -4 took more than 500ms! (532ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 7 took more than 500ms! (533ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -8 took more than 500ms! (533ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -8 took more than 500ms! (534ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 7 took more than 500ms! (534ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, -7 took more than 500ms! (535ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 6 took more than 500ms! (535ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 3 took more than 500ms! (535ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -4 took more than 500ms! (536ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 0 took more than 500ms! (537ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -1 took more than 500ms! (537ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 8 took more than 500ms! (538ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 0 took more than 500ms! (539ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, -1 took more than 500ms! (539ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, -3 took more than 500ms! (540ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, 2 took more than 500ms! (540ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 6 took more than 500ms! (541ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -7 took more than 500ms! (541ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, 2 took more than 500ms! (541ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, -3 took more than 500ms! (542ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 7 took more than 500ms! (542ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -8 took more than 500ms! (543ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, -3 took more than 500ms! (543ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, 2 took more than 500ms! (544ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, 0 took more than 500ms! (544ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, -1 took more than 500ms! (545ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, -6 took more than 500ms! (545ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 5 took more than 500ms! (545ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 8 took more than 500ms! (546ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, -6 took more than 500ms! (546ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 5 took more than 500ms! (547ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 0 took more than 500ms! (547ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -1 took more than 500ms! (548ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, -1 took more than 500ms! (548ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, 0 took more than 500ms! (548ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 1 took more than 500ms! (549ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, -2 took more than 500ms! (549ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 5 took more than 500ms! (550ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -6 took more than 500ms! (550ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -2 took more than 500ms! (551ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 1 took more than 500ms! (551ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, 1 took more than 500ms! (551ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, -2 took more than 500ms! (552ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, 3 took more than 500ms! (552ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, -4 took more than 500ms! (553ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, -7 took more than 500ms! (553ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 6 took more than 500ms! (553ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, -1 took more than 500ms! (554ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, 0 took more than 500ms! (554ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -7 took more than 500ms! (555ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 7 took more than 500ms! (555ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 6 took more than 500ms! (555ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -7 took more than 500ms! (556ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, -1 took more than 500ms! (556ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, 0 took more than 500ms! (557ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 2 took more than 500ms! (557ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -3 took more than 500ms! (558ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, -8 took more than 500ms! (558ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 7 took more than 500ms! (558ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 1 took more than 500ms! (559ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, -2 took more than 500ms! (559ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, 1 took more than 500ms! (560ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -2 took more than 500ms! (560ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -5 took more than 500ms! (560ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 4 took more than 500ms! (561ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 0 took more than 500ms! (561ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, -1 took more than 500ms! (562ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, -7 took more than 500ms! (562ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 6 took more than 500ms! (562ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, -6 took more than 500ms! (563ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 5 took more than 500ms! (563ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -4 took more than 500ms! (564ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 3 took more than 500ms! (564ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 8 took more than 500ms! (564ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -2 took more than 500ms! (565ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 1 took more than 500ms! (565ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -8 took more than 500ms! (566ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, -2 took more than 500ms! (566ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, 1 took more than 500ms! (567ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 8 took more than 500ms! (567ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -1 took more than 500ms! (567ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 0 took more than 500ms! (568ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, 1 took more than 500ms! (568ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, -2 took more than 500ms! (568ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -5 took more than 500ms! (569ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 4 took more than 500ms! (569ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, -8 took more than 500ms! (570ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, 7 took more than 500ms! (570ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -3 took more than 500ms! (570ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 2 took more than 500ms! (571ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 8 took more than 500ms! (571ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, -3 took more than 500ms! (572ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 2 took more than 500ms! (572ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 4 took more than 500ms! (573ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -5 took more than 500ms! (574ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, 8 took more than 500ms! (574ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -6 took more than 500ms! (575ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 6 took more than 500ms! (576ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, -6 took more than 500ms! (579ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, 5 took more than 500ms! (579ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, 0 took more than 500ms! (579ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, -1 took more than 500ms! (580ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, 8 took more than 500ms! (580ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -2 took more than 500ms! (581ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 1 took more than 500ms! (581ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, 8 took more than 500ms! (581ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, -2 took more than 500ms! (582ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, 1 took more than 500ms! (582ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 7 took more than 500ms! (582ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, -8 took more than 500ms! (583ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 3 took more than 500ms! (584ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -4 took more than 500ms! (584ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 5 took more than 500ms! (585ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -5 took more than 500ms! (585ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 5 took more than 500ms! (586ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -6 took more than 500ms! (587ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 5 took more than 500ms! (587ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, -6 took more than 500ms! (588ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, -5 took more than 500ms! (589ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, 4 took more than 500ms! (589ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -6 took more than 500ms! (590ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 5 took more than 500ms! (591ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, 8 took more than 500ms! (591ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, -6 took more than 500ms! (592ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, 5 took more than 500ms! (592ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, -8 took more than 500ms! (593ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, 7 took more than 500ms! (594ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 4 took more than 500ms! (594ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -4 took more than 500ms! (595ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, -6 took more than 500ms! (596ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, 5 took more than 500ms! (596ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, -1 took more than 500ms! (597ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, 0 took more than 500ms! (597ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -7 took more than 500ms! (598ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 6 took more than 500ms! (599ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, 4 took more than 500ms! (599ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, -5 took more than 500ms! (600ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -5 took more than 500ms! (601ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 4 took more than 500ms! (601ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, -6 took more than 500ms! (602ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, 5 took more than 500ms! (602ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, 6 took more than 500ms! (603ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, -7 took more than 500ms! (604ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, -5 took more than 500ms! (604ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 4 took more than 500ms! (605ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -3 took more than 500ms! (606ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 3 took more than 500ms! (606ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, 0 took more than 500ms! (607ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, -1 took more than 500ms! (607ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, 6 took more than 500ms! (608ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, -7 took more than 500ms! (610ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, 5 took more than 500ms! (611ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, -6 took more than 500ms! (612ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, 8 took more than 500ms! (613ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 1 took more than 500ms! (613ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, -2 took more than 500ms! (615ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 7 took more than 500ms! (615ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -5, -8 took more than 500ms! (616ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, -3 took more than 500ms! (617ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, 2 took more than 500ms! (617ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, -5 took more than 500ms! (618ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 4 took more than 500ms! (618ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 2 took more than 500ms! (619ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -2 took more than 500ms! (620ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -4 took more than 500ms! (620ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 3 took more than 500ms! (621ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, 6 took more than 500ms! (622ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, -7 took more than 500ms! (622ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, -3 took more than 500ms! (623ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, 2 took more than 500ms! (623ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, -8 took more than 500ms! (624ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 7 took more than 500ms! (625ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, 7 took more than 500ms! (625ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -1, -8 took more than 500ms! (626ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -3, -5 took more than 500ms! (627ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 3, 4 took more than 500ms! (627ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, 1 took more than 500ms! (628ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 0, -1 took more than 500ms! (629ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 2 took more than 500ms! (631ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, -3 took more than 500ms! (632ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 6, -4 took more than 500ms! (632ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -6, 3 took more than 500ms! (633ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, 6 took more than 500ms! (634ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, -7 took more than 500ms! (634ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 7, 2 took more than 500ms! (635ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -7, -3 took more than 500ms! (635ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 1, 8 took more than 500ms! (636ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 8, -8 took more than 500ms! (637ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -8, 7 took more than 500ms! (637ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 4, -4 took more than 500ms! (638ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -4, 3 took more than 500ms! (638ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 5, 8 took more than 500ms! (639ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, 2, -2 took more than 500ms! (640ms) Is the server overloaded?
+[07-01-2024 02:48:40] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_the_end, -2, 1 took more than 500ms! (640ms) Is the server overloaded?
+[07-01-2024 02:57:15] Reload: KGenerators reload started
+[07-01-2024 02:57:15] Settings: Loading settings
+[07-01-2024 02:57:15] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 02:57:15] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 02:57:15] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 02:57:15] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 02:57:15] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:57:15] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 02:57:15] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:57:15] Generators file: Loaded 2 generators!
+[07-01-2024 02:57:15] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 02:57:15] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 02:57:15] [Debug] LimitsManager: Setting up manager
+[07-01-2024 02:57:15] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 02:57:15] [Debug] Lang: Loading lang files
+[07-01-2024 02:57:15] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 02:57:15] Reload: KGenerators reloaded successfully
+[07-01-2024 02:59:14] Reload: KGenerators reload started
+[07-01-2024 02:59:14] Settings: Loading settings
+[07-01-2024 02:59:14] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 02:59:14] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 02:59:14] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 02:59:14] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 02:59:14] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:59:14] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 02:59:14] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:59:14] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 02:59:14] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 02:59:14] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:59:14] Generators file: Loaded 3 generators!
+[07-01-2024 02:59:14] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 02:59:14] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 02:59:14] [Debug] LimitsManager: Setting up manager
+[07-01-2024 02:59:14] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 02:59:14] [Debug] Lang: Loading lang files
+[07-01-2024 02:59:14] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 02:59:14] Reload: KGenerators reloaded successfully
+[07-01-2024 03:01:56] Reload: KGenerators reload started
+[07-01-2024 03:01:56] Settings: Loading settings
+[07-01-2024 03:01:56] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:01:56] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:01:56] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:01:56] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:01:56] !!! ERROR !!! #lapid_generator: Lapis Lazuli Ore is not a proper material or generator id! Using STONE!
+[07-01-2024 03:01:56] !!! ERROR !!! Generators file: GeneratedItem: Lapis Lazuli Ore is not a proper material or generator id! Using STONE!
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded properly SINGLE lapid_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:01:56] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:01:56] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:01:56] Generators file: Loaded 6 generators!
+[07-01-2024 03:01:56] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:01:56] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:01:56] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:01:56] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:01:56] [Debug] Lang: Loading lang files
+[07-01-2024 03:01:56] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:01:56] Reload: KGenerators reloaded successfully
+[07-01-2024 03:02:30] Reload: KGenerators reload started
+[07-01-2024 03:02:30] Settings: Loading settings
+[07-01-2024 03:02:30] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:02:30] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:02:30] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:02:30] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:02:30] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:02:30] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:02:30] [Debug] Generators file: lapid_generator is already loaded - updating it!
+[07-01-2024 03:02:30] !!! ERROR !!! #lapid_generator: Lapis Lazuli Block is not a proper material or generator id! Using STONE!
+[07-01-2024 03:02:30] !!! ERROR !!! Generators file: GeneratedItem: Lapis Lazuli Block is not a proper material or generator id! Using STONE!
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded properly SINGLE lapid_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:02:30] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:02:30] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:02:30] Generators file: Loaded 6 generators!
+[07-01-2024 03:02:30] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:02:30] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:02:30] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:02:30] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:02:30] [Debug] Lang: Loading lang files
+[07-01-2024 03:02:30] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:02:30] Reload: KGenerators reloaded successfully
+[07-01-2024 03:04:40] Reload: KGenerators reload started
+[07-01-2024 03:04:40] Settings: Loading settings
+[07-01-2024 03:04:40] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:04:40] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:04:40] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] !!! ERROR !!! #lua_generator: Hay Bale is not a proper material or generator id! Using STONE!
+[07-01-2024 03:04:40] !!! ERROR !!! Generators file: GeneratedItem: Hay Bale is not a proper material or generator id! Using STONE!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE lua_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:04:40] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:04:40] Generators file: Loaded 8 generators!
+[07-01-2024 03:04:40] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:04:40] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:04:40] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:04:40] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:04:40] [Debug] Lang: Loading lang files
+[07-01-2024 03:04:40] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:04:40] Reload: KGenerators reloaded successfully
+[07-01-2024 03:05:25] Reload: KGenerators reload started
+[07-01-2024 03:05:25] Settings: Loading settings
+[07-01-2024 03:05:25] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:05:25] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:05:25] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:05:25] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:05:25] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:05:25] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:05:25] Generators file: Loaded 8 generators!
+[07-01-2024 03:05:25] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:05:25] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:05:25] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:05:25] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:05:25] [Debug] Lang: Loading lang files
+[07-01-2024 03:05:25] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:05:25] Reload: KGenerators reloaded successfully
+[07-01-2024 03:06:09] Reload: KGenerators reload started
+[07-01-2024 03:06:09] Settings: Loading settings
+[07-01-2024 03:06:09] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:06:09] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:06:09] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:06:09] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:06:09] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:06:09] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:09] Generators file: Loaded 9 generators!
+[07-01-2024 03:06:09] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:06:09] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:06:09] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:06:09] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:06:09] [Debug] Lang: Loading lang files
+[07-01-2024 03:06:09] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:06:09] Reload: KGenerators reloaded successfully
+[07-01-2024 03:06:44] Reload: KGenerators reload started
+[07-01-2024 03:06:44] Settings: Loading settings
+[07-01-2024 03:06:44] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:06:44] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:06:44] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:06:44] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:06:44] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:06:44] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:06:44] Generators file: Loaded 10 generators!
+[07-01-2024 03:06:44] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:06:44] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:06:44] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:06:44] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:06:44] [Debug] Lang: Loading lang files
+[07-01-2024 03:06:44] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:06:44] Reload: KGenerators reloaded successfully
+[07-01-2024 03:08:59] Reload: KGenerators reload started
+[07-01-2024 03:08:59] Settings: Loading settings
+[07-01-2024 03:08:59] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:08:59] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:08:59] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:08:59] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:08:59] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:08:59] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:08:59] Generators file: Loaded 13 generators!
+[07-01-2024 03:08:59] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:08:59] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:08:59] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:08:59] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:08:59] [Debug] Lang: Loading lang files
+[07-01-2024 03:08:59] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:08:59] Reload: KGenerators reloaded successfully
+[07-01-2024 03:11:47] Reload: KGenerators reload started
+[07-01-2024 03:11:47] Settings: Loading settings
+[07-01-2024 03:11:47] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:11:47] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:11:47] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:11:47] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:11:47] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:11:47] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:11:47] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] !!! ERROR !!! #Slimeball_generator: Slimeball is not a proper material or generator id! Using STONE!
+[07-01-2024 03:11:47] !!! ERROR !!! Generators file: GeneratedItem: Slimeball is not a proper material or generator id! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Slimeball_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:11:47] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:11:47] Generators file: Loaded 20 generators!
+[07-01-2024 03:11:47] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:11:47] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:11:47] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:11:47] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:11:47] [Debug] Lang: Loading lang files
+[07-01-2024 03:11:47] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:11:47] Reload: KGenerators reloaded successfully
+[07-01-2024 03:13:26] Reload: KGenerators reload started
+[07-01-2024 03:13:26] Settings: Loading settings
+[07-01-2024 03:13:26] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:13:26] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:13:26] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:13:26] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:13:26] Generators file: Loaded 21 generators!
+[07-01-2024 03:13:26] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:13:26] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:13:26] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:13:26] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:13:26] [Debug] Lang: Loading lang files
+[07-01-2024 03:13:26] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:13:26] Reload: KGenerators reloaded successfully
+[07-01-2024 03:15:11] Reload: KGenerators reload started
+[07-01-2024 03:15:11] Settings: Loading settings
+[07-01-2024 03:15:11] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:15:11] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Melon_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: BlazePowder_generator is already loaded - updating it!
+[07-01-2024 03:15:11] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] !!! ERROR !!! #MagmaCream_generator: Magma Cream is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MAGMA_CREAM x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE MagmaCream_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] !!! ERROR !!! #EyeofEnder_generator: Eye of Ender is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EYE_OF_ENDER x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE EyeofEnder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] !!! ERROR !!! #FireCharge_generator: Fire Charge is not a block! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREBALL x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE FireCharge_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] !!! ERROR !!! #exp_generator: Bottle o' Enchanting is not a proper material or generator id! Using STONE!
+[07-01-2024 03:15:11] !!! ERROR !!! Generators file: GeneratedItem: Bottle o' Enchanting is not a proper material or generator id! Using STONE!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE exp_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:11] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:11] Generators file: Loaded 25 generators!
+[07-01-2024 03:15:11] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:15:11] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:15:11] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:15:11] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:15:11] [Debug] Lang: Loading lang files
+[07-01-2024 03:15:11] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:15:11] Reload: KGenerators reloaded successfully
+[07-01-2024 03:15:47] Reload: KGenerators reload started
+[07-01-2024 03:15:47] Settings: Loading settings
+[07-01-2024 03:15:47] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:15:47] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Melon_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: BlazePowder_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: MagmaCream_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #MagmaCream_generator: Magma Cream is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MAGMA_CREAM x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE MagmaCream_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: EyeofEnder_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #EyeofEnder_generator: Eye of Ender is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EYE_OF_ENDER x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE EyeofEnder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: FireCharge_generator is already loaded - updating it!
+[07-01-2024 03:15:47] !!! ERROR !!! #FireCharge_generator: Fire Charge is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREBALL x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE FireCharge_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] !!! ERROR !!! #NetherStar_generator: Nether Star is not a block! Using STONE!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_STAR x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE NetherStar_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:15:47] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:15:47] Generators file: Loaded 25 generators!
+[07-01-2024 03:15:47] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:15:47] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:15:47] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:15:47] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:15:47] [Debug] Lang: Loading lang files
+[07-01-2024 03:15:47] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:15:47] Reload: KGenerators reloaded successfully
+[07-01-2024 03:16:37] Reload: KGenerators reload started
+[07-01-2024 03:16:37] Settings: Loading settings
+[07-01-2024 03:16:37] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:16:37] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Melon_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: BlazePowder_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: MagmaCream_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #MagmaCream_generator: Magma Cream is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MAGMA_CREAM x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE MagmaCream_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: EyeofEnder_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #EyeofEnder_generator: Eye of Ender is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EYE_OF_ENDER x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE EyeofEnder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: FireCharge_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #FireCharge_generator: Fire Charge is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREBALL x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE FireCharge_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: NetherStar_generator is already loaded - updating it!
+[07-01-2024 03:16:37] !!! ERROR !!! #NetherStar_generator: Nether Star is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_STAR x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE NetherStar_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] !!! ERROR !!! #FireworkRocket_generator: Firework Rocket is not a block! Using STONE!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREWORK x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE FireworkRocket_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_BRICK x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE NetherBrick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:16:37] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:16:37] Generators file: Loaded 27 generators!
+[07-01-2024 03:16:37] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:16:37] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:16:37] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:16:37] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:16:37] [Debug] Lang: Loading lang files
+[07-01-2024 03:16:37] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:16:37] Reload: KGenerators reloaded successfully
+[07-01-2024 03:17:01] Reload: KGenerators reload started
+[07-01-2024 03:17:01] Settings: Loading settings
+[07-01-2024 03:17:01] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:17:01] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Melon_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: BlazePowder_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: MagmaCream_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #MagmaCream_generator: Magma Cream is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MAGMA_CREAM x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE MagmaCream_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: EyeofEnder_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #EyeofEnder_generator: Eye of Ender is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EYE_OF_ENDER x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE EyeofEnder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: FireCharge_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #FireCharge_generator: Fire Charge is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREBALL x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE FireCharge_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: NetherStar_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #NetherStar_generator: Nether Star is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_STAR x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE NetherStar_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: FireworkRocket_generator is already loaded - updating it!
+[07-01-2024 03:17:01] !!! ERROR !!! #FireworkRocket_generator: Firework Rocket is not a block! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREWORK x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE FireworkRocket_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: NetherBrick_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_BRICK x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE NetherBrick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] !!! ERROR !!! #NetherQuartz_generator: Nether Quartz is not a proper material or generator id! Using STONE!
+[07-01-2024 03:17:01] !!! ERROR !!! Generators file: GeneratedItem: Nether Quartz is not a proper material or generator id! Using STONE!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE NetherQuartz_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:01] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:01] Generators file: Loaded 28 generators!
+[07-01-2024 03:17:01] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:17:01] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:17:01] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:17:01] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:17:01] [Debug] Lang: Loading lang files
+[07-01-2024 03:17:01] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:17:01] Reload: KGenerators reloaded successfully
+[07-01-2024 03:17:38] Reload: KGenerators reload started
+[07-01-2024 03:17:38] Settings: Loading settings
+[07-01-2024 03:17:38] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:17:38] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Melon_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: BlazePowder_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: MagmaCream_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #MagmaCream_generator: Magma Cream is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MAGMA_CREAM x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE MagmaCream_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: EyeofEnder_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #EyeofEnder_generator: Eye of Ender is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EYE_OF_ENDER x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE EyeofEnder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: FireCharge_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #FireCharge_generator: Fire Charge is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREBALL x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE FireCharge_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: NetherStar_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #NetherStar_generator: Nether Star is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_STAR x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE NetherStar_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: FireworkRocket_generator is already loaded - updating it!
+[07-01-2024 03:17:38] !!! ERROR !!! #FireworkRocket_generator: Firework Rocket is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREWORK x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE FireworkRocket_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: NetherBrick_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_BRICK x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE NetherBrick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] !!! ERROR !!! #PrismarineShard_generator: Prismarine Shard is not a block! Using STONE!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{PRISMARINE_SHARD x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE PrismarineShard_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:17:38] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:17:38] Generators file: Loaded 28 generators!
+[07-01-2024 03:17:38] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:17:38] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:17:38] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:17:38] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:17:38] [Debug] Lang: Loading lang files
+[07-01-2024 03:17:38] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:17:38] Reload: KGenerators reloaded successfully
+[07-01-2024 03:18:10] Reload: KGenerators reload started
+[07-01-2024 03:18:10] Settings: Loading settings
+[07-01-2024 03:18:11] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:18:11] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Melon_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: BlazePowder_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: MagmaCream_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #MagmaCream_generator: Magma Cream is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MAGMA_CREAM x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE MagmaCream_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: EyeofEnder_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #EyeofEnder_generator: Eye of Ender is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EYE_OF_ENDER x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE EyeofEnder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: FireCharge_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #FireCharge_generator: Fire Charge is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREBALL x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE FireCharge_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: NetherStar_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #NetherStar_generator: Nether Star is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_STAR x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE NetherStar_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: FireworkRocket_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #FireworkRocket_generator: Firework Rocket is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREWORK x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE FireworkRocket_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: NetherBrick_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_BRICK x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE NetherBrick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: PrismarineShard_generator is already loaded - updating it!
+[07-01-2024 03:18:11] !!! ERROR !!! #PrismarineShard_generator: Prismarine Shard is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{PRISMARINE_SHARD x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE PrismarineShard_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] !!! ERROR !!! #PrismarineCrystals_generator: Prismarine Crystals is not a block! Using STONE!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{PRISMARINE_CRYSTALS x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE PrismarineCrystals_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:18:11] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:18:11] Generators file: Loaded 29 generators!
+[07-01-2024 03:18:11] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:18:11] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:18:11] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:18:11] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:18:11] [Debug] Lang: Loading lang files
+[07-01-2024 03:18:11] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:18:11] Reload: KGenerators reloaded successfully
+[07-01-2024 03:19:40] Reload: KGenerators reload started
+[07-01-2024 03:19:40] Settings: Loading settings
+[07-01-2024 03:19:40] [Debug] Generators file: store_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #store_generator: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:19:40] !!! ERROR !!! Generators file: GeneratedItem: STORE is not a proper material or generator id! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STONE x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE store_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: coal_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{COAL_ORE x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE coal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: iron_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{IRON_ORE x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE iron_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: gold_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{GOLD_ORE x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE gold_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Diamond_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Diamond_generator: Diamond is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIAMOND x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Diamond_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Emerald_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Emerald_generator: Emerald is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EMERALD x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Emerald_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Sunflower_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Sunflower_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Lilac_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Lilac_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: RoseBush_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE RoseBush_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Peony_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DOUBLE_PLANT x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Peony_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Apple_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Apple_generator: Apple is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{APPLE x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Apple_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Arrow_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Arrow_generator: Arrow is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{ARROW x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Arrow_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Stick_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Stick_generator: Stick is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STICK x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Stick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: String_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #String_generator: String is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{STRING x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE String_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Gunpowder_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Gunpowder_generator: Gunpowder is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{SULPHUR x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Gunpowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Wheat_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Wheat_generator: Wheat is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{WHEAT x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Wheat_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Redstone_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Redstone_generator: Redstone is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{REDSTONE x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Redstone_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Melon_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Melon_generator: Melon is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MELON x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Melon_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: Egg_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #Egg_generator: Egg is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EGG x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Egg_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: BlazePowder_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #BlazePowder_generator: Blaze Powder is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BLAZE_POWDER x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE BlazePowder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: MagmaCream_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #MagmaCream_generator: Magma Cream is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{MAGMA_CREAM x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE MagmaCream_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: EyeofEnder_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #EyeofEnder_generator: Eye of Ender is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{EYE_OF_ENDER x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE EyeofEnder_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: FireCharge_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #FireCharge_generator: Fire Charge is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREBALL x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE FireCharge_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: NetherStar_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #NetherStar_generator: Nether Star is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_STAR x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE NetherStar_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: FireworkRocket_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #FireworkRocket_generator: Firework Rocket is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{FIREWORK x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE FireworkRocket_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: NetherBrick_generator is already loaded - updating it!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NETHER_BRICK x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE NetherBrick_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: PrismarineShard_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #PrismarineShard_generator: Prismarine Shard is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{PRISMARINE_SHARD x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE PrismarineShard_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] [Debug] Generators file: PrismarineCrystals_generator is already loaded - updating it!
+[07-01-2024 03:19:40] !!! ERROR !!! #PrismarineCrystals_generator: Prismarine Crystals is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{PRISMARINE_CRYSTALS x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE PrismarineCrystals_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] !!! ERROR !!! #NameTag_generator: Name Tag is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{NAME_TAG x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE NameTag_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] !!! ERROR !!! #Lead_generator: Lead is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{LEASH x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Lead_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] !!! ERROR !!! #EndCrystal_generator: End Crystal is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{END_CRYSTAL x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE EndCrystal_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] !!! ERROR !!! #Banner_generator: Banner is not a block! Using STONE!
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{BANNER x 1} [waitForPickUp]
+[07-01-2024 03:19:40] [Debug] Generators file: Loaded properly SINGLE Banner_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 03:19:40] Generators file: Loaded 33 generators!
+[07-01-2024 03:19:40] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 03:19:40] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 03:19:40] [Debug] LimitsManager: Setting up manager
+[07-01-2024 03:19:40] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 03:19:40] [Debug] Lang: Loading lang files
+[07-01-2024 03:19:40] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 03:19:40] Reload: KGenerators reloaded successfully
+[07-01-2024 03:22:05] !!! ERROR !!! Database: An error occured, while loading 31 placed generators!
+[07-01-2024 03:22:05] !!! ERROR !!! Database: Cant load worlds: [Trade]
+[07-01-2024 03:22:05] !!! ERROR !!! Database: Possible worlds: world, world_nether, world_the_end, gen1, ASkyBlock, ASkyBlock_nether, 
+[07-01-2024 03:22:05] !!! ERROR !!! Database: There are no generators with ids: [ores_from_stone_generator, ores_generator]
+[07-01-2024 03:22:05] !!! ERROR !!! Database: Possible ids: store_generator, dirt_generator, coal_generator, iron_generator, gold_generator, Diamond_generator, Emerald_generator, Sunflower_generator, Lilac_generator, RoseBush_generator, Peony_generator, Apple_generator, Arrow_generator, Stick_generator, String_generator, Gunpowder_generator, Wheat_generator, Redstone_generator, Melon_generator, Egg_generator, BlazePowder_generator, MagmaCream_generator, EyeofEnder_generator, FireCharge_generator, NetherStar_generator, FireworkRocket_generator, NetherBrick_generator, PrismarineShard_generator, PrismarineCrystals_generator, NameTag_generator, Lead_generator, EndCrystal_generator, Banner_generator, 
+[07-01-2024 03:22:05] [Debug] Rod_Wirez placed gold_generator in world gen1 at -1310.0, 101.0, 622.0
+[07-01-2024 03:22:07] [Debug] Rod_Wirez placed Diamond_generator in world gen1 at -1310.0, 101.0, 623.0
+[07-01-2024 03:22:08] [Debug] Rod_Wirez placed Emerald_generator in world gen1 at -1311.0, 101.0, 623.0
+[07-01-2024 03:22:11] [Debug] Rod_Wirez placed iron_generator in world gen1 at -1311.0, 101.0, 622.0
+[07-01-2024 03:22:50] [Debug] Rod_Wirez picked up (58) gold_generator owned by Rod_Wirez placed in world gen1 at -1310.0, 101.0, 622.0 (ChunkInfo: gen1, -82, 38)
+[07-01-2024 03:22:53] [Debug] Rod_Wirez picked up (61) iron_generator owned by Rod_Wirez placed in world gen1 at -1311.0, 101.0, 622.0 (ChunkInfo: gen1, -82, 38)
+[07-01-2024 03:22:54] [Debug] Rod_Wirez picked up (60) Emerald_generator owned by Rod_Wirez placed in world gen1 at -1311.0, 101.0, 623.0 (ChunkInfo: gen1, -82, 38)
+[07-01-2024 03:23:04] [Debug] Rod_Wirez picked up (59) Diamond_generator owned by Rod_Wirez placed in world gen1 at -1310.0, 101.0, 623.0 (ChunkInfo: gen1, -82, 38)
+[07-01-2024 03:26:02] [Debug] Rod_Wirez placed PrismarineCrystals_generator in world gen1 at -1315.0, 101.0, 631.0
+[07-01-2024 03:26:03] [Debug] Rod_Wirez placed Lead_generator in world gen1 at -1315.0, 101.0, 630.0
+[07-01-2024 03:26:04] [Debug] Rod_Wirez placed Banner_generator in world gen1 at -1316.0, 101.0, 630.0
+[07-01-2024 03:26:05] [Debug] Rod_Wirez placed iron_generator in world gen1 at -1316.0, 101.0, 631.0
+[07-01-2024 03:26:07] [Debug] Rod_Wirez placed gold_generator in world gen1 at -1313.0, 101.0, 631.0
+[07-01-2024 03:26:08] [Debug] Rod_Wirez placed Diamond_generator in world gen1 at -1313.0, 101.0, 630.0
+[07-01-2024 03:26:09] [Debug] Rod_Wirez placed Emerald_generator in world gen1 at -1312.0, 101.0, 631.0
+[07-01-2024 03:26:12] [Debug] Rod_Wirez placed Sunflower_generator in world gen1 at -1312.0, 101.0, 630.0
+[07-01-2024 03:26:56] [Debug] Rod_Wirez placed Lilac_generator in world gen1 at -1312.0, 101.0, 628.0
+[07-01-2024 03:29:07] [Debug] Rod_Wirez picked up (63) Lead_generator owned by Rod_Wirez placed in world gen1 at -1315.0, 101.0, 630.0 (ChunkInfo: gen1, -83, 39)
+[07-01-2024 03:29:11] [Debug] Rod_Wirez picked up (62) PrismarineCrystals_generator owned by Rod_Wirez placed in world gen1 at -1315.0, 101.0, 631.0 (ChunkInfo: gen1, -83, 39)
+[07-01-2024 03:29:12] [Debug] Rod_Wirez picked up (65) iron_generator owned by Rod_Wirez placed in world gen1 at -1316.0, 101.0, 631.0 (ChunkInfo: gen1, -83, 39)
+[07-01-2024 03:29:15] [Debug] Rod_Wirez picked up (64) Banner_generator owned by Rod_Wirez placed in world gen1 at -1316.0, 101.0, 630.0 (ChunkInfo: gen1, -83, 39)
+[07-01-2024 03:29:26] [Debug] Rod_Wirez picked up (66) gold_generator owned by Rod_Wirez placed in world gen1 at -1313.0, 101.0, 631.0 (ChunkInfo: gen1, -83, 39)
+[07-01-2024 03:29:29] [Debug] Rod_Wirez picked up (68) Emerald_generator owned by Rod_Wirez placed in world gen1 at -1312.0, 101.0, 631.0 (ChunkInfo: gen1, -82, 39)
+[07-01-2024 03:29:31] [Debug] Rod_Wirez picked up (69) Sunflower_generator owned by Rod_Wirez placed in world gen1 at -1312.0, 101.0, 630.0 (ChunkInfo: gen1, -82, 39)
+[07-01-2024 03:29:36] [Debug] Rod_Wirez picked up (67) Diamond_generator owned by Rod_Wirez placed in world gen1 at -1313.0, 101.0, 630.0 (ChunkInfo: gen1, -83, 39)
+[07-01-2024 03:29:40] [Debug] Rod_Wirez picked up (70) Lilac_generator owned by Rod_Wirez placed in world gen1 at -1312.0, 101.0, 628.0 (ChunkInfo: gen1, -82, 39)
+[07-01-2024 04:12:11] Disabling KGenerators
+[07-01-2024 04:12:11] Safely closing menus.
+[07-01-2024 04:12:11] Saving 0 running generators.
+[07-01-2024 04:12:11] Safely shutting down database.
+[07-01-2024 04:12:11] Database SQLITE: Connection closed

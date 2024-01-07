@@ -1,0 +1,107 @@
+# Weapon Stats
+attack-damage: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sát thương: &f#'
+attack-speed: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Tốc đánh: &f#'
+critical-strike-chance: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Tỉ lệ chí mạng: &f<plus>#%'
+critical-strike-power: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sát thương chí mạng: &f<plus>#%'
+range: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Phạm vi: &f#'
+mana-cost: '&d✧ Uses # Mana'
+stamina-cost: '&d✧ Uses # Stamina'
+arrow-velocity: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Tốc độ mũi tên: &f#%'
+blunt-power: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sức mạnh cùn: &f#%'
+blunt-rating: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Xếp hạng thẳng thùng: &f#%'
+two-handed: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Hai tay '
+knockback: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Bật lùi: &f#'
+recoil: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giật: &f#%'
+note-weight: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Lưu ý trọng lượng: &f#'
+
+# Extra Damage
+pve-damage: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sát thương PVE: &f<plus>#%'
+pvp-damage: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sát thương PVP: &f<plus>#%'
+magic-damage: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sát thương Phép: &f<plus>#%'
+weapon-damage: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sát thương vũ khí: &f<plus>#%'
+undead-damage: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c sát thương xác sống: &f<plus>#%'
+
+# Abilities
+ability-format: '&2#c: #a'
+ability-modifier: '&2#m: #v'
+ability-splitter: '&2'
+
+# Armor Stats
+block-power: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sức chặn: &f<plus>#%'
+block-rating: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Khả năng chặn: &f<plus>#%'
+block-cooldown-reduction: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giảm thời gian hồi chặn: &f<plus>#%'
+dodge-rating: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Khả năng né: &f<plus>#%'
+dodge-cooldown-reduction: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giảm thời gian hồi né: &f<plus>#%'
+parry-rating: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Sức ngang ngược: &f<plus>#%'
+parry-cooldown-reduction: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giảm thời gian hồi ngang ngược: &f<plus>#%'
+armor: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giáp: &f<plus>#'
+armor-toughness: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Độ bền của giáp: &f<plus>#'
+knockback-resistance: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Kháng phản đòn: &f<plus>#'
+max-health: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Máu: <plus>#'
+movement-speed: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Tốc độ di chuyển: &f<plus>#'
+regeneration: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Tốc độ hồi máu: &f<plus>#%'
+
+# Damage Reduction
+damage-reduction: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giảm sát thương: &f<plus>#%'
+fall-damage-reduction: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giảm sát thương khi rơi: &f<plus>#%'
+fire-damage-reduction: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Giảm sát thương của lửa: &f<plus>#%'
+magic-damage-reduction: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c GIảm sát thương của phép: &f<plus>#%'
+
+# Extra Options
+max-mana: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴&f&k&l|&c Mana tối đa: &f<plus>#'
+perm-effect: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Permanent &f#'
+command: '&f&k&l|&a ෴෴෴෴෴&d&l┊✧✧✧┊&a෴෴෴෴෴ &f&k&l|&c Command: &f#c &7(&f#cd&7s)'
+
+# Consumables
+restore-health: '&7■  &f# &7Health'
+restore-food: '&7■ Restores &f# &7Food'
+restore-saturation: '&7■ Restores &f# &7Saturation'
+restore-mana: '&7■ Restores &f# &7Mana'
+restore-stamina: '&7■ Restores &f# &7Stamina'
+effect: '&7■ Grants &f#e &7for &f#d&7s'
+repair: '&7■ Repair: &f#'
+consume-cooldown: '&7■ &f#&7s Cooldown'
+can-identify: '&7■ Can identify items.'
+can-deconstruct: '&7■ Can deconstruct tiered items.'
+success-rate: '&a Tỉ lệ thành công: &a&l#%'
+
+# Gem Stones
+empty-gem-socket: '&a◆ &3Ô Ngọc Trống'
+filled-gem-socket: '&a◆ #'
+when-applied: '&aWhen Applied:'
+gem-stone-lore: '&8&l[&2&l*&8&l] &aKéo vào một mục &7để áp dụng'
+
+# Soulbound
+soulbinding-chance: '&7■ Has a &a#%&7 chance to bind your item.'
+soulbound-break-chance: '&7■ Has a &a#%&7 chance to break soulbounds.'
+soulbound-level: '&7■ Level &e# &7Soulbound'
+
+# Tool Enchants
+autosmelt: '&7■ &fAutosmelt'
+bouncing-crack: '&7■ &fBouncing Crack'
+
+# General
+item-type: '&3 Thuộc loại: &c&l#'
+tier: '&3 Phẩm chất: #'
+required-class: '&7# Item'
+required-level: '&bCần &f&l# &bLvl để sử dụng'
+
+# Elemental Damage
+fire-damage: '&c❖ #% Fire Damage'
+ice-damage: '&b❖ #% Ice Damage'
+earth-damage: '&2❖ #% Earth Damage'
+wind-damage: '&7❖ #% Wind Damage'
+thunder-damage: '&e❖ #% Thunder Damage'
+water-damage: '&3❖ #% Water Damage'
+light-damage: '&f❖ #% Light Damage'
+darkness-damage: '&8❖ #% Darkness Damage'
+
+# Elemental Defense
+fire-defense: '&c❖ #% Fire Defense'
+ice-defense: '&b❖ #% Ice Defense'
+earth-defense: '&2❖ #% Earth Defense'
+wind-defense: '&7❖ #% Wind Defense'
+thunder-defense: '&e❖ #% Thunder Defense'
+water-defense: '&3❖ #% Water Defense'
+light-defense: '&f❖ #% Light Defense'
+darkness-defense: '&8❖ #% Darkness Defense'

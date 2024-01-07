@@ -1,0 +1,1267 @@
+# Do not say you are the owner of this product
+# Do not copy, resell, give this product
+# created by binodio
+
+
+  
+amon2:
+  Type: Husk
+  Display: '&c&LAmon'
+  Health: 600
+  Damage: 28
+  Disguise:
+    Type: player
+    Skin: 'Krafter'
+    Player: '&c&LAmon'
+  Equipment:
+  - diamond_sword:0
+  Skills:
+  - effect:sound{s=entity.wither.death;v=1.3;p=0.01} @self ~onDeath
+  - effect:lightning{repeat=20,repeatInterval=1} @PIR{r=100} ~onDeath 
+  - throw{velocity=3;velocityY=1} @target ~onAttack 0.6
+  - effect:sound{s=entity.wither.ambient;v=1.3;p=0.01} @self ~onTimer:150 0.4
+  - message{m="&a&l<mob.name> has &a<mob.thp>/1550 HP"} @PlayersInRadius{r=27} ~onTimer:390
+  - skill{s=amoneff} @self ~onTimer:50
+  - skill{s=amon1} @self ~onTimer:500
+  - skill{s=amon4} @self ~onTimer:300
+  - teleport @target ~onTimer:200 0.4
+  - skill{s=amon2} @self ~onTimer:200
+  - skill{s=amonprison} @self ~onTimer:700 0.3
+  - summon{mob=laser;amount=1;noise=5;r=1} @self ~onTimer:200 0.5
+  - skill{s=nightkill} @MobsInRadius{r=40;types=zombie,creeper,slime,enderman,spider,skeleton} ~onTimer:10 
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 1 players
+  Options:
+    MovementSpeed: 0.4
+    Silent: true
+    ShowHealth: true
+    KnockbackResistance: 0.2
+
+    
+Borda:
+  Type: WITHER_SKELETON
+  Display: '&cBorda'
+  Health: 500
+  Damage: 7
+  Equipment:
+  - diamond_sword:0
+  Drops:
+  - exp 10-50 1
+  - money 500-1500 1
+  Skills:
+  - skill{s=borda1} ~onTimer:100 0.7
+  - skill{s=borda2} ~onTimer:200 0.6
+  - skill{s=borda4} ~onTimer:400 0.4
+  - skill{s=borda6} ~onTimer:100 1
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.3
+    Silent: true
+    AttackSpeed: 15
+    Collidable: false
+    KnockbackResistance: 60
+    
+    
+    
+dream:
+  Type: Husk
+  Display: '&cdream'
+  Health: 30
+  Damage: 0
+  Disguise:
+    Type: player
+    Skin: 'herobrine'
+    Player: '&cdream'
+  Skills:
+  - skill{s=Glide2} ~onSpawn
+  - skill{s=dreameff} ~onTimer:100
+  - skill{s=Glide2} ~onDamaged 0.1
+  - skill{s=Hover2} ~onTimer:20
+  - skill{s=zeusarr29} ~onTimer:100 1
+  - skill{s=GoUp2} ~onTimer:20
+  - skill{s=RFM2} ~onDamaged
+  - skill{s=Equip2} ~onSpawn 1
+  - sound{s=entity.player.hurt} @self ~onDamaged
+  - remove @self ~onTimer:700 
+  LevelModifiers:
+    Health: 1
+    Damage: 1
+    KnockbackResistance: 0.02
+    Power: 0.05#damage=damage*power
+    Armor: 0.05#damage=damage - armor
+    MovementSpeed: 0.01
+    AttackSpeed: 0.01
+  DamageModifiers:
+  - FALL -1
+  - CONTACT 0
+  Equipment:
+  - bow:0
+  - elytra:3
+  - leather_leggings:2
+  - leather_boots:1
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    AlwaysShowName: false
+    MovementSpeed: 0.2
+    Despawn: true
+    KnockbackResistance: 1
+    ShowHealth: true
+    FollowRange: 100
+    MaxCombatDistance: 100
+    NoAI: false
+    NoDamageTicks: 10
+    Persistent: false
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    RepeatAllSkills: true
+    Silent: true
+
+
+Amon:
+  Mobtype: VILLAGER
+  Disguise:
+    Type: player
+    Player: '&6&lAmon'
+    Skin: Krafter
+  Display: '&6&lAmon'
+  Health: 22500
+  Damage: 0
+  Skills:
+  - skill{s=amonspawn} @Self ~onSpawn
+  - throw{velocity=90;velocityY=2} @PlayersInRadius{r=105} ~onDamaged 1
+  - skill{s=nightkill} @MobsInRadius{r=40;types=zombie,creeper,slime,enderman,spider} ~onTimer:10 
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.0001
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1 
+    NoGravity: true
+    Invincible: true
+    
+    
+laser:
+  Type: Armor_Stand
+  Display: ''
+  Health: 1000
+  Damage: 0
+  Equipment:
+  - air:0
+  DamageModifiers:
+  - ENTITY_ATTACK 0
+  - PROJECTILE 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  - FALL 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - CUSTOM 0
+  - CONTACT 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  Skills:
+  - skill{s=OrbitalLaserTargetting} @PIR{r=30} ~onSpawn
+  Options:
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Silent: true
+    Invincible: true
+    Invisible: true
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  
+OrbitalLaserBeam:
+  Type: Armor_Stand
+  Display: ''
+  Health: 1000
+  Damage: 0
+  Equipment:
+  - air:0
+  DamageModifiers:
+  - ENTITY_ATTACK 0
+  - PROJECTILE 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  - FALL 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - CUSTOM 0
+  - CONTACT 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  Skills:
+  - skill{s=OrbitalLaserDestruction} @self ~onSpawn
+  Options:
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Silent: true
+    Invincible: true
+    Invisible: true
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+
+
+
+ 
+
+osiris:
+  Type: Husk
+  Display: '&c&LOsiris'
+  Health: 1050
+  Damage: 28
+  Disguise:
+    Type: player
+    Skin: 'osiris'
+    Player: '&c&LOsiris'
+  Equipment:
+  - diamond_sword:0
+  Skills:
+  - effect:sound{s=entity.wither.death;v=1.3;p=0.01} @self ~onDeath
+  - effect:lightning{repeat=20,repeatInterval=1} @PIR{r=100} ~onDeath 
+  - effect:sound{s=entity.wither.ambient;v=1.3;p=0.01} @self ~onTimer:150 0.4
+  - message{m="&a&l<mob.name> has &a<mob.thp>/1050 HP"} @PlayersInRadius{r=27} ~onTimer:390
+  - skill{s=osiriseff} @self ~onTimer:50
+  - skill{s=osirisspawn} @self ~onTimer:100
+  - skill{s=nightkill} @MobsInRadius{r=40;types=zombie,creeper,slime,enderman,spider} ~onTimer:50 
+  - skill{s=osiris1} @self ~onTimer:300 0.5
+  - skill{s=osiris2} @self ~onTimer:140 0.3
+  - skill{s=osiris3} @self ~onTimer:230 0.3
+  - skill{s=osiris4} @self ~onTimer:170 0.4
+  - skill{s=osiris6} @self ~onTimer:180 0.5
+  - skill{s=osiris7} @self ~onTimer:300 0.7
+  - skill{s=osiris8} @self ~onTimer:290 0.5
+  - skill{s=osiris9} @self ~onTimer:1000
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 1 players
+  Options:
+    MovementSpeed: 0.2
+    Silent: true
+    ShowHealth: true
+    KnockbackResistance: 0.9
+
+ 
+ 
+osiris2:
+  Mobtype: WITHER
+  Display: '&6Osiris Anomaly'
+  Health: 20
+  Damage: 1
+  Skills:
+  - effect:particleline{particle=flame;amount=10;fromOrigin=true} @Parent ~onTimer:30 0.5
+  - effect:particleline{particle=reddust;amount=10;fromOrigin=true} @Parent ~onTimer:30 0.5
+  - remove{m=osiris2} @Self ~onTimer:300
+  - skill{s=axe} ~onTimer:250
+  - skill{s=shooot} ~onTimer:140
+  AITargetSelectors:
+  - 0 players
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.01
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1   
+ 
+ 
+ 
+osiris3:
+  Mobtype: POLAR_BEAR
+  Display: '&lOsiris'
+  Health: 7
+  Damage: 7
+  Armor: 10
+  Skills:
+  - remove{m=osiris3} @Self ~onTimer:350
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.5
+    Persistent: true
+    Despawn: false
+    RepeatAllSkills: true
+    PreventMobKillDrops: true 
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+ 
+osiris4:
+  Mobtype: ENDER_CRYSTAL
+  Display: '&6Osiris Chaos'
+  Health: 60
+  Damage: 0
+  Skills:
+  - skill{s=osiris5} ~onTimer:170 0.4
+  - remove{m=osiris4} @Self ~onTimer:500 1
+  AITargetSelectors:
+  - 0 players
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.01
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1 
+ 
+ 
+Anubis:
+  Mobtype: ZOMBIE
+  Disguise:
+    Type: player
+    Player: '&6&lAnubis'
+    Skin: anubbis
+  Display: '&6Anubis'
+  Health: 225
+  Damage: 0
+  Skills:
+  - effect:particlesphere{particle=spell;amount=200;radius=3} @self ~onTimer:25
+  - skill{s=punch} @Target ~onTimer:90 0.5
+  - skill{s=bomb} @Target ~onTimer:90 0.5
+  - skill{s=summonslave} @Target ~onTimer:70 0.2
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.15
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1    
+    
+Anubisslave:
+  Mobtype: WOLF
+  Display: '&6Anubis slave'
+  Health: 20
+  Damage: 1
+  Skills:
+  - effect:particleline{particle=flame;amount=10;fromOrigin=true} @Parent ~onTimer:30 0.5
+  - effect:particleline{particle=reddust;amount=10;fromOrigin=true} @Parent ~onTimer:30 0.5
+  - skill{s=slaveattack} @Target ~onTimer:100 0.5
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.1
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1    
+
+
+
+
+odin:
+  Mobtype: VILLAGER
+  Disguise:
+    Type: player
+    Player: '&6&lOdin'
+    Skin: odin
+  Display: '&6&lOdin'
+  Health: 225
+  Damage: 0
+  Skills:
+  - skill{s=odinspawn} @Self ~onSpawn
+  - throw{velocity=90;velocityY=2} @PlayersInRadius{r=105} ~onDamaged 1
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.0001
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1 
+    NoGravity: true
+    Invincible: true
+
+    
+    
+odin2:
+  Type: Husk
+  Display: '&lOdin'
+  Health: 150
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'odin'
+    Player: '&lOdin'
+  Equipment:
+  - iron_sword:0
+  Skills:
+  - skill{s=summonodin} @Target ~onTimer:100 0.5
+  - skill{s=effectodin} ~onTimer:40
+  - skill{s=Throwmulti} ~onTimer:250
+  - skill{s=slowodin} ~onDamaged <70% 0.6
+  - effect:lightning{repeat=20;repeatInterval=3;l=true;lr=80} @self ~onSpawn
+  - skill{s=odinwarcry} ~onSpawn
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.2
+    Silent: true
+    
+odinbat:
+  Type: BAT
+  Display: '&6&lValHalla Minions'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particleline{particle=flame;amount=2;fromOrigin=true} @Parent ~onTimer:200
+  - effect:smoke @self ~onTimer:10
+  - effect:lightning @self ~onTimer:200
+  - skill{s=odinthrow} @PlayersInRadius{r=30}
+  - remove{m=odinbat} @Self ~onTimer:300
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1 
+    
+    
+    
+ra:
+  Type: Husk
+  Display: '&cRa'
+  Health: 200
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'Horakty'
+    Player: '&cRa'
+  Skills:
+  - skill{s=raeffect} ~onTimer:200 1
+  - effect:sound{s=entity.wither.ambient;v=1.3;p=0.01} @self ~onTimer:300 0.4
+  - skill{s=ra1} ~onTimer:100 0.4
+  - skill{s=ra3} ~onTimer:500 1
+  - skill{s=ra4} ~onTimer:100 0.4
+  - skill{s=ra5} ~onTimer:100 0.4
+  - skill{s=ra6} ~onTimer:100 0.4
+  - effect:sound{s=entity.wither.death;v=1.3;p=0.01} @self ~onDeath
+  - skill{s=raspawn} ~onSpawn
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.2
+    Silent: true
+    
+ra2:
+  Type: Husk
+  Display: '&cRa'
+  Health: 150
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'Horakty'
+    Player: '&cRa'
+  Skills:
+  - skill{s=ra2} ~onSpawn
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.2
+    Silent: true
+    NoGravity: true
+    
+   
+   
+chronos:
+  Type: Husk
+  Display: '&cChronos'
+  Health: 340
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'Horakty'
+    Player: '&cChronos'
+  Equipment:
+  - iron_hoe:0
+  Skills:
+  - effect:sound{s=entity.wither.death;v=1.3;p=0.01} @self ~onDeath
+  - effect:sound{s=entity.enderdragon.growl;v=1.3;p=0.01} @self ~onTimer:300 0.4
+  - skill{s=crospawn} ~onSpawn
+  - skill{s=croair} ~onTimer:200 0.4
+  - skill{s=cro2} ~onTimer:200 1
+  - skill{s=cro3} ~onTimer:150 0.6
+  - skill{s=cro4} ~onTimer:100 0.4
+  - skill{s=cro5} ~onTimer:160 1
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.1
+    Silent: true
+    
+
+    
+hades:
+  Type: Husk
+  Display: '&cHades'
+  Health: 270
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'hades'
+    Player: '&cHades'
+  Equipment:
+  - iron_hoe:0
+  Skills:
+  - skill{s=ha1} ~onSpawn
+  - skill{s=ha2} ~onTimer:100 1
+  - skill{s=ha4} ~onTimer:300 1
+  - effect:sound{s=entity.elder_guardian.ambient;v=0.8;p=0.01} @self ~onTimer:200 0.4
+  - skill{s=ha6} ~onTimer:100 0.4
+  - skill{s=ha7} ~onTimer:100 0.4
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.1
+    Silent: true
+    
+hades2:
+  Type: SKELETON_HORSE
+  Display: '&cHades'
+  Health: 90
+  Damage: 7
+  Skills:
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.1
+    Silent: true
+    
+hades3:
+  Type: Husk
+  Display: '&cHades Slave'
+  Health: 80
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'herobrine'
+    Player: '&cHades Slave'
+  Equipment:
+  - diamond_sword:0
+  Skills:
+  - skill{s=ha3} ~onTimer:100 1
+  - skill{s=ha5} ~onTimer:200 1
+  - skill{s=ha55} ~onTimer:120 0.3
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.3
+    Silent: true
+    
+    
+poseidon:
+  Type: Husk
+  Display: '&cPoseidon'
+  Health: 270
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'poseido'
+    Player: '&cPoseidon'
+  Skills:
+  - skill{s=poseff} ~onTimer:75 1
+  - skill{s=pose} ~onTimer:100 0.7
+  - skill{s=pose2} ~onTimer:200 0.5
+  - effect:sound{s=entity.guardian.attack;v=0.8;p=0.01} @self
+  - skill{s=pose3} ~onTimer:100 0.7
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.1
+    Silent: true
+    
+    
+zeus:
+  Type: Husk
+  Display: '&cZeus'
+  Health: 270
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'zeus4'
+    Player: '&cZeus'
+  Skills:
+  - skill{s=zeus} ~onTimer:100 0.07
+  - skill{s=Glide} ~onSignal:Attack
+  - skill{s=Glide} ~onDamaged 0.1
+  - skill{s=Hover} ~onTimer:20
+  - skill{s=zeusarr} ~onTimer:100 1
+  - skill{s=zeusarr2} ~onTimer:290 1
+  - skill{s=GoUp} ~onTimer:20
+  - skill{s=zeuseff} ~onTimer:100 1
+  - skill{s=RFM} ~onDamaged
+  - skill{s=Equip} ~onSpawn 1
+  - sound{s=entity.player.hurt} @self ~onDamaged
+  LevelModifiers:
+    Health: 1
+    Damage: 1
+    KnockbackResistance: 0.02
+    Power: 0.05#damage=damage*power
+    Armor: 0.05#damage=damage - armor
+    MovementSpeed: 0.01
+    AttackSpeed: 0.01
+  DamageModifiers:
+  - FALL -1
+  - CONTACT 0
+  Equipment:
+  - bow:0
+  - elytra:3
+  - leather_leggings:2
+  - leather_boots:1
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    AlwaysShowName: false
+    MovementSpeed: 0.2
+    Despawn: true
+    KnockbackResistance: 1
+    ShowHealth: true
+    FollowRange: 100
+    MaxCombatDistance: 100
+    NoAI: false
+    NoDamageTicks: 10
+    Persistent: false
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    RepeatAllSkills: true
+    Silent: true
+    
+   
+   
+hephaistos:
+  Type: Husk
+  Display: '&chephaistos'
+  Health: 270
+  Damage: 7
+  Disguise:
+    Type: player
+    Skin: 'Forgeron'
+    Player: '&chephaistos'
+  Equipment:
+  - diamond_sword:0
+  Skills:
+  - effect:sound{s=entity.enderdragon.ambient;v=1;p=0} @self ~onSpawn
+  - effect:sound{s=entity.enderdragon.death;v=1;p=0} @self ~onDeath
+  - skill{s=hefff} ~onTimer:100 1
+  - skill{s=heff} ~onTimer:100 1
+  - skill{s=he1} ~onTimer:150 0.5
+  - skill{s=he2} ~onTimer:150 0.5
+  - skill{s=he3} ~onTimer:150 0.5
+  - skill{s=he4} ~onTimer:250 0.5
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.3
+    Silent: true
+    
+    
+SummonerCreeper:
+  Type: ZOMBIE
+  Display: '&6Summoner'
+  Health: 200
+  Damage: 3
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particles{p=witchMagic;amount=190;speed=0.03;hR=3;vR=3} @self ~onTimer:20
+  - skill{s=KarazschBossParticles} @self ~onTimer:20
+  - skill{s=Summoncreepers} @Self 
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+CreeperMinion:
+  Type: CREEPER
+  Display: '&2Creeper Minion'
+  Health: 2
+  Damage: 2
+  Options:
+    MovementSpeed: 0.4 
+
+skeleton2:
+  Type: SKELETON
+  Display: '&6Hydros'
+  Health: 200
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particles{p=witchMagic;amount=190;speed=0.03;hR=3;vR=3} @self ~onTimer:20
+  - skill{s=KarazschBossParticles} @self ~onTimer:20
+  - skill{s=test} @Target ~onTimer:30
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    
+esgand:
+  Type: SKELETON
+  Display: '&6Esgand'
+  Health: 200
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particlesphere{particle=largesmoke;amount=100;radius=3} @self ~onTimer:20
+  - skill{s=firearrow} @Target ~onTimer:50 0.3
+  - skill{s=tp} @Target ~onTimer:50 0.3
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  
+supzombie:
+  Type: ZOMBIE
+  Display: '&6Sup Zombie'
+  Health: 200
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particlebox{particle=portal;amount=100;radius=1} @self ~onTimer:20
+  - skill{s=Leap} @Target ~onTimer:50 0.5
+  - skill{s=tp} @Target ~onTimer:50 0.3
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+darkendermen:
+  Type: ENDERMAN
+  Display: '&cDark &0Enderman'
+  Health: 80
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particlebox{particle=portal;amount=100;radius=1} @self ~onTimer:20
+  - effect:particlebox{particle=flame;amount=100;radius=1} @self ~onTimer:20
+  - skill{s=potion} @Target ~onTimer:50 0.5
+  - skill{s=tp} @Target ~onTimer:50 0.3
+  - skill{s=laser1} @Target ~onTimer:50 0.7
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1         
+    
+creeper2:
+  Type: CREEPER
+  Display: '&2Creeper Esgard'
+  Health: 150
+  Damage: 1
+  Skills:
+  - effect:particles{p=lava;amount=100;speed=0.03;hR=3;vR=3} @self ~onTimer:100
+  - sound{s=entity.enderdragon.hurt} @self ~onTimer:40
+  - skill{s=test2} @Target ~onCombat
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.015
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    PreventSuicide: true   
+    FuseTicks: 10000  
+    
+
+
+Enderal:
+  Mobtype: ZOMBIE
+  Disguise:
+    Type: player
+    Player: '&6&lElder-Sigon'
+    Skin: king
+  Display: '&6Elder-Sigon'
+  Health: 225
+  Damage: 0
+  Skills:
+  - sound{s=entity.elder_guardian.ambient} @self ~onTimer:200
+  - effect:particlesphere{particle=portal;amount=200;radius=3} @self ~onTimer:25
+  - skill{s=wiz1} @Target ~onTimer:100 0.5
+  - skill{s=wiz2} @Target ~onTimer:100 0.5
+  - skill{s=wiz3} @Target ~onTimer:100 0.5
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.15
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1    
+   
+tnt:
+  Type: ZOMBIE
+  Disguise:
+    Type: BLOCK
+    Block: TNT
+    BlockData: 0
+  Skills:
+  - skill{s=tntwiz} @Self ~onSpawn
+  Options:
+    ShowName: true   
+    MovementSpeed: 0.001  
+
+
+
+
+saok:
+  Mobtype: VILLAGER
+  Disguise:
+    Type: player
+    Player: '&6&lSaok'
+    Skin: QT7
+  Display: '&6&lSaok'
+  Health: 225
+  Damage: 0
+  Skills:
+  - skill{s=saokspawn} @Self ~onSpawn
+  - throw{velocity=90;velocityY=2} @PlayersInRadius{r=105} ~onDamaged 1
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.0001
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1 
+    NoGravity: true
+    Invincible: true
+
+    
+saok2:
+  Type: CREEPER
+  Display: '&c&lSaok'
+  Health: 450
+  Damage: 0
+  Skills:
+  - effect:particles{p=reddust;color=#ffd500;amount=30;hS=1.1;vd=500;vS=1.1;speed=0.1} @self ~onTimer:20
+  - effect:particles{p=reddust;color=#A50008;amount=150;hS=7.1;vd=500;vS=7.1;speed=0.1} @self ~onTimer:20
+  - sound{s=entity.wither.hurt} @self ~onSpawn
+  - skill{s=saokskill1} @Self ~onTimer:50 0.15
+  - skill{s=saokskill2} @Self ~onTimer:50 0.15
+  - skill{s=saokskill3} @Self ~onTimer:50 0.04
+  - skill{s=saokskill4} @Self ~onTimer:50 0.09
+  - skill{s=saokskill5} @Self ~onTimer:50 0.15
+  - skill{s=saokskill6} @Self ~onTimer:50 0.15
+  - skill{s=saokskill7} @Self ~onDamaged 0.3
+  - skill{s=saokskill8} @Self ~oTimer:100 0.1
+  - skill{s=saokmsg} @Self ~onTimer:100 0.43
+  - sound{s=entity.wither.hurt} @self ~onDeath 1
+  - skill{s=saokskill3} @Self ~onDeath 1
+  - lightning @Ring{radius=8;points=5} ~onDamaged 0.15
+  - message{cooldown=30;m="<mob.name><&co> Aaawww.."} @PlayersInRadius{r=40} ~onDamaged 0.09
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.015
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    PreventSuicide: true   
+    FuseTicks: 10000  
+    SuperCharged: true
+    
+saok3:
+  Type: CREEPER
+  Display: '&6&lSaok'
+  Health: 1
+  Damage: 0
+  Skills:
+  - effect:particles{p=reddust;color=#ffd500;amount=30;hS=1.1;vd=500;vS=1.1;speed=0.1} @self ~onTimer:20
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    PreventSuicide: false  
+    FuseTicks: 1
+    SuperCharged: true    
+    
+    
+    
+EnderalBoss:
+  Mobtype: CREEPER
+  Disguise:
+    Type: player
+    Player: '&6&lAknyzor'
+    Skin: __Huahwi
+  Display: '&6&lAknyzor'
+  Health: 225
+  Damage: 0
+  DamageModifiers:
+  - FALL 0
+  Skills:
+  - skill{s=wiz8} @Self ~onSpawn
+  - sound{s=entity.elder_guardian.ambient} @self ~onTimer:200
+  - effect:particlesphere{particle=portal;amount=350;radius=3} @self ~onTimer:25
+  - skill{s=wiz1} @Target ~onTimer:20 0.14
+  - skill{s=wiz2} @Target ~onTimer:20 0.14
+  - skill{s=wiz3} @Target ~onTimer:20 0.14
+  - skill{s=wiz4} @Target ~onTimer:20 0.14
+  - skill{s=wiz5} @Target ~onTimer:20 0.14
+  - skill{s=wiz6} @Target ~onTimer:20 0.14
+  - skill{s=wiz7} @Self ~onTimer:20 0.02
+  - skill{s=wiz9} @Self ~onDeath
+  - skill{s=wiz10} @Self ~onTimer:100 0.05
+  - skill{s=wiz11} @Self ~onTimer:100 0.05
+  - skill{s=wiz12} @Self ~onTimer:100 0.1
+  - skill{s=wiz13} @Self ~onTimer:100 0.1
+  - skill{s=wiz14} @Self ~onTimer:100 0.1
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.1
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1    
+    FuseTicks: 10000  
+    
+    
+tnt:
+  Type: CREEPER
+  Disguise:
+    Type: BLOCK
+    Block: TNT
+    BlockData: 0
+    Health: 440
+    Damage: 0
+  Skills:
+  - skill{s=tntwiz} @Self ~onSpawn
+  Options:
+    ShowName: true   
+    MovementSpeed: 0.001   
+    FuseTicks: 10000  
+    
+invisible1:
+  Type: CREEPER
+  Health: 440
+  Damage: 0
+  Skills:
+  - skill{s=wiz55} @Self ~onSpawn
+  Options:
+    ShowName: true   
+    MovementSpeed: 0.001
+    FuseTicks: 10000      
+    
+vex2:
+  Type: VEX
+  Health: 1
+  Damage: 0
+  Skills:
+  - skill{s=vexwiz} @Self ~onTimer:170
+  Options:
+    ShowName: true   
+    MovementSpeed: 0.001  
+    
+vex3:
+  Type: VEX
+  Health: 1000
+  Damage: 0
+  AIGoalSelectors:
+  - 0 attacker
+  Skills:
+  - skill{s=spawn} @Self ~onTimer:100
+  Options:
+    ShowName: true   
+    FollowRange: 0
+    MovementSpeed: 0.001  
+       
+    
+bat1:
+  Type: BAT
+  Display: '&6&lSuper Bat'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particles{p=reddust;color=#ffd500;amount=30;hS=1.1;vd=500;vS=1.1;speed=0.1} @self ~onTimer:20
+  - skill{s=batskull} @Target ~onDamaged
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+    
+chicken1:
+  Type: CHICKEN
+  Display: '&6&lSuper Chicken'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particles{p=reddust;color=#713E77;amount=30;hS=1.1;vd=500;vS=3.1;speed=0.1} @self ~onTimer:20
+  - skill{s=chickenegg} @Target ~onDamaged
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+cow1:
+  Type: COW
+  Display: '&6&lSuper cow'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=30;hS=0.1;vd=500;vS=3.1;speed=0.1} @self ~onTimer:20
+  - skill{s=cow} @Target ~onDamaged 0.5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.1
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+    
+cow2:
+  Type: MUSHROOM_COW
+  Display: '&6&lSuper mushroom cow'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particles{p=reddust;color=#ff0000;amount=30;hS=0.1;vd=500;vS=3.1;speed=0.1} @self ~onTimer:20
+  - effect:particles{p=reddust;color=#000000;amount=30;hS=0.1;vd=500;vS=3.1;speed=0.1} @self ~onTimer:20
+  - skill{s=cow2} @Target ~onDamaged 0.5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.1
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+    
+pig1:
+  Type: PIG
+  Display: '&6&lSuper pig'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particles{p=reddust;color=#FF8585;amount=30;hS=3.1;vd=500;vS=3.1;speed=0.1} @self ~onTimer:20
+  - effect:particles{p=reddust;color=#000000;amount=30;hS=1.1;vd=500;vS=1.1;speed=0.1} @self ~onDamaged 1
+  - prison{material=GLASS;duration=100;breakable=false} @PlayersInRadius{r=15} ~onDamaged 0.1
+  - skill{s=pig} @PlayersInRadius{r=15} ~onDamaged 0.5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.16
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+rabbit1:
+  Type: RABBIT
+  Display: '&6&lSuper rabbit'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particles{p=reddust;color=#9fafff;amount=30;hS=0.1;vd=500;vS=0.1;speed=0.1} @self ~onTimer:20
+  - effect:particles{p=reddust;color=#ffffff;amount=30;hS=0.1;vd=500;vS=1.1;speed=0.1} @self ~onDamaged 1
+  - potion{type=INVISIBILITY;duration=50;level=8} @self ~onDamaged 0.4
+  - skill{s=rabbit} @PlayersInRadius{r=15} ~onDamaged 0.5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.16
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+    
+sheep1:
+  Type: SHEEP
+  Display: '&6&lSuper sheep'
+  Health: 40
+  Damage: 1
+  Skills:
+  - effect:particles{p=lava;amount=100;speed=0.03;hR=3;vR=3} @self ~onTimer:100
+  - effect:particles{p=witchMagic;amount=190;speed=0.03;hR=3;vR=3} @self ~onTimer:20 @self ~onDamaged 1
+  - skill{s=sheep} @PlayersInRadius{r=15} ~onDamaged 0.5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.16
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    Color: RED
+    
+villager1:
+  Type: VILLAGER
+  Display: '&6&lSuper villager'
+  Health: 180
+  Damage: 1
+  Skills:
+  - effect:particlebox{particle=portal;amount=100;radius=1} @self ~onTimer:20
+  - effect:particlebox{particle=flame;amount=100;radius=1} @self ~onTimer:20
+  - skill{s=svillager} @MIR{r=10;t=zombie} ~onDamaged 1
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.16
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+    
+sheep2:
+  Type: SHEEP
+  Display: '&6&lSuper sheeparrot'
+  Health: 40
+  Damage: 1
+  Skills:
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.16
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    Color: PINK
+    
+parrot1:
+  Type: PARROT
+  Display: '&6&lSuper sheeparrot'
+  Health: 40
+  Damage: 1
+  Skills:
+  - skill{s=summonparrot} @Self ~onDamaged 0.1
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.16
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+    
+Ornan:
+  Mobtype: PIG_ZOMBIE
+  Display: '&c&lOrnan'
+  Health: 225
+  Damage: 0
+  DamageModifiers:
+  - FALL 0
+  Skills:
+  - skill{s=ornan1} @Self ~onTimer:300
+  - skill{s=ornan3} @Target ~onTimer:50 0.4
+  - skill{s=ornan4} @Target ~onTimer:50 0.4
+  - skill{s=o7} @Target ~onTimer:50 0.4
+  - skill{s=o8} @Target ~onTimer:50 0.4
+  - skill{s=ornan2} @Self ~onTimer:100
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.1
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1    
+    
+Ornan2:
+  Type: SHEEP
+  Display: '&6&lSuper sheep'
+  Health: 40
+  Damage: 1
+  Skills:
+  - skill{s=crr1} @Self ~onSpawn
+  - skill{s=crr2} @Self ~onTimer:25
+  - skill{s=crr3} @PlayersInRadius{r=40} ~onTimer:25
+  - skill{s=crr4} @self ~onTimer:550
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.16
+    MaxCombatDistance: 65
+    NoGravity: true
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    Color: PINK
+    
+Wither1:
+  Mobtype: WITHER
+  Display: '&c&lOROS'
+  Health: 200
+  Damage: 0
+  Skills:
+  - skill{s=boom} @Self ~onTimer:60 0.1
+  - skill{s=ornan1} @Self ~onTimer:300
+  - skill{s=tp2} @PIR{r=45} ~onTimer:200 0.8
+  - skill{s=ornan3} @Target ~onTimer:50 0.4
+  - skill{s=ornan4} @Target ~onTimer:50 0.4
+  - skill{s=o7} @Target ~onTimer:50 0.4
+  - skill{s=o8} @Target ~onTimer:50 0.4
+  - skill{s=ornan2} @Self ~onTimer:100
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.01
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1 

@@ -1,0 +1,280 @@
+menu_title: '%gpextention_title% &7(&2/ᴄʟᴀɪᴍ&7)'
+open_command:
+  - 'gpclaimmenu'
+register_command: true
+update_interval: 1
+size: 54
+items:
+  'blue_glass_pane':
+    priority: 3
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 0-44
+  'white_glass_pane':
+    priority: 3
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 1
+    - 3
+    - 4
+    - 17
+    - 18
+  'white_glass':
+    priority: 3
+    material: WHITE_STAINED_GLASS
+    display_name: " &r "
+    slots:
+    - 0
+    - 2
+    - 8
+    - 9
+  'tall_grass':
+    priority: 3
+    material: TALL_GRASS
+    display_name: " &r "
+    slots:
+    - 45
+    - 47
+    - 48
+    - 49
+    - 51
+    - 52
+    - 53
+  'rose':
+    priority: 3
+    material: ROSE_BUSH
+    display_name: " &r "
+    slots:
+    - 46
+  'dark_oak':
+    priority: 3
+    material: DARK_OAK_SAPLING
+    display_name: " &r "
+    slots:
+    - 50
+  '2':
+    material: BOOK
+    priority: 1
+    display_name: "&7ᴄʟᴀɪᴍ ʟɪꜱᴛ &7(&aᴠɪᴇᴡ&2&l|&aᴇᴅɪᴛ&2&l|&aᴜᴘɢʀᴀᴅᴇ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴛʜɪꜱ ɪɴᴄʟᴜᴅᴇꜱ ʏᴏᴜʀ ᴏᴡɴ ʟᴀɴᴅꜱ'
+      - '   &7ᴀɴᴅ ʟᴀɴᴅꜱ, ɪɴ ᴡʜɪᴄʜ ʏᴏᴜ''ʀᴇ'
+      - '   &7ᴛʀᴜꜱᴛᴇᴅ.'
+      - ''
+      - '    &8• &7ᴏᴡɴ: &f%gpextention_claimcount%'
+      - '    &8• &7ᴛʀᴜꜱᴛᴇᴅ: &f%gpextention_trustcount%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] claim list"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 20
+  '4':
+    material: GRASS_BLOCK
+    priority: 1
+    display_name: "&7ᴄʟᴀɪᴍ ʙʟᴏᴄᴋꜱ &7(&aʙᴜʏ&7)"
+    view_requirement:
+      requirements:
+        buyenabled:
+          type: string equals
+          input: "%gpextention_isenabled_economy%"
+          output: "true"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ʙᴜʏ ᴄʟᴀɪᴍ ʙʟᴏᴄᴋꜱ ꜰᴏʀ'
+      - '   &7ᴄʟᴀɪᴍꜱ ᴛʜᴀᴛ ʏᴏᴜ ᴏᴡɴ'
+      - ''
+      - '    &8• &7ᴏᴡɴ: &f%gpextention_claimcount%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] gpclaimblocks"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 22
+  '6':
+    material: MAP
+    priority: 1
+    display_name: "&7ᴄʟᴀɪᴍ ɪɴꜰᴏ &7(&aᴠɪᴇᴡ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '   &8• &7ᴏᴡɴ: &f%gpextention_claimcount%'
+      - '   &8• &7ᴍᴀɴᴀɢᴇ: &f%gpextention_managercount%'
+      - '   &8• &7ᴛʀᴜꜱᴛᴇᴅ: &f%gpextention_trustcount%'
+      - '   &8• &7ᴛᴏᴛᴀʟ ʙʟᴏᴄᴋꜱ: &f%gpextention_claimblocks%'
+      - '   &8• &7ʀᴇᴍᴀɪɴɪɴɢ ʙʟᴏᴄᴋꜱ: &f%gpextention_remainingblocks%'
+      - ''
+    click_commands:
+      - "[refresh] UI_BUTTON_CLICK"
+    slot: 49
+  '7':
+    material: 'placeholder-%gpextention_getbyid_claimicon_{gpextention_standing_id}%'
+    priority: 1
+    view_requirement:
+      requirements:
+        claimhaseditable:
+          type: string equals
+          input: "%gpextention_standing_owner%"
+          output: "%player_name%"
+    display_name: "&7ᴛʜɪꜱ ᴄʟᴀɪᴍ &7(&aᴠɪᴇᴡ&2&l|&aᴇᴅɪᴛ&2&l|&aᴜᴘɢʀᴀᴅᴇ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴇᴅɪᴛ ᴏʀ ᴜᴘɢʀᴀᴅᴇ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - '   &7ʏᴏᴜ ᴄᴜʀʀᴇɴᴛʟʏ ꜱᴛᴀɴᴅɪɴɢ ᴏɴ'
+      - ''
+      - '   &7%gpextention_getbyid_claimdescription_{gpextention_standing_id}%'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_standing_permission%'
+      - '    &8• &7ᴏᴡɴᴇʀ: &f%gpextention_standing_owner%'
+      - '    &8• &7ꜱɪᴢᴇ: &f%gpextention_standing_size%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+      - '&c&l| &4ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅᴇʟᴇᴛᴇ'
+    left_click_commands:
+      - "[player] gpclaiminfo %gpextention_standing_id%"
+      - "[sound] UI_BUTTON_CLICK"
+    right_click_commands:
+      - "[player] unclaim %gpextention_standing_id%"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 31
+  '07':
+    material: 'placeholder-%gpextention_getbyid_claimicon_{gpextention_standing_id}%'
+    priority: 2
+    view_requirement:
+      requirements:
+        claimtrusted:
+          type: string equals
+          input: "%gpextention_getbyid_istrusted_{gpextention_standing_id}%"
+          output: "true"
+    display_name: "&7ᴛʜɪꜱ ᴄʟᴀɪᴍ &7(&aᴠɪᴇᴡ&2&l|&aᴇᴅɪᴛ&2&l|&aᴜᴘɢʀᴀᴅᴇ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴇᴅɪᴛ ᴏʀ ᴜᴘɢʀᴀᴅᴇ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - '   &7ʏᴏᴜ ᴄᴜʀʀᴇɴᴛʟʏ ꜱᴛᴀɴᴅɪɴɢ ᴏɴ'
+      - ''
+      - '   &7%gpextention_getbyid_claimdescription_{gpextention_standing_id}%'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_standing_permission%'
+      - '    &8• &7ᴏᴡɴᴇʀ: &f%gpextention_standing_owner%'
+      - '    &8• &7ꜱɪᴢᴇ: &f%gpextention_standing_size%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+      - '&c&l| &4ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ʟᴇᴀᴠᴇ'
+    left_click_commands:
+      - "[player] gpclaiminfo %gpextention_standing_id%"
+      - "[sound] UI_BUTTON_CLICK"
+    right_click_commands:
+      - "[player] leaveclaim %gpextention_standing_id%"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 31
+  '7_1':
+    material: 'STONE'
+    priority: 3
+    view_requirement:
+      requirements:
+        nullclaim:
+          type: "string equals"
+          input: "%gpextention_standing_id%"
+          output: "null"
+        isholding:
+          type: "string equals"
+          input: "%gpextention_isholding_GOLDEN_SHOVEL%"
+          output: "true"
+    display_name: "&7ᴄʟᴀɪᴍ ʜᴇʀᴇ"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʟᴀɪᴍ ᴛʜɪꜱ ᴀʀᴇᴀ.'
+      - ''
+      - '   &8• &7ᴏᴡɴ: &f%gpextention_claimcount%'
+      - '   &8• &7ᴛᴏᴛᴀʟ ʙʟᴏᴄᴋꜱ: &f%gpextention_claimblocks%'
+      - '   &8• &7ʀᴇᴍᴀɪɴɪɴɢ ʙʟᴏᴄᴋꜱ: &f%gpextention_remainingblocks%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴀɪᴍ'
+    click_commands:
+      - "[player] claim create"
+      - "[close]"
+      - "[sound] ENTITY_PLAYER_LEVELUP"
+      - "[player] claim<delay=20>"
+    slot: 31
+  '7_2':
+    material: 'placeholder-%gpextention_getbyid_claimicon_{gpextention_standing_id}%'
+    priority: 4
+    view_requirement:
+      requirements:
+        nullclaimwithoutshovel:
+          type: "!string equals"
+          input: "%gpextention_standing_id%"
+          output: "null"
+        claimtrusted:
+          type: "!string equals"
+          input: "%gpextention_getbyid_istrusted_{gpextention_standing_id}%"
+          output: "true"
+    display_name: "&7ᴛʜɪꜱ ᴄʟᴀɪᴍ &7"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴛʜᴇ ᴄʟᴀɪᴍ ʏᴏᴜ ᴄᴜʀʀᴇɴᴛʟʏ ꜱᴛᴀɴᴅɪɴɢ ᴏɴ'
+      - ''
+      - '   &7%gpextention_getbyid_claimdescription_{gpextention_standing_id}%'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_standing_permission%'
+      - '    &8• &7ᴏᴡɴᴇʀ: &f%gpextention_standing_owner%'
+      - '    &8• &7ꜱɪᴢᴇ: &f%gpextention_standing_size%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏꜱᴇ'
+    click_commands:
+      - "[close]"
+    slot: 31
+  '7_3':
+    material: 'STONE'
+    priority: 5
+    view_requirement:
+      requirements:
+        nullclaimwithoutshovel:
+          type: "string equals"
+          input: "%gpextention_standing_id%"
+          output: "null"
+    display_name: "&7ᴄʟᴀɪᴍ ʜᴇʀᴇ"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʟᴀɪᴍ ᴛʜɪꜱ ᴀʀᴇᴀ.'
+      - '   &cʜᴏʟᴅ ᴀ ɢᴏʟᴅᴇɴ ꜱʜᴏᴠᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ'
+      - ''
+      - '   &8• &7ᴏᴡɴ: &f%gpextention_claimcount%'
+      - '   &8• &7ᴛᴏᴛᴀʟ ʙʟᴏᴄᴋꜱ: &f%gpextention_claimblocks%'
+      - '   &8• &7ʀᴇᴍᴀɪɴɪɴɢ ʙʟᴏᴄᴋꜱ: &f%gpextention_remainingblocks%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏꜱᴇ'
+    click_commands:
+      - "[close]"
+    slot: 31
+  '8':
+    material: ENDER_PEARL
+    priority: 1
+    display_name: "&7ᴡᴀʀᴘ ʟɪꜱᴛ &7(&aᴛᴇʟᴇᴘᴏʀᴛ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴛʜɪꜱ ɪɴᴄʟᴜᴅᴇꜱ ᴄʟᴀɪᴍꜱ '
+      - '   &7ᴛʜᴀᴛ ᴀʀᴇ ᴏᴘᴇɴ ꜰᴏʀ ᴀɴʏᴏɴᴇ ᴛᴏ ᴛᴇʟᴇᴘᴏʀᴛ'
+      - ''
+      - '    &8• &7ᴀᴠɪʟᴀʙʟᴇ: &f%gpextention_warpsize%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] cwarp"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 24
+
+# Downloaded from https://nullforums.net/resources/grief-prevention-gui-addon.6973/
+# 70228A6Y7ZUCF909N1MW4N3HJK94N6

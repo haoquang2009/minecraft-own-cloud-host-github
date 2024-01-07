@@ -1,0 +1,32 @@
+# DeluxeMenus 1.13.7-Release main configuration file
+# 
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: true
+gui_menus:
+  greifprevention:
+    file: GP-Nature/CLAIM_MENU.yml
+  greif_info:
+    file: GP-Nature/CLAIM_INFO.yml
+  greif_upgrade:
+    file: GP-Nature/CLAIM_UPGRADE.yml
+  greif_block:
+    file: GP-Nature/CLAIM_BLOCKS.yml
+  greif_player_trust:
+    file: GP-Nature/CLAIM_PERMISSIONS.yml
+  greif_trustlist:
+    file: GP-Nature/Functional/trustlist_1.yml
+  greif_leave_claim:
+    file: GP-Nature/Functional/CLAIM_LEAVE.yml
+  greif_leave_claim_all:
+    file: GP-Nature/Functional/CLAIM_LEAVE_ALL.yml
+  greif_kick:
+    file: GP-Nature/Functional/CLAIM_KICK.yml
+  greif_unclaim:
+    file: GP-Nature/Functional/CLAIM_DELETE.yml
+  greif_unclaim_all:
+    file: GP-Nature/Functional/CLAIM_DELETE_ALL.yml
+  greif_upgrade_no_enter:
+    file: GP-Nature/Functional/CLAIM_UPGRADE_NO_ENTER.yml

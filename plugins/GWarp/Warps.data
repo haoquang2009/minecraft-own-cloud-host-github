@@ -1,0 +1,38 @@
+Warps:
+  lobby:
+    name: lobby
+    owner: 37fb3338-1ba7-3120-9edc-4173c0c2c1a2
+    ownername: Rod_Wirez
+    count: true
+    loc:
+      x: 9.161900278972132
+      y: 64.0
+      z: -293.3116266099964
+      pitch: 39.15
+      yaw: -87.75018
+      world: world
+  gen1:
+    name: Gen1
+    owner: 37fb3338-1ba7-3120-9edc-4173c0c2c1a2
+    ownername: Rod_Wirez
+    count: true
+    loc:
+      x: 2.300000011920929
+      y: 19.0
+      z: 2.3000000119209303
+      pitch: 66.45
+      yaw: -68.93793
+      world: gen1
+    visitors: 2
+  gen2:
+    name: gen2
+    owner: 37fb3338-1ba7-3120-9edc-4173c0c2c1a2
+    ownername: Rod_Wirez
+    count: true
+    loc:
+      x: 96.49431161561944
+      y: 25.0
+      z: 61.74169636508855
+      pitch: 40.949963
+      yaw: 0.5037689
+      world: gen1

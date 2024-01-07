@@ -1,0 +1,45 @@
+# Bạn Có Thể Xem Thêm Nhiều Plugins hay tại https://minecraftvn.net/members/zednatsumii.7781/
+# đây là Config Mẫu Mình Share cho Các Bạn , Không Bán nhé !!!
+#  
+    
+    
+wiz1:
+  Skills:
+  - missile{ot=w1_TICK;oh=w1_HIT;v=4;i=1;hR=1;vR=1;in=0.75}
+
+w1_TICK:
+  Skills:
+  - effect:particles{p=flame;a=1} @origin
+
+w1_HIT:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=entity.generic.explode;v=1;p=0}
+  - damage{a=1;i=false}   
+    
+    
+wiz2:
+  Skills:
+  - missile{ot=w2_TICK;oh=w2_HIT;v=7;i=1;hR=1;vR=1;in=3.40}
+  - effect:sound{s=entity.wither.shoot;v=1;p=0}
+  - delay 20
+  - missile{ot=w2_TICK;oh=w2_HIT;v=7;i=1;hR=1;vR=1;in=3.40}
+  - effect:sound{s=entity.wither.shoot;v=1;p=0}
+  - delay 20
+  - missile{ot=w2_TICK;oh=w2_HIT;v=7;i=1;hR=1;vR=1;in=3.40}
+  - effect:sound{s=entity.wither.shoot;v=1;p=0}
+
+wiz3:
+  Skills:
+  - teleport @target
+  - delay 50
+  - potion{type=BLINDNESS;duration=50;level=4} @target
+  - potion{type=CONFUSION;duration=100;level=4} @target 
+  - potion{type=SLOW;duration=280;level=8} @self
+  - potion{type=INVISIBILITY;duration=140;level=8} @self
+  - delay 40
+  - effect:particlering{particle=flame;radius=20;points=52;amount=1;hS=1;vS=0} @target
+  - delay 20
+  - summon{mob=tnt;amount=4;noise=5;r=7} @target 
+ 
+

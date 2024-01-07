@@ -1,0 +1,11 @@
+players:
+- volume: 100
+  favorites:
+  - Alan Walker - Alone.nbs
+  - Alan Walker - Big Universe.nbs
+  playlist: PLAYLIST
+  repeat: false
+  id: 37fb3338-1ba7-3120-9edc-4173c0c2c1a2
+  join: false
+  shuffle: false
+  particles: false

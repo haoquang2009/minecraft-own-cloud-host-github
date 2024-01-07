@@ -1,0 +1,189 @@
+#  ______           _        __      __         _ _
+# |  ____|         | |       \ \    / /        | | |
+# | |__   _ __   __| | ___ _ _\ \  / /_ _ _   _| | |_ ___
+# |  __| | '_ \ / _` |/ _ \ '__\ \/ / _` | | | | | __/ __|
+# | |____| | | | (_| |  __/ |   \  / (_| | |_| | | |_\__ \
+# |______|_| |_|\__,_|\___|_|    \/ \__,_|\__,_|_|\__|___/
+#
+
+# Enderchest configuration
+enderchest:
+  # Should we open the vault selector when
+  # a player interacts with a enderchest?
+  replace-with-selector: false
+
+# Configuration for the selector
+selector:
+  # 9 slots in each row
+  # double chest is 6
+  # single chest is 3
+  rows: 6
+  # Should vaults that the player has no
+  # permission be shown?
+  show-locked: true
+  # Possible modes:
+  #   - PANE_BY_FILL    (default, each vault will be a glass pane
+  #                      colour depending on how full the vault is)
+  #   - STATIC          (each vault will be a static item defined below)
+  design-mode: PANE_BY_FILL
+  # Only used if STATIC above, every item will be
+  # this material in the selector.
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+  static-item:
+    unlocked: CHEST
+    locked: REDSTONE_BLOCK
+  # Player selects icon per vault.
+  select-icon:
+    # Allow the player to select
+    # vault icon by right clicking?
+    enabled: true
+    # Size of the inventory.
+    # single chest is 3
+    # double chest is 6
+    rows: 3
+    # All available items to select.
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    items:
+      - COAL
+      - IRON_INGOT
+      - IRON_BLOCK
+      - GOLD_INGOT
+      - GOLD_BLOCK
+      - DIAMOND
+      - DIAMOND_BLOCK
+      - EMERALD
+      - EMERALD_BLOCK
+      - REDSTONE
+      - REDSTONE_BLOCK
+      - OBSIDIAN
+      - BEDROCK
+      - DIAMOND_SWORD
+      - DIAMOND_AXE
+      - DIAMOND_PICKAXE
+      - DIAMOND_HOE
+      - DIAMOND_HELMET
+      - DIAMOND_CHESTPLATE
+      - DIAMOND_LEGGINGS
+      - DIAMOND_BOOTS
+      - GOLDEN_APPLE
+      - BOW
+      - ARROW
+      - APPLE
+      - WHEAT
+  # Item designs, how the items look etc.
+  template:
+    # Unlocked vault item
+    unlocked:
+      # Available placeholders:
+      #    - %order (vault order number)
+      title: '&5Vault #%order'
+      # Available placeholders:
+      #    - %filled_slots (slots that are filled by items)
+      #    - %total_slots (size of the inventory)
+      #    - %free_slots (slots that are not filled by items)
+      lore:
+        - '&7%filled_slots/%total_slots slots filled.'
+        - '&f '
+        - '&aLeft Click to open.'
+        - '&eRight Click to change icon.'
+    # Locked vault item
+    locked:
+      title: '&5Vault &c(Locked)'
+      lore:
+        - '&7Unlock by donating at'
+        - '&7store.example.com'
+
+# Configuration for each vault
+vault:
+  # 9 slots in each row
+  # double chest is 6
+  # single chest is 3
+  default-rows: 3
+  # Items that players cannot put inside
+  # their vaults.
+  blacklist:
+    enabled: false
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    items:
+      - BARRIER
+
+# Auto save timer
+auto-save:
+  minutes: 15
+
+# Data storage
+storage:
+  # Possible methods:
+  #   - FLATFILE
+  #   - MYSQL
+  #   - MARIADB (preferred over MYSQL)
+  method: FLATFILE
+
+  # All the different settings for the storage methods.
+  settings:
+
+    # Amount of ticks to wait before
+    # loading vaults, I recommend you use
+    # 100 (5 seconds). You can set to 0, if
+    # you do not use the plugin across
+    # servers on the same database.
+    load-delay: 100
+
+    # Flat file settings
+    flatfile:
+      # Possible file formats:
+      #   - YAML
+      type: YAML
+      # Where the data will be saved
+      directory: 'data'
+
+    # MySQL settings
+    mysql:
+      # Address and port. Can specify as "host:port" or "host".
+      # Default port for MySQL is 3306.
+      address: 'localhost'
+
+      # Database to create tables in
+      database: 'minecraft'
+
+      # Credentials
+      user: 'minecraft'
+      password: '123'
+
+      # Connection properties, disable useSSL and verifyServerCertificate to
+      # disable SSL connections.
+      properties:
+        cachePrepStmts: 'true'
+        prepStmtCacheSize: '250'
+        prepStmtCacheSqlLimit: '2048'
+        useSSL: 'true'
+        verifyServerCertificate: 'true'
+
+      # Table names
+      tables:
+        vault: 'endervaults_vault'
+        vault-metadata: 'endervaults_vault_metadata'
+
+    # MariaDB settings
+    mariadb:
+      # Address and port. Can specify as "host:port" or "host".
+      # Default port for MariaDB is 3306.
+      address: 'localhost'
+
+      # Database to create tables in
+      database: 'minecraft'
+
+      # Credentials
+      user: 'minecraft'
+      password: '123'
+
+      # Connection properties
+      properties:
+        cachePrepStmts: 'true'
+        prepStmtCacheSize: '250'
+        prepStmtCacheSqlLimit: '2048'
+
+      # Table names
+      tables:
+        vault: 'endervaults_vault'
+        vault-metadata: 'endervaults_vault_metadata'

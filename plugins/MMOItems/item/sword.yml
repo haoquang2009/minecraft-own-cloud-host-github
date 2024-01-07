@@ -1,0 +1,187 @@
+TWO_HANDED_STEEL_SWORD:
+  material: IRON_SWORD
+  name: '&c&m--[&f Two Handed Steel Sword &c&m]--'
+  enchants:
+    DAMAGE_ALL: 4
+    KNOCKBACK: 1
+    DURABILITY: 6
+  two-handed: true
+  unbreakable: true
+  attack-damage: 7.0=10.0
+  attack-speed: 0.8=1.0
+  critical-strike-chance: 7.0=10.0
+  critical-strike-power: 170.0=210.0
+  required-level: 2.0
+  element:
+    ice:
+      damage: 7.0
+  gem-sockets: 2.0
+  tier: UNCOMMON
+  ability:
+    right-click:
+      type: CIRCULAR_SLASH
+      mode: RIGHT_CLICK
+      cooldown: 8.0
+      damage: 4.0
+  lore:
+  - '&7Right click to &c&nsmash&7 nearby'
+  - '&7enemies for &c4&7 damage.'
+  hide-enchants: true
+CUTLASS:
+  material: IRON_SWORD
+  attack-damage: 6.0=8.0
+  attack-speed: 1.6=1.8
+  lore:
+  - '&7Slightly better than an iron sword.'
+  required-level: 3.0
+  tier: COMMON
+  name: '&fSharp Cutlass'
+  max-durability: 300.0
+FALCON_BLADE:
+  material: GOLD_SWORD
+  name: '&e&nFalcon Blade'
+  required-level: 10.0
+  attack-damage: 7.0=9.0
+  attack-speed: 1.6=2.0
+  critical-strike-chance: 50.0=70.0
+  gem-sockets: 2.0
+  ability:
+    on-hit:
+      type: STUN
+      mode: ON_HIT
+      duration: 1.0
+      cooldown: 9.0
+  unbreakable: true
+  perm-effects:
+    SPEED: 1
+  hide-enchants: true
+  enchants:
+    DURABILITY: 1
+  disable-enchanting: true
+  disable-crafting: true
+  disable-repairing: true
+  disable-smelting: true
+  tier: EPIC
+  advanced-craft:
+    '0':
+      material: AIR
+      durability: 0
+      amount: 1
+      name: ''
+    '2':
+      material: AIR
+      durability: 0
+      amount: 1
+      name: ''
+    '6':
+      material: AIR
+      durability: 0
+      amount: 1
+      name: ''
+    '8':
+      material: AIR
+      durability: 0
+      amount: 1
+      name: ''
+    '4':
+      material: GOLD_SWORD
+      amount: 1
+      durability: 0
+      name: ''
+    '5':
+      type: MATERIAL
+      id: EPIC_WEAPON_ESSENCE
+      amount: 1
+    '7':
+      type: MATERIAL
+      id: EPIC_WEAPON_ESSENCE
+      amount: 1
+    '3':
+      type: MATERIAL
+      id: EPIC_WEAPON_ESSENCE
+      amount: 1
+    '1':
+      type: MATERIAL
+      id: EPIC_WEAPON_ESSENCE
+      amount: 1
+KATANA:
+  material: IRON_SWORD
+  attack-damage: 7.0
+  lore:
+  - '&7&oA very sharp & light sword'
+  - '&7&oforged by a hundred years'
+  - '&7&oof smithing mastery.'
+  attack-speed: 2.0
+  tier: RARE
+  movement-speed: 0.02
+  critical-strike-chance: 10.0
+  name: '&fKatana'
+  max-durability: 800.0
+SOULSTEALER:
+  material: IRON_SWORD
+  enchants:
+    DURABILITY: 9
+  name: '&cThe Soulstealer'
+  attack-damage: 7.0=7.5
+  attack-speed: 1.6=1.7
+  mana-cost: 2.0
+  critical-strike-chance: 30.0
+  max-health: 2.0
+  required-level: 10.0
+  ability:
+    ability1:
+      type: VAMPIRISM
+      mode: ON_HIT
+      cooldown: 7.0
+  lore:
+  - '&7Drains &c10%&7 of the damage'
+  - '&7dealt as health points.'
+'1':
+  material: DIAMOND_SWORD
+  attack-damage: 1000000.0
+  attack-speed: 1.0E7
+  will-break: false
+  name: §f§l§k|||§a§l❖§c§lQuyền trượng ADMIN§a§l❖§f§k§l|||§e§l《§4§lWIREZ§e§l》
+  lore: []
+  displayed-type: Sword
+  item-particles:
+    type: HELIX
+  required-level: 10.0
+  critical-strike-chance: 1000.0
+  critical-strike-power: 1.0E7
+  pve-damage: 1.0E8
+  pvp-damage: 1.0E9
+  magic-damage: 1.0E8
+  weapon-damage: 1000000.0
+  regeneration: 100000.0
+  unbreakable: true
+  max-health: 1.0E11
+  knockback-resistance: 1.0E10
+  two-handed: true
+  perm-effects:
+    HEAL: 5
+    INCREASE_DAMAGE: 111
+  element:
+    fire:
+      damage: 10000.0
+    ice:
+      damage: 10000.0
+    wind:
+      damage: 10000.0
+    earth:
+      damage: 10000.0
+    thunder:
+      damage: 10000.0
+    water:
+      damage: 10000.0
+    light:
+      damage: 10000.0
+    darkness:
+      damage: 10000.0
+  gem-sockets: 3.0
+  ability:
+    ability1:
+      type: HOLY_MISSILE
+      mode: ON_HIT
+      damage: 1000000.0
+      cooldown: 0.0

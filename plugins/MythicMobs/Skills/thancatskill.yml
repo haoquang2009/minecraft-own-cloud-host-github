@@ -1,0 +1,76 @@
+MobHealth2:
+  Skills:
+  - sendactionmessage{msg="&7»» &d&n<mob.hp>&r &7««"} @PIR{r=30}
+
+Sandstorm2:
+  Skills:
+  - message{m="&7&l** &eSandstorm &7&l**"} @PlayersInRadius{r=20}
+  - damage{amount=8} @PlayersInRadius{r=1}
+  - effect:particlesphere{particle=crit;amount=200;radius=1} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=2}
+  - effect:particlesphere{particle=crit;amount=200;radius=2} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=3}
+  - effect:particlesphere{particle=crit;amount=200;radius=3} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=4}
+  - effect:particlesphere{particle=crit;amount=400;radius=4} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=5}
+  - effect:particlesphere{particle=crit;amount=400;radius=5} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=6}
+  - effect:particlesphere{particle=crit;amount=400;radius=6} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=7}
+  - effect:particlesphere{particle=crit;amount=800;radius=7} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=8}
+  - effect:particlesphere{particle=crit;amount=800;radius=8} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=9}
+  - effect:particlesphere{particle=crit;amount=800;radius=9} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=10}
+  - effect:particlesphere{particle=crit;amount=1000;radius=10} @self
+  - delay 10
+  - damage{amount=8} @PlayersInRadius{r=11}
+  - effect:particlesphere{particle=crit;amount=1000;radius=11} @self
+ 
+Bat2:
+  Cooldown: 3
+  Skills:
+  - summon{mob=MummyBat;amount=1;noise=1} @Self
+
+ExplodeBat2:
+  Skills:
+  - delay 40
+  - effect:particles{p=reddust;color=#4A4A4A;amount=50;hS=1;vS=1;speed=0}
+  - remove{delay=5} @self
+ 
+Egypt2:
+  Skills:
+  - sendtitle{title="&8&l** &6Egyptian Curse &8&l**";subtitle="";d=100} @PlayersInRadius{r=10}
+  - potion{type=JUMP;lvl=128;duration=100} @PlayersInRadius{r=10}
+  - potion{type=SLOW;lvl=127;duration=100} @PlayersInRadius{r=10}
+  - potion{type=WITHER;lvl=1;duration=100} @PlayersInRadius{r=10}
+
+SummonRat:
+  Skills:
+  - summon{mob=Rat;amount=1;noise=1} @Self
+
+ExplodeRat:
+  Skills:
+  - delay 60
+  - explosion{yield=2} @self
+  - remove @self
+ 
+Wrath:
+  Cooldown: 10
+  Skills:
+  - throw{velocityY=10} @PlayersInRadius{r=10}
+  - message{m='&e&l&o"Feel My Wrath"'} @PlayersInRadius{r=20}
+  - delay 10
+  - throw{velocity=20;velocityY=2} @PlayersInRadius{r=15}
+  - lightning{d=6} @PlayersInRadius{r=15}

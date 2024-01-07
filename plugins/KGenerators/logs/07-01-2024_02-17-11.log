@@ -1,0 +1,243 @@
+[07-01-2024 02:04:45] Settings: Loading settings
+[07-01-2024 02:04:45] WorldGuard: Registering kgenerators-pick-up flag
+[07-01-2024 02:04:45] WorldGuard: Registering kgenerators-only-gen-break flag
+[07-01-2024 02:04:57] !!! WARNING !!! KGenerators will be loaded in post init check, check for more informations futher in this log
+[07-01-2024 02:05:01] [Debug] Dependencies: Setting up dependencies
+[07-01-2024 02:05:01] [Debug] Dependencies: Detected Vault economy. Hooked into it.
+[07-01-2024 02:05:01] [Debug] Dependencies: Detected Vault permissions. Hooked into it.
+[07-01-2024 02:05:01] [Debug] Dependencies: Detected plugin WorldEdit. Hooking into it.
+[07-01-2024 02:05:01] [Debug] Dependencies: Detected plugin PlaceholderAPI. Hooking into it.
+[07-01-2024 02:05:01] [Debug] Dependencies: Detected plugin MMOItems. Hooking into it.
+[07-01-2024 02:05:01] [Debug] Dependencies: Detected plugin WorldGuard. Hooked into it.
+[07-01-2024 02:05:01] [Debug] Dependencies: Detected plugin HolographicDisplays. Hooked holograms into it.
+[07-01-2024 02:05:01] [Debug] GeneratorsManager: Setting up manager
+[07-01-2024 02:05:01] [Debug] GeneratedObjectsManager: Loaded GeneratedBlock with type block
+[07-01-2024 02:05:01] [Debug] GeneratedObjectsManager: Loaded GeneratedItem with type item
+[07-01-2024 02:05:01] [Debug] GeneratedObjectsManager: Loaded GeneratedEntity with type entity
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_1 generating variety of 1 objects every 40 ticks
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_2 generating variety of 1 objects every 20 ticks
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded properly SINGLE wood_generator generating variety of 4 objects every 20 ticks
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: STONE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{COAL x 1} ItemFortune: true
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 10.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{DIAMOND x 1} ItemFortune: true
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{EMERALD x 1} ItemFortune: true, Commands: [say <player> dropped emerald from Ores from stone generator!]
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded properly SINGLE ores_from_stone_generator generating variety of 6 objects every 80 ticks
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: COAL_ORE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 25.0 | Material: IRON_ORE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: GOLD_ORE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: DIAMOND_ORE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: EMERALD_ORE
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded properly SINGLE ores_generator generating variety of 5 objects every 80 ticks
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1}
+[07-01-2024 02:05:01] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:05:01] Generators file: Loaded 6 generators!
+[07-01-2024 02:05:01] [Debug] Lang: Loading lang files
+[07-01-2024 02:05:01] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 02:05:01] [Debug] RecipesManager: Setting up manager
+[07-01-2024 02:05:01] Recipes file: Recipes are disabled. You can enable them in recipes.yml
+[07-01-2024 02:05:01] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostMoney
+[07-01-2024 02:05:01] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExp
+[07-01-2024 02:05:01] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExpLevel
+[07-01-2024 02:05:01] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostItems
+[07-01-2024 02:05:01] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 02:05:01] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 02:05:01] [Debug] LimitsManager: Setting up manager
+[07-01-2024 02:05:01] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 02:05:01] [Debug] DatabaseManager: Setting up manager
+[07-01-2024 02:05:01] Database SQLITE: Connected to SQLITE database
+[07-01-2024 02:05:01] [Debug] HologramsManager: Setting up manager
+[07-01-2024 02:05:01] [Debug] Holograms: Enabling HolographicDisplaysProvider
+[07-01-2024 02:05:01] [Debug] SchedulesManager: Setting up manager
+[07-01-2024 02:05:01] [Debug] MenusManager: Setting up manager
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Starting chunk management task
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Loading generators from already loaded chunks
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Loaded 0 generators from world ASkyBlock_nether (289 chunks)
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Loaded 0 generators from world world_nether (289 chunks)
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Loaded 0 generators from world ASkyBlock (289 chunks)
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Loaded 0 generators from world gen1 (291 chunks)
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Loaded 0 generators from world world (289 chunks)
+[07-01-2024 02:05:01] [Debug] PlacedGenerators: Loaded 0 generators from world world_the_end (289 chunks)
+[07-01-2024 02:05:01] [Debug] MainManager: Loading listeners
+[07-01-2024 02:05:01] [Debug] MainManager: Loading Metrix
+[07-01-2024 02:05:01] MainManager: KGenerators loaded successfully
+[07-01-2024 02:06:37] !!! ERROR !!! Database: An error occured, while loading 31 placed generators!
+[07-01-2024 02:06:37] !!! ERROR !!! Database: Cant load worlds: [Trade]
+[07-01-2024 02:06:37] !!! ERROR !!! Database: Possible worlds: world, world_nether, world_the_end, gen1, ASkyBlock, ASkyBlock_nether, 
+[07-01-2024 02:06:38] [Debug] Rod_Wirez picked up (51) dirt_generator owned by Rod_Wirez placed in world gen1 at -1347.0, 101.0, 667.0 (ChunkInfo: gen1, -85, 41)
+[07-01-2024 02:09:32] Reload: KGenerators reload started
+[07-01-2024 02:09:32] Settings: Loading settings
+[07-01-2024 02:09:32] [Debug] Generators file: stone_generator_level_1 is already loaded - updating it!
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_1 generating variety of 1 objects every 40 ticks
+[07-01-2024 02:09:32] [Debug] Generators file: stone_generator_level_2 is already loaded - updating it!
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_2 generating variety of 1 objects every 20 ticks
+[07-01-2024 02:09:32] [Debug] Generators file: wood_generator is already loaded - updating it!
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded properly SINGLE wood_generator generating variety of 4 objects every 20 ticks
+[07-01-2024 02:09:32] [Debug] Generators file: ores_from_stone_generator is already loaded - updating it!
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: STONE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{COAL x 1} ItemFortune: true
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 10.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{DIAMOND x 1} ItemFortune: true
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{EMERALD x 1} ItemFortune: true, Commands: [say <player> dropped emerald from Ores from stone generator!]
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded properly SINGLE ores_from_stone_generator generating variety of 6 objects every 80 ticks
+[07-01-2024 02:09:32] [Debug] Generators file: ores_generator is already loaded - updating it!
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: COAL_ORE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 25.0 | Material: IRON_ORE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: GOLD_ORE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: DIAMOND_ORE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: EMERALD_ORE
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded properly SINGLE ores_generator generating variety of 5 objects every 80 ticks
+[07-01-2024 02:09:32] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1}
+[07-01-2024 02:09:32] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:09:32] Generators file: Loaded 6 generators!
+[07-01-2024 02:09:32] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 02:09:32] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 02:09:32] [Debug] LimitsManager: Setting up manager
+[07-01-2024 02:09:32] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 02:09:32] [Debug] Lang: Loading lang files
+[07-01-2024 02:09:32] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 02:09:32] Reload: KGenerators reloaded successfully
+[07-01-2024 02:09:40] !!! ERROR !!! Database: An error occured, while loading 31 placed generators!
+[07-01-2024 02:09:40] !!! ERROR !!! Database: Cant load worlds: [Trade]
+[07-01-2024 02:09:40] !!! ERROR !!! Database: Possible worlds: world, world_nether, world_the_end, gen1, ASkyBlock, ASkyBlock_nether, 
+[07-01-2024 02:09:40] [Debug] Rod_Wirez placed dirt_generator in world gen1 at -1348.0, 101.0, 667.0
+[07-01-2024 02:09:44] [Debug] Rod_Wirez picked up (52) dirt_generator owned by Rod_Wirez placed in world gen1 at -1348.0, 101.0, 667.0 (ChunkInfo: gen1, -85, 41)
+[07-01-2024 02:09:55] [Debug] Rod_Wirez placed dirt_generator in world gen1 at -1348.0, 101.0, 667.0
+[07-01-2024 02:10:04] [Debug] Rod_Wirez picked up (53) dirt_generator owned by Rod_Wirez placed in world gen1 at -1348.0, 101.0, 667.0 (ChunkInfo: gen1, -85, 41)
+[07-01-2024 02:10:52] Reload: KGenerators reload started
+[07-01-2024 02:10:52] Settings: Loading settings
+[07-01-2024 02:10:52] [Debug] Generators file: stone_generator_level_1 is already loaded - updating it!
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_1 generating variety of 1 objects every 40 ticks
+[07-01-2024 02:10:52] [Debug] Generators file: stone_generator_level_2 is already loaded - updating it!
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_2 generating variety of 1 objects every 20 ticks
+[07-01-2024 02:10:52] [Debug] Generators file: wood_generator is already loaded - updating it!
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded properly SINGLE wood_generator generating variety of 4 objects every 20 ticks
+[07-01-2024 02:10:52] [Debug] Generators file: ores_from_stone_generator is already loaded - updating it!
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: STONE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{COAL x 1} ItemFortune: true
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 10.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{DIAMOND x 1} ItemFortune: true
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{EMERALD x 1} ItemFortune: true, Commands: [say <player> dropped emerald from Ores from stone generator!]
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded properly SINGLE ores_from_stone_generator generating variety of 6 objects every 80 ticks
+[07-01-2024 02:10:52] [Debug] Generators file: ores_generator is already loaded - updating it!
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: COAL_ORE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 25.0 | Material: IRON_ORE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: GOLD_ORE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: DIAMOND_ORE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: EMERALD_ORE
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded properly SINGLE ores_generator generating variety of 5 objects every 80 ticks
+[07-01-2024 02:10:52] [Debug] Generators file: dirt_generator is already loaded - updating it!
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 100.0 | Item: ItemStack{DIRT x 1}
+[07-01-2024 02:10:52] [Debug] Generators file: Loaded properly SINGLE dirt_generator generating variety of 1 objects every 20 ticks
+[07-01-2024 02:10:52] Generators file: Loaded 6 generators!
+[07-01-2024 02:10:52] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 02:10:52] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 02:10:52] [Debug] LimitsManager: Setting up manager
+[07-01-2024 02:10:52] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 02:10:52] [Debug] Lang: Loading lang files
+[07-01-2024 02:10:52] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 02:10:52] Reload: KGenerators reloaded successfully
+[07-01-2024 02:10:56] !!! ERROR !!! Database: An error occured, while loading 31 placed generators!
+[07-01-2024 02:10:56] !!! ERROR !!! Database: Cant load worlds: [Trade]
+[07-01-2024 02:10:56] !!! ERROR !!! Database: Possible worlds: world, world_nether, world_the_end, gen1, ASkyBlock, ASkyBlock_nether, 
+[07-01-2024 02:10:56] [Debug] Rod_Wirez placed dirt_generator in world gen1 at -1347.0, 101.0, 667.0
+[07-01-2024 02:11:00] [Debug] Rod_Wirez picked up (54) dirt_generator owned by Rod_Wirez placed in world gen1 at -1347.0, 101.0, 667.0 (ChunkInfo: gen1, -85, 41)
+[07-01-2024 02:12:21] Reload: KGenerators reload started
+[07-01-2024 02:12:21] Settings: Loading settings
+[07-01-2024 02:12:21] !!! ERROR !!! Generators file: Cant load generators config. Disabling plugin.
+[07-01-2024 02:12:21] !!! ERROR !!! org.bukkit.configuration.InvalidConfigurationException: while parsing a block mapping
+ in 'string', line 317, column 5:
+        material: DIRT
+        ^
+expected <block end>, but found BlockMappingStart
+ in 'string', line 323, column 7:
+          wait-for-pick-up: true
+          ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:130)
+	at me.kryniowesegryderiusz.kgenerators.utils.immutable.Config.loadConfig(Config.java:24)
+	at me.kryniowesegryderiusz.kgenerators.generators.generator.GeneratorsManager.reload(GeneratorsManager.java:132)
+	at me.kryniowesegryderiusz.kgenerators.Main.reload(Main.java:123)
+	at me.kryniowesegryderiusz.kgenerators.Commands.onCommand(Commands.java:47)
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:152)
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:685)
+	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1492)
+	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1297)
+	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45)
+	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:5)
+	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils.lambda$ensureMainThread$0(PlayerConnectionUtils.java:14)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46)
+	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:850)
+	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:423)
+	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:774)
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:666)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: while parsing a block mapping
+ in 'string', line 317, column 5:
+        material: DIRT
+        ^
+expected <block end>, but found BlockMappingStart
+ in 'string', line 323, column 7:
+          wait-for-pick-up: true
+          ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:571)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437)
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53)
+	... 22 more
+
+[07-01-2024 02:12:21] Disabling KGenerators
+[07-01-2024 02:12:21] Safely closing menus.
+[07-01-2024 02:12:21] Saving 0 running generators.
+[07-01-2024 02:12:21] Safely shutting down database.
+[07-01-2024 02:12:21] Database SQLITE: Connection closed
+[07-01-2024 02:12:21] [Debug] UpgradesManager: Setting up manager
+[07-01-2024 02:12:21] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[07-01-2024 02:12:21] [Debug] LimitsManager: Setting up manager
+[07-01-2024 02:12:21] Limits file: Limits are disabled. You can enable them in limits.yml!
+[07-01-2024 02:12:21] [Debug] Lang: Loading lang files
+[07-01-2024 02:12:21] Lang: Messages and Guis file loaded with lang: en
+[07-01-2024 02:12:21] Reload: KGenerators reloaded successfully

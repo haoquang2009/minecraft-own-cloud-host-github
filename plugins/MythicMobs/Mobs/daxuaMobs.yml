@@ -1,0 +1,31 @@
+Daxua:
+ Type: pigzombie
+ Health: 1000
+ Damage: 19
+ Display: '&b&lYasuo'
+ Options:
+   PreventOtherDrops: true
+   Despawn: false
+   FollowRange: 50
+   KnockbackResistance: 0.2
+   PreventRandomEquipment: true
+   PreventRandomEquipment: true
+   NoDamageTicks: 10
+   MovementSpeed: 0.3
+ Modules:
+    ImmunityTable: true
+    ThreatTable: true
+ Equipment:
+ - diamond_sword:0
+ KillMessages:
+ - '&f<target.name> đã bị Daxua hành sml '
+ Disguise:
+    Type: player
+    Skin: 'yasuo'
+    Player: '&b&lYasuo'
+    Sprinting: true
+ Skills:
+ - effect:particles{particle=angryVillager;amount=10;hS=0.5;vS=0.4;yoffset=0.6;speed=0.0001;d=10} @self ~onTimer:10
+ - skill{s=DaxuaSkills} ~onTimer:160 @RandomThreatTarget
+ - effect:particles{p=blockcrack_152_0;a=50;hS=0.4;vS=0.4;d=10;yoffset=0.5} @target ~onAttack 1
+ - skill{s=HP} ~ontimer:10

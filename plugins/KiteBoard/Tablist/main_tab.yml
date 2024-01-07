@@ -1,0 +1,18 @@
+setting:
+  priority: 1
+  advanced: false
+
+assignment:
+  default-permissions:
+    type: PERMISSION
+    permission: "kiteboard.group.default"
+    default: true
+header:
+  - ""
+  - "&d&lKite&e&lBoard&5&l3"
+  - "&7&oThe enterprise scoreboard and tab solution."
+  - ""
+footer:
+  - ""
+  - "3|<rainbow>www.yourwebsite.com</rainbow>"
+  - ""

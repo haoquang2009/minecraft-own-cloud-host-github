@@ -1,0 +1,26 @@
+setting:
+  priority: 3
+  advanced: false
+
+assignment:
+  on-player-attack:
+    type: EVENT
+    event: "org.bukkit.event.entity.EntityDamageByEntityEvent"
+    event-player: "getDamager"
+    stay-seconds: 6
+
+content:
+  - "&c&lEntered Combat"
+  - "&8&m--------------------------"
+  - "&c&l» Opponent"
+  - "&7{event.getEntity.getName}"
+  - ""
+  - "&c&l» Opponent Health"
+  - "10|&7<healthbar fill=&c&l empty=&7&l size=10>{event.getEntity.getHealth}</healthbar>"
+  - ""
+  - "&c&l» Your Health"
+  - "10|&7<healthbar fill=&a&l empty=&7&l size=10>{event.getDamager.getHealth}</healthbar>"
+  - ""
+  - "&c&l» Sát thương"
+  - "10|&7<round format=#.#>{event.getFinalDamage}</round>"
+  - "&8&m--------------------------"

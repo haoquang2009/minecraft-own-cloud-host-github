@@ -1,0 +1,17 @@
+RUBY:
+  material: EMERALD
+  name: §4§l§kADMIN STRENGTH
+  critical-strike-power: 1.0E11
+  attack-damage: 1.23123123123E11
+  required-level: 5.0
+  disable-crafting: true
+  attack-speed: 1000000.0
+  critical-strike-chance: 1111111.0
+GEM_OF_ACCURACY:
+  material: DIAMOND
+  disable-crafting: true
+  name: '&fGem of Accuracy'
+  success-rate: 90.0=99.0
+  attack-speed: 0.05=0.1
+  tier: COMMON
+  critical-strike-chance: 10.0=15.0

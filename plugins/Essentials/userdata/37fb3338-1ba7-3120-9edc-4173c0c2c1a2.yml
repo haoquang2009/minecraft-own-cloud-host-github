@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1704635125044
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1704636162658
+  login: 1704636200337
+money: '956.0389766802338'
+last-account-name: Rod_Wirez
+logoutlocation:
+  world: 76ca8fbf-43a4-4e49-b0d9-04eda1eedcc6
+  world-name: test
+  x: -327.6445861729911
+  y: 106.0
+  z: 639.1466737478979
+  yaw: -22.5379638671875
+  pitch: -4.171630382537842
+lastlocation:
+  world: 76ca8fbf-43a4-4e49-b0d9-04eda1eedcc6
+  world-name: test
+  x: -263.35818462180174
+  y: 112.59173515860057
+  z: 664.4945424954415
+  yaw: -14.9842529296875
+  pitch: 74.24999237060547
+nickname: Wirez

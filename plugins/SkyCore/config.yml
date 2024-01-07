@@ -1,0 +1,12 @@
+kill_message: '&bYou killed &a<player>'
+killed_message: '&bYou got killed by &4<player>'
+day: '&aYou have set it to day!'
+night: '&4You have set it to night, watch out for mobs!'
+Fly: '&aYou can now fly.'
+NoPermission: '&cYou dont have permission to execute this command!'
+Hat: '&benjoy your new hat!'
+HatID: '&aEnjoy your new hat!'
+IDPermissions: false
+JoinMessage: '&2<player> Has joined the game.'
+QuitMessage: '&2<player> Has left the game.'
+froze: '&cYou have been frozen!'

@@ -1,0 +1,183 @@
+menu_title: '%gpextention_title% &7(&2No Enter&7)'
+open_command: 'cupgradenoenter'
+register_command: true
+args:
+  - "claimid"
+args_usage_message: "missing arg"
+update_interval: 1
+size: 36
+items:
+  'blue_glass_pane':
+    priority: 3
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+      - 0-44
+  'white_glass_pane':
+    priority: 3
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+      - 1
+      - 3
+      - 4
+      - 17
+      - 18
+  'white_glass':
+    priority: 3
+    material: WHITE_STAINED_GLASS
+    display_name: " &r "
+    slots:
+      - 0
+      - 2
+      - 8
+      - 9
+  'tall_grass':
+    priority: 3
+    material: TALL_GRASS
+    display_name: " &r "
+    slots:
+      - 29
+      - 30
+      - 33
+      - 34
+      - 35
+  'rose':
+    priority: 3
+    material: ROSE_BUSH
+    display_name: " &r "
+    slots:
+      - 28
+  'dark_oak':
+    priority: 3
+    material: DARK_OAK_SAPLING
+    display_name: " &r "
+    slots:
+      - 32
+  'goback':
+    material: OAK_DOOR
+    display_name: "&7⟰ &aɢᴏ ʙᴀᴄᴋ"
+    click_commands:
+      - "[sound] BLOCK_WOODEN_DOOR_OPEN"
+      - "[player] cupgrade {claimid}"
+    slot: 31
+  'info':
+    display_name: "&7ᴄʟᴀɪᴍ ɪɴꜰᴏ &7(&aᴠɪᴇᴡ&7)"
+    material: MAP
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '   &7%gpextention_getbyid_claimdescription_{claimid}%'
+      - ''
+      - '   &8• &7ʟᴏᴄᴀᴛɪᴏɴ: &f%gpextention_getbyid_location_{claimid}%'
+      - '   &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{player_uuid}%'
+      - '   &8• &7ᴛʀᴜꜱᴛ: &f%gpextention_getbyid_trustsize_{claimid}%'
+      - '   &8• &7ʙɪᴏᴍᴇ: &f%gpextention_getbyid_biome_{claimid}%'
+      - '   &8• &7ɪᴄᴏɴ (ᴄᴇɴᴛᴇʀ ʙʟᴏᴄᴋ): &f%gpextention_getbyid_centerblock_{claimid}%'
+      - ''
+    click_commands:
+      - "[refresh] UI_BUTTON_CLICK"
+    slot: 27
+  '1':
+    material: STRUCTURE_VOID
+    priority: 1
+    display_name: "&7Blacklist"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7Blacklisted players can not enter your claim'
+      - ''
+      - '    &8• &7size: &f%gpextention_getbyid_claimentry_{claimid}_blocklistsize%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_requirement:
+      requirements:
+        req:
+          type: string equals
+          input: "%gpextention_getbyid_editaccess_{claimid}_{player_uuid}%"
+          output: "true"
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ edit blacklist</red></gray> "
+    click_commands:
+      - "[player] gpblacklist {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 11
+  '2':
+    material: IRON_DOOR
+    priority: 1
+    display_name: "&7Whitelist"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7Whitelisted players can enter your claim,'
+      - '   &7when the claim is locked'
+      - ''
+      - '    &8• &7size: &f%gpextention_getbyid_claimentry_{claimid}_whitelistsize%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] gpwhitelist {claimid}"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 13
+    click_requirement:
+      requirements:
+        req:
+          type: string equals
+          input: "%gpextention_getbyid_editaccess_{claimid}_{player_uuid}%"
+          output: "true"
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ edit blacklist</red></gray> "
+  '3':
+    material: 'BARRIER'
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&7ɴᴏ ᴇɴᴛʀʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴘʀᴇᴠᴇɴᴛ ᴘʟᴀʏᴇʀꜱ ꜰʀᴏᴍ ᴇɴᴛᴇʀɪɴɢ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_noenter_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} noenter true'
+      - '[close]'
+      - "[sound] UI_BUTTON_CLICK"
+      - "[player] cupgradenoenter {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_noenter_{claimid}%"
+          output: "false"
+  '3_2':
+    material: 'BARRIER'
+    slot: 15
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ɴᴏ ᴇɴᴛʀʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴘʀᴇᴠᴇɴᴛ ᴘʟᴀʏᴇʀꜱ ꜰʀᴏᴍ ᴇɴᴛᴇʀɪɴɢ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_noenter_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags unset {claimid} noenter true'
+      - '[close]'
+      - "[sound] UI_BUTTON_CLICK"
+      - "[player] cupgradenoenter {claimid}<delay=20>"
+
+# Downloaded from https://nullforums.net/resources/grief-prevention-gui-addon.6973/
+# 70228A6Y7ZUCF909N1MW4N3HJK94N6

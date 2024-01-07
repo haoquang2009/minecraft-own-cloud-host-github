@@ -1,0 +1,546 @@
+'1':
+  uniqueId: 61543acd-411d-41c4-8857-5aec22c00cf1
+  name: DEMO
+  world: world
+  x: 16
+  y: 65
+  z: -290
+  type: admin
+  object:
+    type: villager
+    uuid: d0ad0fed-3d66-4e17-8fa7-452ba4dfee2d
+    prof: PRIEST
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§l§k|||§a§l❖§c§lQuyền trượng ADMIN§a§l❖§f§k§l|||§e§l《§4§lWIREZ§e§l》
+          lore:
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lThông Tin§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - '§3 Thuộc loại: §c§lSword'
+          - §bCần §f§l10000 §bLvl để sử dụng
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lChỉ Số§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương: §f1000000'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Tốc đánh: §f10000000'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Tỉ lệ chí mạng: §f+1000%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương chí mạng: §f+10000000%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương PVP: §f+1000000000%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương PVE: §f+100000000%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương vũ khí: §f+1000000%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương Phép: §f+100000000%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Tốc độ hồi máu: §f+100000%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Kháng phản đòn: §f+10000000000'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Máu: +100000000000'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Hai tay '
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lNguyên Tố§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - §c❖ 10000% Fire Damage
+          - §b❖ 10000% Ice Damage
+          - §7❖ 10000% Wind Damage
+          - §2❖ 10000% Earth Damage
+          - §e❖ 10000% Thunder Damage
+          - §3❖ 10000% Water Damage
+          - §f❖ 10000% Light Damage
+          - §8❖ 10000% Darkness Damage
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lKỉ Năng§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - '§2Trong Lúc Đánh: Tên lửa thánh'
+          - '§2Sát thương: 1000000'
+          - '§2Hồi chiêu: 0'
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lNgọc§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - §a◆ §4§l§kADMIN STRENGTH
+          - §a◆ §4§l§kADMIN STRENGTH
+          - §a◆ §4§l§kADMIN STRENGTH
+          ItemFlags:
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          Unbreakable: true
+          internal: H4sIAAAAAAAA/+2UT2gbRxTGx3ZiFJPQNo7rtKGJISkkBxttrTZyXFGPdsfaqfaPvDOSmhy8jKS1rcjaNdYmKURQ04bQcwgpKaX4UHBLaW+lUHpyjkkaegg5JyQhh1DaQ2l7CHQkWauxZdn0Yl+6CMHu++a9337z7fQB0Av6dd3EFOnETmWQrUAdJhD87MEVwK8QGGhVkaXbaHISyZSA11UEtTNvj2NDthAkzXVnJEkSO+rwA7umpGr8tHrxGe/YJVRp1rRVaChI6QqBg8Hj2r9Nz6YQ2EuypqW01dJprIATkVEWHTudmxkejUajwxFpNDIczY2Fh8MSy7GZd9gYkyLiUhjHGqYYESCppnbW1jEhWENV07BVTKsFVmazTkwK16+RcDXvefMF75Ib4ze9gg8aTqh07X0nbn1as4m7+GprDqVQTq4J4uml/cczE1xwLBDIFseQoWYTauEksmXugYwgXphe2tAqi2CK463tyciVpcasNwJB0jDlZLw2zkIEE1prFO9etofqusFAZ6GpNLaQYmsog7QW9cBGapJCSIFzt79u1I92hE6ZWWTFpy5+RJbXN8pCiqw2ew616thQ2soDAmkCGciCFJvGxN/n1+qHg7oCraSBCNliwiR/07Zyywuqpnnk2hFbucRy+/oWIYIWVbdYncqkmjt2967T+IpeXh9gHt8uScxmgj8k1DRQ153VlcjqyvzqSgkqOjaGuN3ISFC1Ol5dF6yYNPLWqNT8IUmqjgeK+iYKSeaVzTMXkxrX5pr6FvM54Ub38er/aP8RTYwNH4/lDcfrPnAQ+v5iMXfBd3SvUJwpOouVPl7o6wGh2imnexX/8qn793rAvtqt5rCK775WGdwLemHZu+D62D/+ewjsIfOeD0JlVnTnmFsIgQNBW4OVHXBo1nGdxWJ+hPk+y5eU+lHHe5oLziLzi57bSOmezmIgAMV77l8TgU5Nv7gaACUP36huD9S/fgZZcJxCJ57NtCLO0Mn8VyLO7NOYGeBM/ST/uD3OK80RZfah6rB5f64TTLtSRJl9+Nu3IsqXamk5QEkNdP+zPcqR5oCS6+VLOf7CllMpVnzm5jvu2FZrRLz+h/d+EPE+v5x53nLqSfr7nU7Sm99FYiLQzakv/hKifQLsbJI+zt18ScSZ/iXx66768965wXdFoMfF83/soj+PH+3/RsS5rn7y/q76A7qHLolAfx679vNO+wP+BT4rmydFCwAA
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: EMERALD
+        amount: 9
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§l§kADMIN STRENGTH
+          lore:
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lThông Tin§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - '§3 Thuộc loại: §c§lGem Stone'
+          - §bCần §f§l5 §bLvl để sử dụng
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lChỉ Số§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương: §f123123123123'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Tốc đánh: §f1000000'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Tỉ lệ chí mạng: §f+1111111%'
+          - '§f§k§l|§a ෴෴෴෴෴§d§l┊✧✧✧┊§a෴෴෴෴෴ §f§k§l|§c Sát thương chí mạng: §f+100000000000%'
+          - §b§l亗§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§e§lSiêu Thanh§c§lﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ§b§l亗
+          - §8§l[§2§l*§8§l] §aKéo vào một mục §7để áp dụng
+          ItemFlags:
+          - HIDE_ATTRIBUTES
+          internal: H4sIAAAAAAAA/+NiYGBjEPP19fcMcfUNjncMCXF09o53cfR1dHd1slm19fBmkAJ5uALnIM8QT2dHn/jgkCBPb9d4Zw9HP2dXR4Mv7gxAwMggCVfp4hns6OQDVBHk6Bbi6efOyMEgAJcEkfGeLgwsQaFOkWwM4nCJINfAUM8gV5d4H9cwVx8HEQYwYGMQRXdicICrq4ujXksDRF4OpwsD/MNdg5zMPcpeABVyMAihuiEkMsCVgdMdyAoO8fdz5WQQciwpKcpMKi1J9c1PyUzLTC0qBjsBQ2doKND9KpbmlgZpFqaGusamBga6JmmmRrqWaUbJuikGFonmBmlpZqbGRgwAv9X4MmUBAAA=
+'2':
+  uniqueId: 8583e132-ed28-4c30-88b1-ae7809e1e223
+  name: '&f&lVũ khí và Buff'
+  world: gen1
+  x: 10
+  y: 19
+  z: 10
+  type: admin
+  object:
+    type: villager
+    uuid: 32d820be-e4ad-4421-8bd4-997f9497ee50
+    prof: FARMER
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fKiếm §c§lTáo
+          lore:
+          - '§d§l❖§b§l §0§1§r§b§lSát thương§0§1§r§b§l§f: §e§0§2§r§f0.2 §7➨ §f0.5§0§2§r§e'
+          internal: H4sIAAAAAAAA/+NiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy4x+uVYP8vapZiFgRMk5JOaWFyySvekrku+szkbA5tjbn5pXon9BwYw4GBgCc7JL2HgyE3MzMtIzEvhYOCFW+GXmJvKIJyempdalJmsl1hSkpicHVyQmprCzMDpX5BalFiSmZ8HNQWslgPmKAYGANkvLFmuAAAA
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 16
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fKiếm §c§lTáo
+          lore:
+          - '§d§l❖§b§l §0§1§r§b§lSát thương§0§1§r§b§l§f: §e§0§2§r§f0.2 §7➨ §f0.5§0§2§r§e'
+          internal: H4sIAAAAAAAA/+NiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy4x+uVYP8vapZiFgRMk5JOaWFyySvekrku+szkbA5tjbn5pXon9BwYw4GBgCc7JL2HgyE3MzMtIzEvhYOCFW+GXmJvKIJyempdalJmsl1hSkpicHVyQmprCzMDpX5BalFiSmZ8HNQWslgPmKAYGANkvLFmuAAAA
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fKiếm §c§lTáo §f§l[§a§l+1§f§l]
+          lore:
+          - §c§l亗§a§l Thông Số §c§l亗
+          - '§d§l❖§b§l §0§1§r§b§lSát thương§0§1§r§b§l§f: §e§0§2§r§f0.2 §7➨ §f0.5§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lTỉ lệ Bạo kích§0§1§r§b§l§f: §e§0§2§r§f1.0%§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lBạo kích§0§1§r§b§l§f: §e§0§2§r§f2.0§7x§0§2§r§e'
+          internal: H4sIAAAAAAAA/+NiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy7x691zdPov/wMsDJwgIZ/UxOKS7psal6c9unqdjYHNMTe/NK/E/gMDGHAwsATn5JcwcOQmZuZlJOalcDDwwq3wS8xNZRBOT81LLcpM1kssKUlMzg4uSE1NYWbg9C9ILUosyczPg5oCVssBcxQDAwDu8/38rgAAAA==
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fKiếm §c§lTáo §f§l[§a§l+1§f§l]
+          lore:
+          - §c§l亗§a§l Thông Số §c§l亗
+          - '§d§l❖§b§l §0§1§r§b§lSát thương§0§1§r§b§l§f: §e§0§2§r§f0.2 §7➨ §f0.5§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lTỉ lệ Bạo kích§0§1§r§b§l§f: §e§0§2§r§f1.0%§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lBạo kích§0§1§r§b§l§f: §e§0§2§r§f2.0§7x§0§2§r§e'
+          internal: H4sIAAAAAAAA/+NiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy7x691zdPov/wMsDJwgIZ/UxOKS7psal6c9unqdjYHNMTe/NK/E/gMDGHAwsATn5JcwcOQmZuZlJOalcDDwwq3wS8xNZRBOT81LLcpM1kssKUlMzg4uSE1NYWbg9C9ILUosyczPg5oCVssBcxQDAwDu8/38rgAAAA==
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fKiếm §c§lTáo §f§l[§a§l+2§f§l]
+          lore:
+          - §c§l亗§a§l Thông Số §c§l亗
+          - '§d§l❖§b§l §0§1§r§b§lSát thương§0§1§r§b§l§f: §e§0§2§r§f0.5 §7➨ §f0.7§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lTỉ lệ Bạo kích§0§1§r§b§l§f: §e§0§2§r§f1.0%§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lBạo kích§0§1§r§b§l§f: §e§0§2§r§f2.0§7x§0§2§r§e'
+          internal: H4sIAAAAAAAA/z2OwQnCQBRER1zCJuBF+7AEJSBCwOghpIA1+epHsxs2PzetRDsQUpqIFYhBnePwmDcREGIci3jetkKpK3nH5JsIwEBB53mySF0jV3u2M7XsFMJPtSLTyK17vC6c3AMEceVaK/Mn+mio7OQEujJsD8aWGqO/Ym0qwmRPljwXUyNiimNWE5VDhJuavBF29rvSs/p3CngD3A8FFa4AAAA=
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fKiếm §c§lTáo §f§l[§a§l+2§f§l]
+          lore:
+          - §c§l亗§a§l Thông Số §c§l亗
+          - '§d§l❖§b§l §0§1§r§b§lSát thương§0§1§r§b§l§f: §e§0§2§r§f0.5 §7➨ §f0.7§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lTỉ lệ Bạo kích§0§1§r§b§l§f: §e§0§2§r§f1.0%§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lBạo kích§0§1§r§b§l§f: §e§0§2§r§f2.0§7x§0§2§r§e'
+          internal: H4sIAAAAAAAA/z2OwQnCQBRER1zCJuBF+7AEJSBCwOghpIA1+epHsxs2PzetRDsQUpqIFYhBnePwmDcREGIci3jetkKpK3nH5JsIwEBB53mySF0jV3u2M7XsFMJPtSLTyK17vC6c3AMEceVaK/Mn+mio7OQEujJsD8aWGqO/Ym0qwmRPljwXUyNiimNWE5VDhJuavBF29rvSs/p3CngD3A8FFa4AAAA=
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fKiếm §c§lTáo §f§l[§a§l+3§f§l]
+          lore:
+          - §c§l亗§a§l Thông Số §c§l亗
+          - '§d§l❖§b§l §0§1§r§b§lSát thương§0§1§r§b§l§f: §e§0§2§r§f0.7 §7➨ §f1.0§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lTỉ lệ Bạo kích§0§1§r§b§l§f: §e§0§2§r§f1.0%§0§2§r§e'
+          - '§d§l❖§b§l §0§1§r§b§lBạo kích§0§1§r§b§l§f: §e§0§2§r§f2.0§7x§0§2§r§e'
+          internal: H4sIAAAAAAAA/+NiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy7ROF+edHWhnyMLAydIyCc1sbhk9ec22zgJzVNsDGyOufmleSX2HxjAgIOBJTgnv4SBIzcxMy8jMS+Fg4EXboVfYm4qg3B6al5qUWayXmJJSWJydnBBamoKMwOnf0FqUWJJZn4e1BSwWg6YoxgYAMuuX5muAAAA
+'4':
+  uniqueId: 9dc5e751-3831-4b9a-8038-bb28a384143d
+  name: '&c&l Nguyên liệu'
+  world: gen1
+  x: 9
+  y: 19
+  z: 10
+  type: admin
+  object:
+    type: villager
+    uuid: 1d34fc5d-9471-4d5a-880d-ace488659deb
+    prof: LIBRARIAN
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 16
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 16
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 16
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng cục
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 16
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng thùng
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 16
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng thùng
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 16
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng thùng
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng thùng
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '5':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng thùng
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng thùng
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §c§l Táo đóng thùng
+          lore:
+          - §f Nguyên liệu trade đồ
+          enchants:
+            DAMAGE_ARTHROPODS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+'5':
+  uniqueId: d2ab6022-226a-4251-a1ac-dfc01c5e38ce
+  name: '&f&l Giáp'
+  world: gen1
+  x: 8
+  y: 19
+  z: 10
+  type: admin
+  object:
+    type: villager
+    uuid: b61fcea8-8ba9-402a-93d9-88652bb32da2
+    prof: FARMER
+  recipes: {}
+'6':
+  uniqueId: 63970ac8-6c59-4a1b-8b15-21988986e298
+  name: ''
+  world: gen1
+  x: 62
+  y: 25
+  z: 72
+  type: admin
+  object:
+    type: vex
+    uuid: f29a740a-a453-4181-809f-5edf1375346b
+  recipes: {}
+'7':
+  uniqueId: afea20f5-efba-488b-ae44-36425f26e722
+  name: ''
+  world: gen1
+  x: 62
+  y: 25
+  z: 73
+  type: admin
+  object:
+    type: blaze
+    uuid: e9e94960-bfcd-4b58-a966-5e25c671a5dc
+  recipes: {}
+'8':
+  uniqueId: 80c7f4e3-6f75-4446-9695-2f9966ea6809
+  name: ''
+  world: gen1
+  x: 62
+  y: 25
+  z: 74
+  type: admin
+  object:
+    type: wolf
+    uuid: 0bb3d2b2-2516-4621-8f11-29de9f03ca30
+  recipes: {}
+'9':
+  uniqueId: c6bc61ad-5364-441d-8bfe-3a45186bf241
+  name: ''
+  world: gen1
+  x: 62
+  y: 25
+  z: 75
+  type: admin
+  object:
+    type: snowman
+    uuid: ace16ad5-58dc-45eb-860d-39d1b748273b
+  recipes: {}

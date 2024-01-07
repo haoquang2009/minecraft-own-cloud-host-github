@@ -1,0 +1,106 @@
+ability:
+  overload: Tăng máu
+  freeze: Đóng băng
+  magical-shield: Lá chắn Phép
+  blizzard: Bão tuyết
+  bouncy-fireball: Cầu lửa
+  burning-hands: Thiêu đốt
+  fire-meteor: Sao băng lửa
+  light-dash: Lướt ánh sáng
+  tactical-grenade: Lựu đạn chiến thuật
+  ignite: Hỏa thiêu
+  sparkle: Tia sáng
+  tnt-throw: Thả TNT
+  rain-of-arrows: Mưa mũi tên
+  earthquake: Động đất
+  stun: Gây choáng
+  holy-missile: Tên lửa thánh
+  black-hole: Hố đen
+  circular-slash: Chém hình tròn
+  throw-up: Nhấc bổng
+  cursed-beam: Tia nguyền rủa
+  slow: Chậm
+  thrust: Đẩy
+  heavy-charge: Điện mạnh
+  item-throw: Ném
+  shock: Sốc
+  minor-explosion: Vụ nổ nhỏ
+  shadow-veil: Mặt nạ bóng tối
+  frog-mode: Chế độ ếch
+  regen-ally: Hồi phục đồng minh
+  lightning-beam: Tia sét
+  death-mark: Dấu chết
+  confuse: rối loạn
+  shulker-missile: Tên lửa shulker
+  contamination: Sự ô nhiểm
+  heal: Hồi máu
+  corrosion: Ăn mòn
+  leap: Nhảy
+  explosive-turkey: Vụ nổ lớn
+  hoearthquake: Trận động đất
+  burn: Đốt cháy
+  starfall: Mưa sao băng
+  wither: Khô héo
+  shockwave: Điện giật
+  vampirism: Mlem Mlem máu
+  snowman-turret: Tháp pháo người tuyết
+  smite: Lén lút
+  corrupt: Tham lam
+  arcane-hail: Tiếng kêu phức tạp
+  firebolt: Chốt lửa
+  grand-heal: Siêu hồi máu
+  magical-path: Con đường Phép thuật
+  life-ender: Chấm dứt
+  swiftness: Siêu tốc
+  present-throw: Ném quà
+  weaken-target: Suy yếu
+  chicken-wraith: Bóng ma nhỏ
+  freezing-curse: Nguyền băng
+  arcane-rift: Rạn nứt
+  targeted-fireball: Cầu lửa đuổi
+  corrupted-fangs: Răng hỏng
+  ice-crystal: Pha lê băng
+  blind: Mù quáng
+  firefly: Đom đóm
+  poison: Độc
+  blink: Chớp
+  sky-smash: Phá trời
+  frozen-aura: Vùng đất băng
+  bunny-mode: Thỏ
+  magma-fissure: Khe nứt magma
+  bloodbath: Tắm máu
+  item-bomb: Vật phẩm bom
+modifier:
+  damage: Sát thương
+  mana: Năng lượng
+  stamina: Nội lực
+  cooldown: Hồi chiêu
+  radius: Tầm đánh
+  duration: Thời lượng
+  amplifier: Khuếch đại
+  power: Sức mạnh
+  inaccuracy: Sai
+  force: Hiệu lực
+  ignite: Thiêu đốt
+  speed: Tốc độ
+  knockback: Bật lùi
+  length: Chiều dài
+  knock-up: Gõ lên
+  max-ignite: Thiêu đốt tối đa
+  limit: Giới hạn
+  jump-force: Hiệu lực nhảy
+  heal: Hồi máu
+  effect-duration: Hiệu ứng độ bền
+  drain: Khô héo
+  extra-damage: Sát thương phụ
+  range: Tầm ảnh hưởng
+  amount: Số lượn
+  slow-duration: Chậm hỏng
+  slow-amplifier: Khuếch đại chậm
+cast-mode:
+  on-hit: Trong Lúc Đánh
+  when-hit: Khi Bị Đánh
+  left-click: Chuột Trái
+  right-click: Chuột Phải
+  shift-left-click: Shift Chuột Trái
+  shift-right-click: Shift Chuột Phải

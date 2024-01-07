@@ -1,0 +1,22 @@
+update-available: '&bUpdate is available!'
+configuration-reloaded: '&a&lConfiguration reloaded!'
+gethp-command-hearts: Hearts
+invalid-player: '&c&lError: &cInvalid player!'
+no-permission: '&c&lError: &cNo permission!'
+invalid-arguments: '&c&lError: &cInvalid arguments!'
+help-usage: '&c&lUsage:'
+help-player: player
+help-number: number
+finished: '&c&lFinished!'
+statusbar-maximum: '&4&lMaximum'
+players-hp: '&c&l%s''s HP:'
+scaled-to: scaled to
+hp-levelled-up: '&c&lHP levelled up'
+hp-and-melee-damage-levelled-up: '&c&lHP and melee damage levelled up'
+help-command-reload: Reloads the configuration file
+help-command-gethp: Shows the HP of the targeted player
+help-command-addhp: Adds HP to the targeted player
+help-command-sethp: Sets the HP of the targeted player
+help-command-tmphp: Sets HP temporary
+help-command-addxp: Adds XP to the targeted player
+help-command-version: Shows the version of the plugin

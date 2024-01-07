@@ -1,0 +1,33 @@
+portals:
+  lobby:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Rod_Wirez
+    location: 93.0,57.0,-304.0:93.0,91.0,-285.0
+    world: world
+    destination: p:vo
+  vo:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Rod_Wirez
+    location: 117.0,52.0,-296.0:117.0,56.0,-290.0
+    world: world
+  ra:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Rod_Wirez
+    location: 94.0,57.0,-300.0:95.0,92.0,-287.0
+    world: world
+    destination: p:lobby

@@ -1,0 +1,562 @@
+Endless Pursuit: 
+  name: 'Endless Pursuit'
+  type: 'Dynamic'
+  max-level: 3
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'false'
+  attributes: 
+    level-base: '25'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '1'
+    cooldown-base: '20'
+    cooldown-scale: '-1'
+    mana-base: '30'
+    mana-scale: '5'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'IRON_BOOTS'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'True'
+            material: 'Iron sword'
+            check-data: 'False'
+            check-lore: 'False'
+            check-name: 'True'
+            name: 'Katana'
+            regex: 'False'
+          children: 
+            Location-c: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                range-base: '0.1'
+                range-scale: '0'
+                entities: 'True'
+                fluids: 'False'
+                passable: 'True'
+                center: 'False'
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Delay-d: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.5'
+                    delay-scale: '0'
+                  children: 
+                    Explosion-e: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        power-base: '2'
+                        power-scale: '0'
+                        damage: 'False'
+                        fire: 'False'
+                      children:  {}
+            Self-f: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Launch-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Caster'
+                    forward-base: '0.85'
+                    forward-scale: '0.15'
+                    upward-base: '0.25'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+                Particle Animation-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '20'
+                    frequency: '0.05'
+                    angle: '0'
+                    start: '0'
+                    duration-base: '0.65'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '0'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Redstone'
+                    dust-color: '#FFFFFF'
+                    dust-size: '1'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '2'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '0'
+                    speed: '0.1'
+                    forward: '-0.5'
+                    upward: '0'
+                    right: '0'
+                    -with-rotation: 'False'
+                  children:  {}
+                Delay-i: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.85'
+                    delay-scale: '0'
+                  children: 
+                    Potion-j: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Speed'
+                        ambient: 'True'
+                        tier-base: '1'
+                        tier-scale: '0'
+                        seconds-base: '4'
+                        seconds-scale: '1'
+                      children:  {}
+        Item-k: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'True'
+            material: 'Diamond sword'
+            check-data: 'False'
+            check-lore: 'False'
+            check-name: 'True'
+            name: 'Katana'
+            regex: 'False'
+          children: 
+            Location-l: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                range-base: '0.1'
+                range-scale: '0'
+                entities: 'True'
+                fluids: 'False'
+                passable: 'True'
+                center: 'False'
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Delay-m: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.5'
+                    delay-scale: '0'
+                  children: 
+                    Explosion-n: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        power-base: '2'
+                        power-scale: '0'
+                        damage: 'False'
+                        fire: 'False'
+                      children:  {}
+            Self-o: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Launch-p: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: '0.95'
+                    forward-scale: '0'
+                    upward-base: '0.25'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+                Particle Animation-q: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '20'
+                    frequency: '0.05'
+                    angle: '0'
+                    start: '0'
+                    duration-base: '0.65'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '0'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Redstone'
+                    dust-color: '#FFFFFF'
+                    dust-size: '1'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '2'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '0'
+                    speed: '0.1'
+                    forward: '-0.5'
+                    upward: '0'
+                    right: '0'
+                    -with-rotation: 'False'
+                  children:  {}
+                Delay-r: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.85'
+                    delay-scale: '0'
+                  children: 
+                    Potion-s: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Speed'
+                        ambient: 'True'
+                        tier-base: '1'
+                        tier-scale: '0'
+                        seconds-base: '4'
+                        seconds-scale: '1'
+                      children:  {}
+        Item-t: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'True'
+            material: 'Netherite sword'
+            check-data: 'False'
+            check-lore: 'False'
+            check-name: 'True'
+            name: 'Katana'
+            regex: 'False'
+          children: 
+            Location-u: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                range-base: '0.1'
+                range-scale: '0'
+                entities: 'True'
+                fluids: 'False'
+                passable: 'True'
+                center: 'False'
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Delay-v: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.5'
+                    delay-scale: '0'
+                  children: 
+                    Explosion-w: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        power-base: '2'
+                        power-scale: '0'
+                        damage: 'False'
+                        fire: 'False'
+                      children:  {}
+            Self-x: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Launch-y: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: '1.05'
+                    forward-scale: '0'
+                    upward-base: '0.25'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+                Particle Animation-z: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '20'
+                    frequency: '0.05'
+                    angle: '0'
+                    start: '0'
+                    duration-base: '0.65'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '0'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Redstone'
+                    dust-color: '#FFFFFF'
+                    dust-size: '1'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '2'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '0'
+                    speed: '0.1'
+                    forward: '-0.5'
+                    upward: '0'
+                    right: '0'
+                    -with-rotation: 'False'
+                  children:  {}
+                Delay-ab: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.85'
+                    delay-scale: '0'
+                  children: 
+                    Potion-bb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Speed'
+                        ambient: 'True'
+                        tier-base: '1'
+                        tier-scale: '0'
+                        seconds-base: '4'
+                        seconds-scale: '1'
+                      children:  {}
+        Item-cb: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'True'
+            material: 'Iron sword'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: "This Is The Samurai's Katana"
+            check-name: 'True'
+            name: 'Katana'
+            regex: 'False'
+          children: 
+            Location-db: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                range-base: '0.1'
+                range-scale: '0'
+                entities: 'True'
+                fluids: 'False'
+                passable: 'True'
+                center: 'False'
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Delay-eb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.5'
+                    delay-scale: '0'
+                  children: 
+                    Explosion-fb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        power-base: '2'
+                        power-scale: '0'
+                        damage: 'False'
+                        fire: 'False'
+                      children:  {}
+            Self-gb: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Launch-hb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: '1.15'
+                    forward-scale: '0'
+                    upward-base: '0.25'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+                Particle Animation-ib: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '20'
+                    frequency: '0.05'
+                    angle: '0'
+                    start: '0'
+                    duration-base: '0.65'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '0'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Redstone'
+                    dust-color: '#FFFFFF'
+                    dust-size: '1'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '2'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '0'
+                    speed: '0.1'
+                    forward: '-0.5'
+                    upward: '0'
+                    right: '0'
+                    -with-rotation: 'False'
+                  children:  {}
+                Delay-jb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.85'
+                    delay-scale: '0'
+                  children: 
+                    Potion-kb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Speed'
+                        ambient: 'True'
+                        tier-base: '1'
+                        tier-scale: '0'
+                        seconds-base: '4'
+                        seconds-scale: '1'
+                      children:  {}

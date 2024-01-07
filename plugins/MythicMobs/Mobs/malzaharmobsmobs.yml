@@ -1,0 +1,33 @@
+ #Copy Rồi Bỏ Vào Mục Mobs Của Bạn
+ 
+Enderal:
+  Mobtype: ZOMBIE
+  Disguise:
+    Type: player
+    Player: '&6&lElder-Sigon'
+    Skin: king
+  Display: '&6Malzahar'
+  Health: 225
+  Damage: 0
+  Skills:
+  - sound{s=entity.elder_guardian.ambient} @self ~onTimer:200
+  - effect:particlesphere{particle=portal;amount=200;radius=3} @self ~onTimer:25
+  - skill{s=wiz1} @Target ~onTimer:100 0.5
+  - skill{s=wiz2} @Target ~onTimer:100 0.5
+  - skill{s=wiz3} @Target ~onTimer:100 0.5
+  BossBar:
+    Enabled: true
+    Title: Malzahar
+    Range: 15
+    color: RED
+    Style: SEGMENTED_6
+    DarkenSky: false
+    PlayMusic: true
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.15
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1    
+   

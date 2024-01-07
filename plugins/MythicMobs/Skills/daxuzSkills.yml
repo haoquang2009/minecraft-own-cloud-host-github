@@ -1,0 +1,135 @@
+Hasaghi:
+  Cooldown: 30.0
+  Skills:
+  - sendtitle{title="&4&lCoi chừng !";subtitle="&6<mob.name> chuẩn bị sử dụng kĩ năng Trăn Trối";d=20} @PlayersInRadius{r=5}
+  - delay 25
+  - effect:particlesphere{p=explode;amount=200;hSpread=1;vSpread=1;speed=0.1;yOffset=0} @Self
+  - teleport @target
+  - sound{s=block.anvil.place;volume=3.0;pitch=1} @EIR{r=10} 
+  - effect:explosion @Self
+  - effect:particlering{particle=sweepAttack;r=1;points=5;a=20} @target
+  - sendtitle{title="&4&l⚠ Kĩ Năng Trăn Trối ⚠";subtitle=" &fBạn là mục tiêu !";d=10} @Target
+  - throw{velocity=2;velocityY=10} @Target
+  - damage{a=6} @Target
+  - delay 10
+  - teleport @target
+  - effect:particlering{particle=sweepAttack;r=1;points=5;a=20} @target
+  - sound{s=block.anvil.place;volume=3.0;pitch=1} @EIR{r=10} 
+  - effect:explosion @Self
+  - sendtitle{title="&4&l⚠ Kĩ Năng Trăn Trối ⚠";subtitle=" &fBạn là mục tiêu !";d=10} @Target
+  - throw{velocity=2;velocityY=10} @Target
+  - damage{a=8} @Target
+  - delay 10
+  - teleport @target
+  - effect:particlering{particle=sweepAttack;r=1;points=5;a=20} @target
+  - sound{s=block.anvil.place;volume=3.0;pitch=1} @EIR{r=10} 
+  - effect:explosion @Self
+  - sendtitle{title="&4&l⚠ Kĩ Năng Trăn Trối ⚠";subtitle=" &fBạn là mục tiêu !";d=10} @Target
+  - effect:particlering{particle=flame;r=2;points=5;a=10} @target
+  - throw{velocity=2;velocityY=10} @Target
+  - damage{a=10} @Target
+  - delay 10
+  - teleport @target
+  - sound{s=block.anvil.place;volume=3.0;pitch=1} @EIR{r=10} 
+  - effect:explosion @Self
+  - sendtitle{title="&4&l⚠ Kĩ Năng Trăn Trối ⚠";subtitle=" &fBạn là mục tiêu !";d=10} @Target
+  - effect:particlering{particle=sweepAttack;r=1;points=5;a=20} @target
+  - throw{velocity=2;velocityY=10} @Target
+  - damage{a=12} @Target
+  - delay 10
+  - teleport @target
+  - sound{s=block.anvil.place;volume=3.0;pitch=1} @EIR{r=10} 
+  - effect:explosion @Self
+  - sendtitle{title="&4&l⚠ Kĩ Năng Trăn Trối ⚠";subtitle=" &fBạn là mục tiêu !";d=10} @Target
+  - effect:particlering{particle=sweepAttack;r=1;points=5;a=20} @target
+  - throw{velocity=2;velocityY=10} @Target
+  - damage{a=16} @Target
+DaxuaQ:
+ CoolDown: 3.0
+ Skills:
+ - effect:particlesphere{p=explode;amount=200;hSpread=1;vSpread=1;speed=0.1;yOffset=0} @Self
+ - sendtitle{title="&6&lCẩn Thận Daxua";subtitle="&fĐang tung chiêu Q - Bão Kiếm!";d=30} @PlayersInRadius{r=5} 
+ - sendtitle{title="&6&lCẩn Thận Daxua";subtitle="&fĐang tung chiêu Q - Bão Kiếm!";d=30} @target
+ - effect:particleline{particle=sweepAttack;amount=20;;hS=0.1;vS=0.1;fromOrigin=true;yoffset=0.5;d=60} @targetlocation
+ - sound{s=entity.shulker.hit;volume=3.0;pitch=1} @EIR{r=5}
+ - damage{a=10} @target
+DaxuaE:
+ CoolDown: 1.0
+ Skills:
+ - effect:particlesphere{p=explode;amount=200;hSpread=1;vSpread=1;speed=0.1;yOffset=0} @Self
+ - sendtitle{title="&6&l⚠ Cẩn Thận Daxua ⚠";subtitle="&fĐang tung chiêu E - Quét Kiếm!";d=30} @PlayersInRadius{r=5} 
+ - sendtitle{title="&6&l⚠ Cẩn Thận Daxua ⚠";subtitle="&fĐang tung chiêu E - Quét Kiếm!";d=30} @target
+ - leap{velocity=600} @target
+ - sound{s=entity.shulker.shoot;volume=3.0;pitch=1} @EIR{r=5}
+ - damage{a=2} @target
+DaxuaEQ:
+ CoolDown: 2.0
+ Skills:
+ - effect:particlesphere{p=explode;amount=200;hSpread=1;vSpread=1;speed=0.1;yOffset=0} @Self
+ - sendtitle{title="&6&l⚠ Cẩn Thận Daxua ⚠";subtitle="&fĐang tung chiêu Combo E - Q!";d=30} @PlayersInRadius{r=5} 
+ - sendtitle{title="&6&l⚠ Cẩn Thận Daxua ⚠";subtitle="&fĐang tung chiêu Combo E - Q!";d=30} @target
+ - leap{velocity=600} @target
+ - teleport @target
+ - delay 10
+ - throw{velocity=2;velocityY=6} @EIR{r=6}
+ - throw{velocity=2;velocityY=6} @target
+ - skill{s=Hasaghi} @target 0.3
+ - sound{s=entity.shulker.shoot;volume=5.0;pitch=1} @EIR{r=6}
+ - effect:particletornado{p=sweepAttack;cp=largeexplode;mr=1;h=3;i=1;d=30;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @selflocation
+ - delay 30
+DaxuaNoiTai:
+ CoolDown: 30.0
+ Skills:
+ - potion{t=DAMAGE_RESISTANCE;level=3;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - sendtitle{title="&6&l⚠ Cẩn Thận Daxua ⚠";subtitle="&fNội Tại - Tăng Giáp!";d=30} @PlayersInRadius{r=5} 
+ - sendtitle{title="&6&l⚠ Cẩn Thận Daxua ⚠";subtitle="&fNội Tại - Tăng Giáp!";d=30} @target
+ - sound{s=entity.shulker.close;volume=5.0} @EIR{r=5}
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - effect:particles{p=cloud;a=200;hS=1;vS=1;speed=0.01;d=100} @self
+ - delay 100
+DaxuaSkills:
+  Conditions:
+  - incombat
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=DaxuaQ3,DaxuaE,DaxuaQ,DaxuaEQ,DaxuaNoiTai} 
+DaxuaQ3:
+ CoolDown: 10.0
+ Skills:
+ - effect:particlesphere{p=explode;amount=200;hSpread=1;vSpread=1;speed=0.1;yOffset=0} @Self
+ - sendtitle{title="&6&l!⚠ Cẩn Thận Daxua ⚠";subtitle="&fĐang tung chiêu Combo Cộng Dồn Q x3!";d=30} @PlayersInRadius{r=5} 
+ - sendtitle{title="&6&lCẩn Thận Daxua";subtitle="&fĐang tung chiêu Combo Cộng Dồn Q x3!";d=30} @target
+ - delay 10
+ - throw{velocity=2;velocityY=6} @target
+ - skill{s=Hasaghi} @target 0.3
+ - sound{s=entity.creeper.primed;volume=3.0;pitch=1} @EIR{r=5}
+ - skill{s=DaxuaLoc}
+DaxuaLoc:
+ Skills:
+ - projectile{ot=DaxuaLoc-tick;syo=0.5;hS=1;vS=1;hnp=true;i=10;mr=10;hs=true} @target
+DaxuaLoc-tick:
+ Skills:
+ - skill{s=DaxuaLoc-hattung} @origin
+ - effect:particletornado{p=sweepAttack;cp=largeexplode;mr=1;h=3;i=1;d=40;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @origin
+DaxuaLoc-hattung:
+ Skills:
+ - throw{velocity=2;velocityY=6} @EIR{r=4}
+ - skill{s=Hasaghi} @target 0.3
+HP:
+  Cooldown: 0.25
+  Skills:
+  - sendactionmessage{msg=“<mob.name><&sp><&co><&sp> &a<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =100%-80% 1
+  - sendactionmessage{msg=“<mob.name><&sp><&co><&sp> &a<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =80%-60% 1
+  - sendactionmessage{msg=“<mob.name><&sp><&co><&sp> &e<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =60%-40% 1
+  - sendactionmessage{msg=“<mob.name><&sp><&co><&sp> &e<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =40%-20% 1
+  - sendactionmessage{msg=“<mob.name><&sp><&co><&sp> &c<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =20%-10% 1
+  - sendactionmessage{msg=“<mob.name><&sp><&co><&sp> &4<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =10%-0% 1

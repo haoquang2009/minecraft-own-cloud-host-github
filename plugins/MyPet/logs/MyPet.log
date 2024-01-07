@@ -1,0 +1,1386 @@
+12-23-2023 08:04 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 08:04 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 08:04 [INFO] [MyPet] ##################################################
+12-23-2023 08:04 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 08:04 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 08:04 [INFO] [MyPet] ##################################################
+12-23-2023 08:04 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 08:04 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 08:04 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 08:04 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 08:04 [INFO] [MyPet] Current Exp-Cache is invalid, it will be recalculated.
+12-23-2023 08:04 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 08:04 [INFO] [MyPet]    added world to 'default' group.
+12-23-2023 08:04 [INFO] [MyPet]    added world_nether to 'default' group.
+12-23-2023 08:04 [INFO] [MyPet]    added world_the_end to 'default' group.
+12-23-2023 08:04 [INFO] [MyPet] Default skilltree files created.
+12-23-2023 08:04 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 08:04 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 08:04 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 08:04 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 08:04 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 08:04 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 08:04 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 08:04 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 08:04 [INFO] [MyPet] added ASkyBlock to 'default' group.
+12-23-2023 08:04 [INFO] [MyPet] added ASkyBlock_nether to 'default' group.
+12-23-2023 08:05 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 08:05 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 08:05 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 08:06 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 08:06 [INFO] [MyPet] ##################################################
+12-23-2023 08:06 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 08:06 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 08:06 [INFO] [MyPet] ##################################################
+12-23-2023 08:06 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 08:06 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 08:06 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 08:06 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 08:06 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 08:06 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 08:06 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 08:06 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 08:06 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 08:06 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 08:06 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 08:06 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 08:06 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 08:06 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 08:06 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 08:06 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 08:06 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 08:06 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 08:06 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 08:07 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 08:07 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 08:07 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 08:07 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 08:07 [INFO] [MyPet] ##################################################
+12-23-2023 08:07 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 08:07 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 08:07 [INFO] [MyPet] ##################################################
+12-23-2023 08:07 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 08:07 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 08:07 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 08:07 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 08:07 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 08:07 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 08:07 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 08:07 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 08:07 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 08:07 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 08:07 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 08:07 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 08:07 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 08:07 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 08:07 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 08:07 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 08:07 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 08:07 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 08:07 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 09:24 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 09:24 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 09:24 [INFO] [MyPet] ##################################################
+12-23-2023 09:24 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 09:24 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 09:24 [INFO] [MyPet] ##################################################
+12-23-2023 09:24 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 09:24 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 09:24 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 09:24 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 09:24 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 09:24 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 09:24 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 09:24 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 09:24 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 09:24 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 09:24 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 09:24 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 09:24 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 09:24 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 09:24 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 09:24 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 09:24 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 09:24 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 09:24 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 09:25 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 09:25 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 09:25 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 09:25 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 09:25 [INFO] [MyPet] ##################################################
+12-23-2023 09:25 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 09:25 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 09:25 [INFO] [MyPet] ##################################################
+12-23-2023 09:25 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 09:25 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 09:25 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 09:25 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 09:25 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 09:25 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 09:25 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 09:25 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 09:25 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 09:25 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 09:25 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 09:25 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 09:25 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 09:25 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 09:25 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 09:25 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 09:25 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 09:25 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 09:25 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 09:50 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 09:50 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 09:51 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 09:51 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 09:51 [INFO] [MyPet] ##################################################
+12-23-2023 09:51 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 09:51 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 09:51 [INFO] [MyPet] ##################################################
+12-23-2023 09:51 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 09:51 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 09:51 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 09:51 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 09:51 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 09:51 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 09:51 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 09:51 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 09:51 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 09:51 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 09:51 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 09:51 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 09:51 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 09:51 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 09:51 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 09:51 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 09:51 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 09:51 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 09:51 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 10:09 [INFO] [MyPet] added Trade to 'default' group.
+12-23-2023 11:09 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 11:09 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 11:09 [INFO] [MyPet] ##################################################
+12-23-2023 11:09 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 11:09 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 11:09 [INFO] [MyPet] ##################################################
+12-23-2023 11:09 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 11:09 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 11:09 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 11:09 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 11:09 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 11:09 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 11:09 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 11:09 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 11:09 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 11:09 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 11:09 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 11:09 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 11:09 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 11:09 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 11:09 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 11:09 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 11:09 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 11:09 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 11:09 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 11:09 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 13:09 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 13:09 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 13:10 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 13:11 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 13:11 [INFO] [MyPet] ##################################################
+12-23-2023 13:11 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 13:11 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 13:11 [INFO] [MyPet] ##################################################
+12-23-2023 13:11 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 13:11 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 13:11 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 13:11 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 13:11 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 13:11 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 13:11 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 13:11 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 13:11 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 13:11 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 13:11 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 13:11 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 13:11 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 13:11 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 13:11 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 13:11 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 13:11 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 13:11 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 13:11 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 13:11 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 13:13 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 13:13 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 13:14 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 13:14 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 13:14 [INFO] [MyPet] ##################################################
+12-23-2023 13:14 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 13:14 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 13:14 [INFO] [MyPet] ##################################################
+12-23-2023 13:14 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 13:14 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 13:14 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 13:14 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 13:14 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 13:14 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 13:14 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 13:14 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 13:14 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 13:14 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 13:14 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 13:14 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 13:14 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 13:14 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 13:14 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 13:14 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 13:14 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 13:14 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 13:14 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 13:14 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 13:39 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 13:39 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 13:39 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 13:40 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 13:40 [INFO] [MyPet] ##################################################
+12-23-2023 13:40 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 13:40 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 13:40 [INFO] [MyPet] ##################################################
+12-23-2023 13:40 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 13:40 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 13:40 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 13:40 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 13:40 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 13:40 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 13:40 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 13:40 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 13:40 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 13:40 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 13:40 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 13:40 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 13:40 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 13:40 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 13:40 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 13:40 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 13:40 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 13:40 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 13:40 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 13:40 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 14:25 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 14:25 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 14:26 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 14:26 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 14:26 [INFO] [MyPet] ##################################################
+12-23-2023 14:26 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 14:26 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 14:26 [INFO] [MyPet] ##################################################
+12-23-2023 14:26 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 14:26 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 14:26 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 14:26 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 14:26 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 14:26 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 14:26 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 14:26 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 14:26 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 14:26 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 14:26 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 14:26 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 14:26 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 14:26 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 14:26 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 14:26 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 14:26 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 14:26 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 14:26 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 14:26 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 15:00 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 15:00 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 15:00 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 15:00 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 15:00 [INFO] [MyPet] ##################################################
+12-23-2023 15:00 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 15:00 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 15:00 [INFO] [MyPet] ##################################################
+12-23-2023 15:00 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 15:00 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 15:00 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 15:00 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 15:00 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 15:00 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 15:00 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 15:00 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 15:00 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 15:00 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 15:00 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 15:00 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 15:00 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 15:00 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 15:00 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 15:00 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 15:00 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 15:00 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 15:00 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 15:00 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 15:18 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 15:18 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 15:19 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 15:19 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 15:19 [INFO] [MyPet] ##################################################
+12-23-2023 15:19 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 15:19 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 15:19 [INFO] [MyPet] ##################################################
+12-23-2023 15:19 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 15:19 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 15:19 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 15:19 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 15:19 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 15:19 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 15:19 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 15:19 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 15:19 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 15:19 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 15:19 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 15:19 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 15:19 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 15:19 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 15:19 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 15:19 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 15:19 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 15:19 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 15:19 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 15:19 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 15:28 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 15:28 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 15:28 [INFO] [MyPet] Error-Reporter ENABLED
+12-23-2023 15:28 [INFO] [MyPet] Enabling MyPet v3.12
+12-23-2023 15:28 [INFO] [MyPet] ##################################################
+12-23-2023 15:28 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1751 #
+12-23-2023 15:28 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+12-23-2023 15:28 [INFO] [MyPet] ##################################################
+12-23-2023 15:28 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+12-23-2023 15:28 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+12-23-2023 15:28 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+12-23-2023 15:28 [INFO] [MyPet] Exp calculation mode: MyPet
+12-23-2023 15:28 [INFO] [MyPet] Loading WorldGroups...
+12-23-2023 15:28 [INFO] [MyPet]    added 'world' to 'default'
+12-23-2023 15:28 [INFO] [MyPet]    added 'world_nether' to 'default'
+12-23-2023 15:28 [INFO] [MyPet]    added 'world_the_end' to 'default'
+12-23-2023 15:28 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+12-23-2023 15:28 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+12-23-2023 15:28 [INFO] [MyPet]    added 'Trade' to 'default'
+12-23-2023 15:28 [INFO] [MyPet] Connect to SQLite database...
+12-23-2023 15:28 [INFO] [MyPet] SQLite connection successful.
+12-23-2023 15:28 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+12-23-2023 15:28 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+12-23-2023 15:28 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+12-23-2023 15:28 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+12-23-2023 15:28 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+12-23-2023 15:28 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+12-23-2023 15:28 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+12-23-2023 15:36 [INFO] [MyPet] Disabling MyPet v3.12
+12-23-2023 15:36 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-04-2024 07:58 [INFO] [MyPet] Error-Reporter ENABLED
+01-04-2024 07:59 [INFO] [MyPet] Enabling MyPet v3.12
+01-04-2024 07:59 [INFO] [MyPet] ##################################################
+01-04-2024 07:59 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1753 #
+01-04-2024 07:59 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-04-2024 07:59 [INFO] [MyPet] ##################################################
+01-04-2024 07:59 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-04-2024 07:59 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-04-2024 07:59 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-04-2024 07:59 [INFO] [MyPet] Exp calculation mode: MyPet
+01-04-2024 07:59 [INFO] [MyPet] Loading WorldGroups...
+01-04-2024 07:59 [INFO] [MyPet]    added 'world' to 'default'
+01-04-2024 07:59 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-04-2024 07:59 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-04-2024 07:59 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-04-2024 07:59 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-04-2024 07:59 [INFO] [MyPet]    added 'Trade' to 'default'
+01-04-2024 07:59 [INFO] [MyPet] Connect to SQLite database...
+01-04-2024 07:59 [INFO] [MyPet] SQLite connection successful.
+01-04-2024 07:59 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-04-2024 07:59 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-04-2024 07:59 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-04-2024 07:59 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-04-2024 07:59 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-04-2024 07:59 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-04-2024 07:59 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 04:16 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 04:16 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 04:16 [INFO] [MyPet] ##################################################
+01-05-2024 04:16 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 04:16 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 04:16 [INFO] [MyPet] ##################################################
+01-05-2024 04:16 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 04:16 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 04:16 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 04:16 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 04:16 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 04:16 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 04:16 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 04:16 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 04:16 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 04:16 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 04:16 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 04:16 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 04:16 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 04:16 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 04:16 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 04:16 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 04:16 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 04:16 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 04:16 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 04:16 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 04:38 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 04:38 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 04:38 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 04:39 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 04:39 [INFO] [MyPet] ##################################################
+01-05-2024 04:39 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 04:39 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 04:39 [INFO] [MyPet] ##################################################
+01-05-2024 04:39 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 04:39 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 04:39 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 04:39 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 04:39 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 04:39 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 04:39 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 04:39 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 04:39 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 04:39 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 04:39 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 04:39 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 04:39 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 04:39 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 04:39 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 04:39 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 04:39 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 04:39 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 04:39 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 04:39 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 04:52 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 04:52 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 04:52 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 04:52 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 04:52 [INFO] [MyPet] ##################################################
+01-05-2024 04:52 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 04:52 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 04:52 [INFO] [MyPet] ##################################################
+01-05-2024 04:52 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 04:52 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 04:52 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 04:52 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 04:52 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 04:52 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 04:52 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 04:52 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 04:52 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 04:52 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 04:52 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 04:52 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 04:52 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 04:52 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 04:52 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 04:52 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 04:52 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 04:52 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 04:52 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 04:52 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 06:35 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 06:35 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 06:35 [INFO] [MyPet] ##################################################
+01-05-2024 06:35 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 06:35 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 06:35 [INFO] [MyPet] ##################################################
+01-05-2024 06:35 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 06:35 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 06:35 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 06:35 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 06:35 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 06:35 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 06:35 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 06:35 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 06:35 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 06:35 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 06:35 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 06:35 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 06:35 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 06:35 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 06:35 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 06:35 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 06:35 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 06:35 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 06:35 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 06:35 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 06:55 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 06:55 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 06:56 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 06:56 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 06:56 [INFO] [MyPet] ##################################################
+01-05-2024 06:56 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 06:56 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 06:56 [INFO] [MyPet] ##################################################
+01-05-2024 06:56 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 06:56 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 06:56 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 06:56 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 06:56 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 06:56 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 06:56 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 06:56 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 06:56 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 06:56 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 06:56 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 06:56 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 06:56 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 06:56 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 06:56 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 06:56 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 06:56 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 06:56 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 06:56 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 06:56 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 06:57 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 06:57 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 06:58 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 06:58 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 06:58 [INFO] [MyPet] ##################################################
+01-05-2024 06:58 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 06:58 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 06:58 [INFO] [MyPet] ##################################################
+01-05-2024 06:58 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 06:58 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 06:58 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 06:58 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 06:58 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 06:58 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 06:58 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 06:58 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 06:58 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 06:58 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 06:58 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 06:58 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 06:58 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 06:58 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 06:58 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 06:58 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 06:58 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 06:58 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 06:58 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 06:58 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 06:59 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 06:59 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 06:59 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 06:59 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 06:59 [INFO] [MyPet] ##################################################
+01-05-2024 06:59 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 06:59 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 06:59 [INFO] [MyPet] ##################################################
+01-05-2024 06:59 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 06:59 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 06:59 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 06:59 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 06:59 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 06:59 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 06:59 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 06:59 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 06:59 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 06:59 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 06:59 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 06:59 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 06:59 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 06:59 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 06:59 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 06:59 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 06:59 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 06:59 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 06:59 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 06:59 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 07:00 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 07:00 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:00 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 07:00 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 07:00 [INFO] [MyPet] ##################################################
+01-05-2024 07:00 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 07:00 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 07:00 [INFO] [MyPet] ##################################################
+01-05-2024 07:00 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:00 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 07:00 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 07:00 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 07:00 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 07:00 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 07:00 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 07:00 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 07:00 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 07:00 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 07:00 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 07:00 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 07:00 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 07:00 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 07:00 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 07:00 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 07:00 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 07:00 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 07:00 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 07:00 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 07:01 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 07:01 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:01 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 07:01 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 07:01 [INFO] [MyPet] ##################################################
+01-05-2024 07:01 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 07:01 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 07:01 [INFO] [MyPet] ##################################################
+01-05-2024 07:01 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:01 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 07:01 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 07:01 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 07:01 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 07:01 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 07:01 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 07:01 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 07:01 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 07:01 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 07:01 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 07:01 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 07:01 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 07:01 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 07:01 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 07:01 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 07:01 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 07:01 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 07:01 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 07:01 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 07:12 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 07:12 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:13 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 07:13 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 07:13 [INFO] [MyPet] ##################################################
+01-05-2024 07:13 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 07:13 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 07:13 [INFO] [MyPet] ##################################################
+01-05-2024 07:13 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:13 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 07:13 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 07:13 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 07:13 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 07:13 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 07:13 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 07:13 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 07:13 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 07:13 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 07:13 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 07:13 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 07:13 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 07:13 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 07:13 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 07:13 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 07:13 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 07:13 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 07:13 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 07:13 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 07:19 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 07:19 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:19 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 07:20 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 07:20 [INFO] [MyPet] ##################################################
+01-05-2024 07:20 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 07:20 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 07:20 [INFO] [MyPet] ##################################################
+01-05-2024 07:20 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:20 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 07:20 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 07:20 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 07:20 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 07:20 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 07:20 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 07:20 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 07:20 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 07:20 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 07:20 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 07:20 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 07:20 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 07:20 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 07:20 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 07:20 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 07:20 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 07:20 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 07:20 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 07:20 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 07:47 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 07:47 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:47 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 07:48 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 07:48 [INFO] [MyPet] ##################################################
+01-05-2024 07:48 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 07:48 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 07:48 [INFO] [MyPet] ##################################################
+01-05-2024 07:48 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 07:48 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 07:48 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 07:48 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 07:48 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 07:48 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 07:48 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 07:48 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 07:48 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 07:48 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 07:48 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 07:48 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 07:48 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 07:48 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 07:48 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 07:48 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 07:48 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 07:48 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 07:48 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 07:48 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-05-2024 08:01 [INFO] [MyPet] Disabling MyPet v3.12
+01-05-2024 08:01 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 08:01 [INFO] [MyPet] Error-Reporter ENABLED
+01-05-2024 08:02 [INFO] [MyPet] Enabling MyPet v3.12
+01-05-2024 08:02 [INFO] [MyPet] ##################################################
+01-05-2024 08:02 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1754 #
+01-05-2024 08:02 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-05-2024 08:02 [INFO] [MyPet] ##################################################
+01-05-2024 08:02 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-05-2024 08:02 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-05-2024 08:02 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-05-2024 08:02 [INFO] [MyPet] Exp calculation mode: MyPet
+01-05-2024 08:02 [INFO] [MyPet] Loading WorldGroups...
+01-05-2024 08:02 [INFO] [MyPet]    added 'world' to 'default'
+01-05-2024 08:02 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-05-2024 08:02 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-05-2024 08:02 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-05-2024 08:02 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-05-2024 08:02 [INFO] [MyPet]    added 'Trade' to 'default'
+01-05-2024 08:02 [INFO] [MyPet] Connect to SQLite database...
+01-05-2024 08:02 [INFO] [MyPet] SQLite connection successful.
+01-05-2024 08:02 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-05-2024 08:02 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-05-2024 08:02 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-05-2024 08:02 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-05-2024 08:02 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-05-2024 08:02 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-05-2024 08:02 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 04:27 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 04:27 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 04:27 [INFO] [MyPet] ##################################################
+01-06-2024 04:27 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 04:27 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 04:27 [INFO] [MyPet] ##################################################
+01-06-2024 04:27 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 04:27 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 04:27 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 04:27 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 04:27 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 04:27 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 04:27 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 04:27 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 04:27 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 04:27 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 04:27 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 04:27 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 04:27 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 04:27 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 04:27 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 04:27 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 04:27 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 04:27 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 04:27 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 04:27 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 05:46 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 05:46 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 05:46 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 05:46 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 05:46 [INFO] [MyPet] ##################################################
+01-06-2024 05:46 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 05:46 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 05:46 [INFO] [MyPet] ##################################################
+01-06-2024 05:46 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 05:46 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 05:46 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 05:46 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 05:46 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 05:46 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 05:46 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 05:46 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 05:46 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 05:46 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 05:46 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 05:46 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 05:46 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 05:46 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 05:46 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 05:46 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 05:46 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 05:46 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 05:46 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 05:46 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 06:15 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 06:15 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 06:15 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 06:15 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 06:15 [INFO] [MyPet] ##################################################
+01-06-2024 06:15 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 06:15 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 06:15 [INFO] [MyPet] ##################################################
+01-06-2024 06:15 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 06:15 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 06:15 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 06:15 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 06:15 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 06:15 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 06:15 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 06:15 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 06:15 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 06:15 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 06:15 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 06:15 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 06:15 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 06:15 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 06:15 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 06:15 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 06:15 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 06:15 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 06:15 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 06:15 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 07:25 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 07:25 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:26 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 07:26 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 07:26 [INFO] [MyPet] ##################################################
+01-06-2024 07:26 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 07:26 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 07:26 [INFO] [MyPet] ##################################################
+01-06-2024 07:26 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:26 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 07:26 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 07:26 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 07:26 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 07:26 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 07:26 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 07:26 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 07:26 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 07:26 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 07:26 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 07:26 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 07:26 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 07:26 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 07:26 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 07:26 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 07:26 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 07:26 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 07:26 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 07:26 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 07:31 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 07:31 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:31 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 07:31 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 07:31 [INFO] [MyPet] ##################################################
+01-06-2024 07:31 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 07:31 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 07:31 [INFO] [MyPet] ##################################################
+01-06-2024 07:31 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:31 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 07:31 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 07:31 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 07:31 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 07:31 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 07:31 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 07:31 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 07:31 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 07:31 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 07:31 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 07:31 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 07:31 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 07:31 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 07:31 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 07:31 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 07:31 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 07:31 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 07:31 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 07:31 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 07:39 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 07:39 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:40 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 07:40 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 07:40 [INFO] [MyPet] ##################################################
+01-06-2024 07:40 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 07:40 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 07:40 [INFO] [MyPet] ##################################################
+01-06-2024 07:40 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:40 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 07:40 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 07:40 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 07:40 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 07:40 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 07:40 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 07:40 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 07:40 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 07:40 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 07:40 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 07:40 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 07:40 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 07:40 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 07:40 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 07:40 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 07:40 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 07:40 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 07:40 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 07:40 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 07:42 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 07:42 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:43 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 07:43 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 07:43 [INFO] [MyPet] ##################################################
+01-06-2024 07:43 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 07:43 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 07:43 [INFO] [MyPet] ##################################################
+01-06-2024 07:43 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 07:43 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 07:43 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 07:43 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 07:43 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 07:43 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 07:43 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 07:43 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 07:43 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 07:43 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 07:43 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 07:43 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 07:43 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 07:43 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 07:43 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 07:43 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 07:43 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 07:43 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 07:43 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 07:43 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 08:48 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 08:48 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 09:00 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 09:00 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 09:01 [INFO] [MyPet] ##################################################
+01-06-2024 09:01 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 09:01 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 09:01 [INFO] [MyPet] ##################################################
+01-06-2024 09:01 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 09:01 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 09:01 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 09:01 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 09:01 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 09:01 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 09:01 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 09:01 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 09:01 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 09:01 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 09:01 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 09:01 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 09:01 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 09:01 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 09:01 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 09:01 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 09:01 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 09:01 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 09:01 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 09:01 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 09:46 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 09:46 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 09:46 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 09:46 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 09:46 [INFO] [MyPet] ##################################################
+01-06-2024 09:46 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 09:46 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 09:46 [INFO] [MyPet] ##################################################
+01-06-2024 09:46 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 09:46 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 09:46 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 09:46 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 09:46 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 09:46 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 09:46 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 09:46 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 09:46 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 09:46 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 09:46 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 09:46 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 09:46 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 09:46 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 09:46 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 09:46 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 09:46 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 09:46 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 09:46 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 09:46 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 11:11 [INFO] [MyPet] Disabling MyPet v3.12
+01-06-2024 11:11 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 11:11 [INFO] [MyPet] Error-Reporter ENABLED
+01-06-2024 11:12 [INFO] [MyPet] Enabling MyPet v3.12
+01-06-2024 11:12 [INFO] [MyPet] ##################################################
+01-06-2024 11:12 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-06-2024 11:12 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-06-2024 11:12 [INFO] [MyPet] ##################################################
+01-06-2024 11:12 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-06-2024 11:12 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-06-2024 11:12 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-06-2024 11:12 [INFO] [MyPet] Exp calculation mode: MyPet
+01-06-2024 11:12 [INFO] [MyPet] Loading WorldGroups...
+01-06-2024 11:12 [INFO] [MyPet]    added 'world' to 'default'
+01-06-2024 11:12 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-06-2024 11:12 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-06-2024 11:12 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-06-2024 11:12 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-06-2024 11:12 [INFO] [MyPet]    added 'Trade' to 'default'
+01-06-2024 11:12 [INFO] [MyPet] Connect to SQLite database...
+01-06-2024 11:12 [INFO] [MyPet] SQLite connection successful.
+01-06-2024 11:12 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-06-2024 11:12 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-06-2024 11:12 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-06-2024 11:12 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-06-2024 11:12 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-06-2024 11:12 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-06-2024 11:12 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-06-2024 12:38 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 01:31 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 01:31 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 01:32 [INFO] [MyPet] ##################################################
+01-07-2024 01:32 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 01:32 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 01:32 [INFO] [MyPet] ##################################################
+01-07-2024 01:32 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 01:32 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 01:32 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 01:32 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 01:32 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 01:32 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 01:32 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 01:32 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 01:32 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 01:32 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 01:32 [INFO] [MyPet]    added 'Trade' to 'default'
+01-07-2024 01:32 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 01:32 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 01:32 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 01:32 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 01:32 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 01:32 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 01:32 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 01:32 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 01:32 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 01:37 [INFO] [MyPet] added gen1 to 'default' group.
+01-07-2024 01:40 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 01:40 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 01:41 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 01:41 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 01:41 [INFO] [MyPet] ##################################################
+01-07-2024 01:41 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 01:41 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 01:41 [INFO] [MyPet] ##################################################
+01-07-2024 01:41 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 01:41 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 01:41 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 01:41 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 01:41 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 01:41 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 01:41 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 01:41 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 01:41 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 01:41 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 01:41 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 01:41 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 01:41 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 01:41 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 01:41 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 01:41 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 01:41 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 01:41 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 01:41 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 01:41 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 02:04 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 02:04 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:04 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 02:04 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 02:04 [INFO] [MyPet] ##################################################
+01-07-2024 02:04 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 02:04 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 02:04 [INFO] [MyPet] ##################################################
+01-07-2024 02:04 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:04 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 02:04 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 02:04 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 02:04 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 02:04 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 02:04 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 02:04 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 02:04 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 02:04 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 02:04 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 02:04 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 02:04 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 02:04 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 02:04 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 02:04 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 02:04 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 02:04 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 02:04 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 02:05 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 02:16 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 02:16 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:17 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 02:17 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 02:17 [INFO] [MyPet] ##################################################
+01-07-2024 02:17 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 02:17 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 02:17 [INFO] [MyPet] ##################################################
+01-07-2024 02:17 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:17 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 02:17 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 02:17 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 02:17 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 02:17 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 02:17 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 02:17 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 02:17 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 02:17 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 02:17 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 02:17 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 02:17 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 02:17 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 02:17 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 02:17 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 02:17 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 02:17 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 02:17 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 02:17 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 02:30 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 02:30 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:30 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 02:30 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 02:30 [INFO] [MyPet] ##################################################
+01-07-2024 02:30 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 02:30 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 02:30 [INFO] [MyPet] ##################################################
+01-07-2024 02:30 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:30 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 02:30 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 02:30 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 02:30 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 02:30 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 02:30 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 02:30 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 02:30 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 02:30 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 02:30 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 02:30 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 02:30 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 02:30 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 02:30 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 02:30 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 02:30 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 02:30 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 02:30 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 02:30 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 02:48 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 02:48 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:48 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 02:48 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 02:48 [INFO] [MyPet] ##################################################
+01-07-2024 02:48 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 02:48 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 02:48 [INFO] [MyPet] ##################################################
+01-07-2024 02:48 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 02:48 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 02:48 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 02:48 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 02:48 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 02:48 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 02:48 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 02:48 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 02:48 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 02:48 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 02:48 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 02:48 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 02:48 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 02:48 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 02:48 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 02:48 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 02:48 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 02:48 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 02:48 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 02:48 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 04:12 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 04:12 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 04:12 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 04:12 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 04:12 [INFO] [MyPet] ##################################################
+01-07-2024 04:12 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 04:12 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 04:12 [INFO] [MyPet] ##################################################
+01-07-2024 04:12 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 04:12 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 04:12 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 04:12 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 04:12 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 04:12 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 04:12 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 04:12 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 04:12 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 04:12 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 04:12 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 04:12 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 04:12 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 04:12 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 04:12 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 04:12 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 04:12 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 04:12 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 04:12 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 04:12 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 04:48 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 04:48 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 04:49 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 04:49 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 04:49 [INFO] [MyPet] ##################################################
+01-07-2024 04:49 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 04:49 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 04:49 [INFO] [MyPet] ##################################################
+01-07-2024 04:49 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 04:49 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 04:49 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 04:49 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 04:49 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 04:49 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 04:49 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 04:49 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 04:49 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 04:49 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 04:49 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 04:49 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 04:49 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 04:49 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 04:49 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 04:49 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 04:49 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 04:49 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 04:49 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 04:49 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 09:58 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 09:58 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 09:59 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 09:59 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 09:59 [INFO] [MyPet] ##################################################
+01-07-2024 09:59 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 09:59 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 09:59 [INFO] [MyPet] ##################################################
+01-07-2024 09:59 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 09:59 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 09:59 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 09:59 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 09:59 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 09:59 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 09:59 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 09:59 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 09:59 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 09:59 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 09:59 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 09:59 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 09:59 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 09:59 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 09:59 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 09:59 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 09:59 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 09:59 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 09:59 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 09:59 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 11:58 [INFO] [MyPet] added test to 'default' group.
+01-07-2024 13:33 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 13:33 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 13:33 [INFO] [MyPet] ##################################################
+01-07-2024 13:33 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 13:33 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 13:33 [INFO] [MyPet] ##################################################
+01-07-2024 13:33 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 13:33 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 13:33 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 13:33 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 13:33 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 13:33 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 13:33 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 13:33 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 13:33 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 13:33 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 13:33 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 13:33 [INFO] [MyPet]    added 'test' to 'default'
+01-07-2024 13:33 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 13:33 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 13:33 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 13:33 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 13:33 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 13:33 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 13:33 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 13:33 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 13:33 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 13:48 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 13:48 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 13:48 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 13:49 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 13:49 [INFO] [MyPet] ##################################################
+01-07-2024 13:49 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 13:49 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 13:49 [INFO] [MyPet] ##################################################
+01-07-2024 13:49 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 13:49 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 13:49 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 13:49 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 13:49 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 13:49 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 13:49 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 13:49 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 13:49 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 13:49 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 13:49 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 13:49 [INFO] [MyPet]    added 'test' to 'default'
+01-07-2024 13:49 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 13:49 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 13:49 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 13:49 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 13:49 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 13:49 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 13:49 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 13:49 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 13:49 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED
+01-07-2024 14:02 [INFO] [MyPet] Disabling MyPet v3.12
+01-07-2024 14:02 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 14:02 [INFO] [MyPet] Error-Reporter ENABLED
+01-07-2024 14:03 [INFO] [MyPet] Enabling MyPet v3.12
+01-07-2024 14:03 [INFO] [MyPet] ##################################################
+01-07-2024 14:03 [INFO] [MyPet] #  A new build is available: 3.12-SNAPSHOT #1755 #
+01-07-2024 14:03 [INFO] [MyPet] #  https://github.com/MyPetORG/MyPet/releases    #
+01-07-2024 14:03 [INFO] [MyPet] ##################################################
+01-07-2024 14:03 [INFO] [MyPet] Custom entity registry found: net.citizensnpcs.nms.v1_12_R1.util.CustomEntityRegistry
+01-07-2024 14:03 [INFO] [MyPet] Compat mode for v1_12_R1 loaded.
+01-07-2024 14:03 [WARNING] [MyPet] sweet_berries is not a valid 1.13 item ID! Please check your configs.
+01-07-2024 14:03 [INFO] [MyPet] Exp calculation mode: MyPet
+01-07-2024 14:03 [INFO] [MyPet] Loading WorldGroups...
+01-07-2024 14:03 [INFO] [MyPet]    added 'world' to 'default'
+01-07-2024 14:03 [INFO] [MyPet]    added 'world_nether' to 'default'
+01-07-2024 14:03 [INFO] [MyPet]    added 'world_the_end' to 'default'
+01-07-2024 14:03 [INFO] [MyPet]    added 'ASkyBlock' to 'default'
+01-07-2024 14:03 [INFO] [MyPet]    added 'ASkyBlock_nether' to 'default'
+01-07-2024 14:03 [INFO] [MyPet]    added 'gen1' to 'default'
+01-07-2024 14:03 [INFO] [MyPet]    added 'test' to 'default'
+01-07-2024 14:03 [INFO] [MyPet] Connect to SQLite database...
+01-07-2024 14:03 [INFO] [MyPet] SQLite connection successful.
+01-07-2024 14:03 [INFO] [MyPet] Citizens (2.0.25-SNAPSHOT (build 1767)) hook activated.
+01-07-2024 14:03 [INFO] [MyPet] MythicMobs (4.5.3-SNAPSHOT-2603) hook activated.
+01-07-2024 14:03 [INFO] [MyPet] PlaceholderAPI (2.11.5) hook activated.
+01-07-2024 14:03 [INFO] [MyPet] ProtocolLib (5.1.0) hook activated.
+01-07-2024 14:03 [INFO] [MyPet] Vault (1.6.7-b${env.TRAVIS_BUILD_NUMBER}) (Economy: EssentialsX Economy) (Permissions: LuckPerms) hook activated.
+01-07-2024 14:03 [INFO] [MyPet] WorldGuard (6.2.2-SNAPSHOT;8eeab68) hook activated.
+01-07-2024 14:03 [INFO] [MyPet] Version 3.12-SNAPSHOT-b1750 ENABLED

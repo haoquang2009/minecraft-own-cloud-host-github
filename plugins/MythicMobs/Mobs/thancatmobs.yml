@@ -1,0 +1,52 @@
+ThanCat:
+  Type: zombie
+  Equipment:
+  - RHelmII:4
+  - DesertChestplate:3
+  - DesertLeggings:2
+  - DesertBoots:1
+  - air:0
+  Damage: 10
+  Health: 500
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Options:
+    Collidable: false
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Despawn: false
+    MovementSpeed: .12
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - LIGHTNING 0
+  Skills:
+  - potion{t=FIRE_RESISTANCE;d=9999999;l=1} @Self ~onSpawn 1
+  - skill{s=Sandstorm2} @Self ~onTimer:300
+  - skill{s=MobHealth2} ~onDamaged >0 1
+  - heal{amount=1} @self ~onTimer:40
+  - skill{s=Bat2} ~onDamaged .25
+  - skill{s=Egypt2} ~onDamaged .05
+  - skill{s=SummonRat} ~onDamaged .1
+  - skill{s=Wrath} ~onDamaged .05
+ 
+MummyBat:
+  Type: BAT
+  Health: 500
+  Options:
+    Collidable: false
+    PreventOtherDrops: true
+  Skills:
+  - potion{t=FIRE_RESISTANCE;d=9999999;l=1} @Self ~onSpawn 1
+  - skill{s=ExplodeBat2} ~onSpawn 1
+ 
+Rat:
+  Type: SILVERFISH
+  Health: 1
+  Options:
+    Collidable: false
+    PreventOtherDrops: true
+  Skills:
+  - skill{s=ExplodeRat} ~onSpawn 1

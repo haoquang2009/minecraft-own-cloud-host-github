@@ -1,0 +1,103 @@
+ListSlotItem:
+   - chayngaydi
+   - nhacnen
+   - bluecheck
+   - 100
+   - lanman
+   - nhannhu
+   - buonhayvui
+   - dontcoi
+   - dontcoiv2
+   - khima
+   - thitham
+JoinMusicReplay:
+  Name: '&bGui &6Sound'
+  Rows: 5
+chayngaydi:
+  NAME: '&eNhạc {Sound}'
+  Sound: chayngaydi
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 1
+  COLUMN-X: 1
+nhacnen:
+  NAME: '&eNhạc {Sound}'
+  Sound: nhacnen
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 2
+  COLUMN-X: 1
+bluecheck:
+  NAME: '&eNhạc {Sound}'
+  Sound: bluecheck
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 3
+  COLUMN-X: 1
+100:
+  NAME: '&eNhạc {Sound}'
+  Sound: 100
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 4
+  COLUMN-X: 1
+lanman:
+  NAME: '&eNhạc {Sound}'
+  Sound: lanman
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 5
+  COLUMN-X: 1
+nhannhu:
+  NAME: '&eNhạc {Sound}'
+  Sound: nhannhu
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 6
+  COLUMN-X: 1
+khima:
+  NAME: '&eNhạc {Sound}'
+  Sound: khima
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 7
+  COLUMN-X: 1
+dontcoi:
+  NAME: '&eNhạc {Sound}'
+  Sound: dontcoi
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 8
+  COLUMN-X: 1
+dontcoiv2:
+  NAME: '&eNhạc {Sound}'
+  Sound: dontcoiv2
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 9
+  COLUMN-X: 1
+buonhayvui:
+  NAME: '&eNhạc {Sound}'
+  Sound: buonhayvui
+  ID: 2256
+  LORE:
+  - '&6Bài Nhạc: &f{Sound}'
+  COLUMN-Y: 1
+  COLUMN-X: 2
+thitham:
+  NAME: '&eNhạc {Sound}'
+  Sound: thitham
+  ID: 2256
+  LORE:
+  - '&eNhạc: &f{Sound}'
+  COLUMN-Y: 2
+  COLUMN-X: 2

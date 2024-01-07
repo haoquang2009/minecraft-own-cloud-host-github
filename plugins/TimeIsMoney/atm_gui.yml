@@ -1,0 +1,106 @@
+atm:
+  ==: de.Linus122.net.xyz.spaceio.spacegui.SpaceGUI
+  background:
+    ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+    label: null
+    itemstack:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS_PANE
+      damage: 7
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ' '
+  title: §cATM
+  rows: 3
+  items:
+    16:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: deposit-2
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_INGOT
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cDeposit §a%s
+    17:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: deposit-3
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cDeposit §a%s
+    9:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: witdraw-3
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cWithdraw §a%s
+    10:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: witdraw-2
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_INGOT
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cWithdraw §a%s
+    11:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: witdraw-1
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_INGOT
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cWithdraw §a%s
+    12:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: witdraw-0
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: CLAY_BRICK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cWithdraw §a%s
+    13:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: balance
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_NUGGET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cBalance §a%s
+    14:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: deposit-0
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: CLAY_BRICK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cDeposit §a%s
+    15:
+      ==: de.Linus122.net.xyz.spaceio.spaceitem.SpaceItem
+      label: deposit-1
+      itemstack:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_INGOT
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §cDeposit §a%s

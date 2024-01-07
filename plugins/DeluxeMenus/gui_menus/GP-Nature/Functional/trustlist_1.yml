@@ -1,0 +1,855 @@
+menu_title: '%gpextention_title% &7(&2/ᴛʀᴜꜱᴛʟɪꜱᴛ&7)'
+open_command: 
+- trustlist
+- trusts
+register_command: true 
+args:
+- "claimid"
+args_usage_message: "missing arg"
+update_interval: 1
+size: 54
+data:
+  version: 1.1
+items:
+  'blue_glass_pane':
+    priority: 3
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 0-44
+  'white_glass_pane':
+    priority: 3
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 1
+    - 3
+    - 4
+    - 17
+    - 18
+  'white_glass':
+    priority: 3
+    material: WHITE_STAINED_GLASS
+    display_name: " &r "
+    slots:
+    - 0
+    - 2
+    - 8
+    - 9
+  'tall_grass':
+    priority: 3
+    material: TALL_GRASS
+    display_name: " &r "
+    slots:
+    - 45
+    - 47
+    - 48
+    - 49
+    - 51
+    - 52
+    - 53
+  'rose':
+    priority: 3
+    material: ROSE_BUSH
+    display_name: " &r "
+    slots:
+    - 46
+  'dark_oak':
+    priority: 3
+    material: DARK_OAK_SAPLING
+    display_name: " &r "
+    slots:
+    - 50
+  'goback':
+    material: OAK_DOOR
+    display_name: "&7⟰ &aɢᴏ ʙᴀᴄᴋ"
+    click_commands:
+      - '[close]'
+      - "[sound] BLOCK_WOODEN_DOOR_OPEN"
+      - "[player] claiminfo {claimid}"
+    slot: 45
+  'claiminfo':
+    material: MAP
+    display_name: "&7ɪɴꜰᴏ &7(&aᴠɪᴇᴡ&7)"
+    lore:
+    - ''
+    - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+    - ''
+    - '    &8• &7ᴛʀᴜꜱᴛ ꜱɪᴢᴇ: &f%gpextention_getbyid_trustsize_{claimid}%'
+    - ''
+    slot: 49
+    left_click_commands:
+      - '[refresh]'
+    right_click_commands:
+      - '[refresh]'
+  'add':
+    material: HOPPER
+    display_name: "&7ᴀᴅᴅ ɴᴇᴡ"
+    lore:
+    - ''
+    - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+    - '   &7ɢɪᴠᴇ/ᴜᴘᴅᴀᴛᴇ ᴄʟᴀɪᴍ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ꜰᴏʀ ᴀ ᴘʟᴀʏᴇʀ'
+    - ''
+    - '    &8• &7Online players: &f%gpextention_getbyid_trustsize_{claimid}%'
+    - ''
+    slot: 8
+    click_requirement:
+      requirements:
+        req:
+          type: string equals
+          input: "%gpextention_getbyid_editaccess_{claimid}_{player_uuid}%"
+          output: "true" 
+          deny_commands:
+            - "[sound] ITEM_SHIELD_BLOCK"
+            - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴇᴅɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴏꜰ ᴛʜɪꜱ ᴄʟᴀɪᴍ.</red></gray> "
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] gpclaimplayers {claimid}'
+#  'PreviousPage':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNkNjNjOTNjZGQ2ZGIyZjFlZmYyZTNjNDJjZmVhNmQzN2ZiZjViYzJlMzc2MzcyMGU4MTY4NjQyZWM5ZGExIn19fQ==
+#    display_name: '&cPrevious Page'
+#    lore: 
+#      - ''
+#    slots:
+#    - 47
+#    left_click_commands:
+#      - '[refresh]'
+#    right_click_commands:
+#      - '[refresh]'
+  'NextPage':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJiYTg2NmM2MzViYzE4MDUwNjVhZjhhMDI0N2RjNzdiNTBlOWJjZWZkOThiZTNmOTNlODBjMjlmMzlmMzlhYSJ9fX0=
+    display_name: '&aNext Page'
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 29'
+    lore: 
+      - '&7Go to next page'
+    slots:
+    - 51
+    left_click_commands:
+      - '[refresh]'
+    right_click_commands:
+      - '[refresh]'
+  'noclaims':
+    material: 'BARRIER'
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% <= 1'
+    update: true
+    display_name: '&cNo Players!'
+    lore: 
+      - '&7There is no players'
+      - '&7online'
+    left_click_commands:
+      - '[refresh]'
+    right_click_commands:
+      - '[refresh]'
+  '1':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_0%'
+    slot: 10
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 1'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_0%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_0}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_0%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_0% {claimid}'
+  '2':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_1%'
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 2'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_1%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_1}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_1%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_1% {claimid}'
+  '3':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_2%'
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 3'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_2%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_2}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_2%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_2% {claimid}'
+  '4':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_3%'
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 4'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_3%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_3}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_3%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_3% {claimid}'
+  '5':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_4%'
+    slot: 14
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 5'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_4%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_4}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_4%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_4% {claimid}'
+  '6':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_5%'
+    slot: 15
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 6'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_5%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_5}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_5%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_5% {claimid}'
+  '7':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_6%'
+    slot: 16
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 7'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_6%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_6}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_6%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_6% {claimid}'
+  '8':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_7%'
+    slot: 19
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 8'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_7%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_7}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_7%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_7% {claimid}'
+  '9':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_8%'
+    slot: 20
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 9'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_8%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_8}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_8%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_8% {claimid}'
+  '10':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_9%'
+    slot: 21
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 10'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_9%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_9}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_9%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_9% {claimid}'
+  '11':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_10%'
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 11'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_10%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_10}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_10%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_10% {claimid}'
+  '12':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_11%'
+    slot: 23
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 12'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_11%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_11}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_11%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_11% {claimid}'
+  '13':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_12%'
+    slot: 24
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 13'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_12%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_12}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_12%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_12% {claimid}'
+  '14':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_13%'
+    slot: 25
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 14'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_13%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_13}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_13%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_13% {claimid}'
+  '15':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_14%'
+    slot: 28
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 15'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_14%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_14}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_14%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_14% {claimid}'
+  '16':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_15%'
+    slot: 29
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 16'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_15%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_15}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_15%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_15% {claimid}'
+  '17':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_16%'
+    slot: 30
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 17'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_16%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_16}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_16%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_16% {claimid}'
+  '18':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_17%'
+    slot: 31
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 18'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_17%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_17}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_17%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_17% {claimid}'
+  '19':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_18%'
+    slot: 32
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 19'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_18%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_18}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_18%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_18% {claimid}'
+  '20':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_19%'
+    slot: 33
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 20'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_19%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_19}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_19%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_19% {claimid}'
+  '21':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_20%'
+    slot: 34
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 21'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_20%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_20}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_20%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_20% {claimid}'
+  '22':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_21%'
+    slot: 37
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 22'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_21%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_21}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_21%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_21% {claimid}'
+  '23':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_22%'
+    slot: 38
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 23'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_22%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_22}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_22%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_22% {claimid}'
+  '24':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_23%'
+    slot: 39
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 24'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_23%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_23}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_23%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_23% {claimid}'
+  '25':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_24%'
+    slot: 40
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 25'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_24%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_24}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_24%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_24% {claimid}'
+  '26':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_25%'
+    slot: 41
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 26'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_25%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_25}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_25%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_25% {claimid}'
+  '27':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_26%'
+    slot: 42
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 27'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_26%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_26}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_26%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_26% {claimid}'
+  '28':
+    material: 'head-%gpextention_getbyid_trust_{claimid}_27%'
+    slot: 43
+    priority: 1
+    view_requirement:
+      requirements:
+        viewclaimreq:
+          type: javascript
+          expression: '%gpextention_getbyid_trustsize_{claimid}% >= 28'
+    update: true
+    display_name: '&7%gpextention_getbyid_trust_{claimid}_27%'
+    lore:
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '    &8• &7ᴘᴇʀᴍɪꜱꜱɪᴏɴ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_getbyid_trustuuid_{claimid}_27}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴜɴᴛʀᴜꜱᴛ'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:trust {claimid} %gpextention_getbyid_trust_{claimid}_27%'
+    right_click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] deluxemenus:ckickplayer %gpextention_getbyid_trust_{claimid}_27% {claimid}'
+
+# Downloaded from https://nullforums.net/resources/grief-prevention-gui-addon.6973/
+# 70228A6Y7ZUCF909N1MW4N3HJK94N6

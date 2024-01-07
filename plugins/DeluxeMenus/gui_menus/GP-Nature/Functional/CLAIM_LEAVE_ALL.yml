@@ -1,0 +1,100 @@
+menu_title: '%gpextention_title% &7(&2/ʟᴇᴀᴠᴇᴄʟᴀɪᴍ&7)'
+open_command:
+  - 'leaveallclaims'
+register_command: true
+update_interval: 1
+size: 54
+items:
+  'blue_glass_pane':
+    priority: 3
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 0-44
+  'white_glass_pane':
+    priority: 3
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 1
+    - 3
+    - 4
+    - 17
+    - 18
+  'white_glass':
+    priority: 3
+    material: WHITE_STAINED_GLASS
+    display_name: " &r "
+    slots:
+    - 0
+    - 2
+    - 8
+    - 9
+  'tall_grass':
+    priority: 3
+    material: TALL_GRASS
+    display_name: " &r "
+    slots:
+    - 45
+    - 47
+    - 48
+    - 49
+    - 51
+    - 52
+    - 53
+  'rose':
+    priority: 3
+    material: ROSE_BUSH
+    display_name: " &r "
+    slots:
+    - 46
+  'dark_oak':
+    priority: 3
+    material: DARK_OAK_SAPLING
+    display_name: " &r "
+    slots:
+    - 50
+  'goback':
+    material: OAK_DOOR
+    display_name: "&7⟰ &aɢᴏ ʙᴀᴄᴋ"
+    click_commands:
+      - "[sound] BLOCK_WOODEN_DOOR_OPEN"
+      - "[player] claim"
+    slot: 45
+  '01':
+    material: RED_CONCRETE
+    priority: 3
+    display_name: "&7ʟᴇᴀᴠᴇ ᴄʟᴀɪᴍ"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ʟᴇᴀᴠᴇ ᴀʟʟ ᴏꜰ ʏᴏᴜʀ ᴄʟᴀɪᴍꜱ.'
+      - '   &7ᴘʟᴇᴀꜱᴇ ʙᴇ ᴄᴀᴜᴛɪᴏᴜꜱ ᴀꜱ '
+      - '   &7ʀᴇᴊᴏɪɴɪɴɢ ᴛʜᴇ ᴄʟᴀɪᴍ ᴡɪʟʟ ɴᴏᴛ ʙᴇ'
+      - '   &7ᴘᴏꜱꜱɪʙʟᴇ ᴡɪᴛʜᴏᴜᴛ ᴀɴ ɪɴᴠɪᴛᴀᴛɪᴏɴ '
+      - '   &7ꜰʀᴏᴍ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏʀ ᴍᴀɴᴀɢᴇʀ'
+      - ''
+      - '   &8• &7ᴛʀᴜꜱᴛᴇᴅ: &f%gpextention_trustcount%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ʟᴇᴀᴠᴇ'
+    click_commands:
+      - "[player] claim leave all"
+      - "[close]"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 20
+  '2':
+    material: LIME_CONCRETE
+    priority: 1
+    display_name: "&7ᴄᴀɴᴄᴇʟ"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɢᴏ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ᴘᴀɢᴇ'
+      - ''
+    click_commands:
+      - "[player] claim"
+      - "[sound] UI_BUTTON_CLICK"
+    slot: 24
+
+# Downloaded from https://nullforums.net/resources/grief-prevention-gui-addon.6973/
+# 70228A6Y7ZUCF909N1MW4N3HJK94N6

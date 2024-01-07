@@ -1,0 +1,445 @@
+################################
+################################
+###                YirouBoss            ####
+###                by Akyrion          ####
+###                   v 0.1                ####
+################################
+################################
+YirouBoss:
+  Type: SKELETON
+  Damage: 10
+  DamageModifiers:
+  - BLOCK_EXPLOSION 0
+  - ENTITY_EXPLOSION 0
+  - LIGHTNING 0
+  - FALL 0
+  BossBar:
+    Enabled: true
+    Title: '&b<--==࿏۞&1&l【 ⍟ &f&lYIROU&1&l ⍟ 】&b۞࿏==-->'
+    Range: 200
+    Color: BLUE
+    Style: SEGMENTED_20
+  Health: 1000
+  KillMessages:
+  - "&f<trigger.name> was blessed by the light"
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    NoDamageTicks: 10
+    MovementSpeed: 0.2
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MaxCombatDistance: 100
+    Silent: True
+    Despawn: false
+  DamageModifiers:
+  - FALL 0
+  - BLOCK_EXPLOSION 0
+  - ENTITY_EXPLOSION 0
+  - LIGHTNING 0
+  - MAGIC 0
+  Drops:
+  - DIAMOND 20 1
+  Disguise: yirouGod
+############################
+###        Passive Skills           ###
+############################
+  Skills:
+  - sound{s=entity.wither.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.5
+  - sound{s=entity.blaze.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.5
+  - effect:particles{p=end_rod;amount=10;hs=1;vs=1;s=0.001} @self ~onDamaged
+  - effect:particles{p=reddust;color=#04009a;amount=100;hs=0.3;vs=0.4;Size=1;y=1;vd=30} @self ~onDamaged
+  - effect:particles{p=reddust;color=#FFFFFF;amount=100;hs=0.3;vs=0.4;Size=1;y=1;vd=30} @self ~onDamaged
+  - sound{s=block.soul_soil.hit;v=1;p=0.4} @PIR{r=10} ~onDamaged 
+  - effect:particles{p=reddust;amount=20;color=#FF00FF;hs=0.8;vs=0.8;Size=0.5} @target ~onAttack
+  - sound{s=entity.bat.takeoff;v=1;p=0.9} @PIR{r=50} ~onAttack
+
+############################
+###        Active Skills            ###
+############################
+  - skill{s=yirouFirstAttack} =99% ~onDamaged 
+  - skill{s=yirouFirstAttack} =96% ~onDamaged 
+  - skill{s=yirouSecondAttack} =93% ~onDamaged 
+  - skill{s=yirouThirdAttack} =90% ~onDamaged 
+  - skill{s=yirouFirstAttack} =87% ~onDamaged
+  - skill{s=yirouFirstAttack} =84% ~onDamaged
+  - skill{s=yirouThirdAttack} =81% ~onDamaged
+  - skill{s=yirouSecondAttack} =78% ~onDamaged
+  - skill{s=yirouFirstAttack} =75% ~onDamaged
+  - skill{s=yirouThirdAttack} =72% ~onDamaged
+  - skill{s=yirouSecondAttack} =69% ~onDamaged
+  - skill{s=yirouThirdAttack} =66% ~onDamaged
+  - skill{s=yirouSecondAttack} =63% ~onDamaged
+  - skill{s=yirouSecondPhase} =60% ~onDamaged
+  
+YirouBossTwo:
+  Type: SKELETON
+  Damage: 10
+  DamageModifiers:
+  - BLOCK_EXPLOSION 0
+  - ENTITY_EXPLOSION 0
+  - LIGHTNING 0
+  - FALL 0
+  BossBar:
+    Enabled: true
+    Title: '&b☸ 【✤<--==࿏۞&1&l【 ⍟ &f&lThe Entity Yirou&1&l ⍟ 】&b۞࿏==-->✤】 ☸'
+    Range: 200
+    Color: YELLOW
+    Style: SEGMENTED_20
+  Health: 1000
+  KillMessages:
+  - "&f<trigger.name> was blessed by the light"
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    NoDamageTicks: 10
+    MovementSpeed: 0.2
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MaxCombatDistance: 100
+    Silent: True
+    Despawn: false
+  Equipment:
+    - DIAMOND_SWORD HAND
+  DamageModifiers:
+  - FALL 0
+  - BLOCK_EXPLOSION 0
+  - ENTITY_EXPLOSION 0
+  - LIGHTNING 0
+  - MAGIC 0
+  Drops:
+  - DIAMOND 20 1
+  Disguise: yirouKing
+############################
+###        Passive Skills           ###
+############################
+  Skills:
+  - barCreate{name="ServantsCountBar";display="Servants Killed :&f&l0";value=0.1;color=RED;style=SOLID;range=5} @Self ~onSignal:barCreateS
+  - skill{s=laestupidabarranofunciona3} ~onSignal:barCreateSchange
+  - barRemove{name="ServantsCountBar"} @Self ~onSignal:barSRemove
+  - sound{s=entity.wither.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.5
+  - sound{s=entity.blaze.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.5
+  - effect:particles{p=sweep_attack;amount=10;hs=1;vs=1;s=0.001} @self ~onDamaged
+  - effect:particles{p=reddust;color=#3edbf0;amount=100;hs=0.3;vs=0.4;Size=1;y=1;vd=30} @self ~onDamaged
+  - effect:particles{p=reddust;color=#99ddcc;amount=100;hs=0.3;vs=0.4;Size=1;y=1;vd=30} @self ~onDamaged
+  - skill{s=[ - cancelevent - damage{a=16} @target ];sync=true} ~onAttack
+  - effect:particles{p=reddust;amount=20;color=#3edbf0;hs=0.8;vs=0.8;Size=0.5} @self ~onDamaged
+  - sound{s=block.soul_soil.hit;v=1;p=0.4} @PIR{r=50} ~onDamaged 
+  - effect:particles{p=reddust;amount=20;color=#FF00FF;hs=0.8;vs=0.8;Size=0.5} @target ~onAttack
+  - sound{s=entity.bat.takeoff;v=1;p=0.9} @PIR{r=50} ~onAttack
+  - randomskill{skills=yirouBasicLongAttack1,yirouBasicLongAttack2,yirouBasicLongAttack3} ~onDamaged 1
+  - sound{s=entity.fox.screech;v=20;p=0.1} @PIR{r=100} =1% ~onDamaged
+  - remove @MIR{r=200;types=yirouWarrior,yirouArcher,yirouTotemRayOfLight,yirouElectricTotem} ~onDeath
+  - sound{s=ui.toast.challenge_complete;v=20;p=1} @PIR{r=100} ~onDeath
+  
+
+############################
+###        Active Skills            ###
+############################
+  - skill{s=yirouFirstAttack} =99% ~onDamaged
+  - skill{s=yirouSecondAttack} =96% ~onDamaged
+  - skill{s=yirouFirstAttack} =93% ~onDamaged
+  - skill{s=yirouLightMissile} =92% ~onDamaged
+  - skill{s=yirouThirdAttack} =90% ~onDamaged
+  - skill{s=yirouFifthAttack} =87% ~onDamaged
+  - skill{s=yirouSecondAttack} =84% ~onDamaged
+  - skill{s=yirouFirstAttack} =81% ~onDamaged
+  - skill{s=yirouSecondAttack} =78% ~onDamaged
+  - skill{s=yirouFourthAttack} =75% ~onDamaged
+  - skill{s=yirouSecondAttack} =72% ~onDamaged
+  - skill{s=yirouSixthAttack} =69% ~onDamaged
+  - skill{s=yirouThirdAttack} =66% ~onDamaged
+  - skill{s=yirouSeventhAttack} =63% ~onDamaged
+  - skill{s=yirouFlowerOfThunder} =60% ~onDamaged
+  - skill{s=yirouChainStun} =56% ~onDamaged
+  - skill{s=yirouRayOfLight} =54% ~onDamaged
+  - skill{s=yirouRayOfLight} =52% ~onDamaged
+  - skill{s=yirouInvoqueElectricTotem} =50% ~onDamaged
+  - skill{s=yirouInstantKill} =47% ~onDamaged
+  - skill{s=yirouLightMissile} =44% ~onDamaged
+  - skill{s=yirouThirdAttack} =41% ~onDamaged
+  - skill{s=yirouFourthAttack} =38% ~onDamaged
+  - skill{s=yirouSixthAttack} =35% ~onDamaged
+  - skill{s=yirouChainStun} =32% ~onDamaged
+  - skill{s=yirouRayOfLight} =29% ~onDamaged
+  - skill{s=yirouSixthAttack} =26% ~onDamaged
+  - skill{s=yirouLightMissile} =24% ~onDamaged
+  - skill{s=yirouInvoqueElectricTotem} =23% ~onDamaged
+  - skill{s=yirouFlowerOfThunder} =20% ~onDamaged
+  - skill{s=yirouFourthAttack} =17% ~onDamaged
+  - skill{s=yirouInstantKill} =14% ~onDamaged
+  - skill{s=yirouRayOfLight} =11% ~onDamaged
+  - skill{s=yirouChainStun} =8% ~onDamaged
+  - skill{s=yirouLightMissile} =6% ~onDamaged
+  - skill{s=yirouRayOfLight} =5% ~onDamaged
+  - skill{s=yirouSeventhAttack} =2% ~onDamaged
+  
+
+################
+###   Warrior  ###
+################
+yirouWarrior:
+  Type: ZOMBIE
+  Damage: 10
+  Health: 25
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MaxCombatDistance: 100
+    Silent: true
+  Equipment:
+  - NETHERITE_SWORD HAND
+  Drops:
+  - DIAMOND 1 1
+  Disguise: yirouWarrior
+  Skills:
+  - sound{s=zombie_villager.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.8
+  - potion{type=INVISIBILITY;duration=20;level=1;p=false} @self ~onSpawn
+  - delay 1
+  - skill{s=yirouMinionsAppearFirst2} ~onSpawn
+
+################
+###   Archer    ###
+################
+yirouArcher:
+  Type: SKELETON
+  Damage: 10
+  Health: 30
+  Options:
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MaxCombatDistance: 100
+    Silent: true
+  Drops:
+  - DIAMOND 3 1
+  Disguise: yirouArcher
+  Skills:
+  - randomskill{skills=yirouBasicLongAttack1,yirouBasicLongAttack3} ~onDamaged
+  - skill{s=[ - cancelevent - skill{s=yirouBasicLongAttack1} ];sync=true} ~onShoot
+  - sound{s=entity.shulker.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.8
+  - potion{type=INVISIBILITY;duration=20;level=1;p=false} @self ~onSpawn
+  - delay 1
+  - skill{s=yirouMinionsAppearFirst} ~onSpawn
+
+################################
+### Yirou Inmortal Control Minion  ###
+################################
+yirouInmortalControl:
+  Type: ZOMBIE
+  Health: 30
+  Options:
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MaxCombatDistance: 100
+    Silent: true
+  Disguise: yirouInmortal
+  Equipment:
+  - IRON_SWORD HAND
+  Skills:
+  - signal{s=barCreateS} @MIR{r=100;types=YirouBossTwo} ~onSpawn
+  - sound{s=entity.ravager.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.8
+  - setvariable{var=world.YirouInmortal;type=INTEGER;value=1} @self ~onSpawn
+  - setvariable{var=world.YirouInmortalBar;type=INTEGER;value=0} @self ~onSpawn
+  - skill{s=yirouNoDamageOn} @Parent ~onSpawn
+  - variableadd{var=world.YirouInmortalBar;amount=1} @self ~onDeath
+  - variablesubtract{var=world.YirouInmortal;amount=1} @self ~onDeath
+  - sendtitle{title="&c&l<world.var.YirouInmortal>";subtitle="Mobs Left!";d=10} @PlayersInRadius{r=10} ~onDeath
+  - signal{s=barCreateSchange} @Parent ~onDeath
+  - skill{s=yirouNoDamageOff} @Parent ~onDeath
+
+#########################
+### Yirou Inmortal Minion ###
+#########################
+yirouInmortal:
+  Type: ZOMBIE
+  Health: 30
+  Options:
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MaxCombatDistance: 100
+    Silent: true
+  Disguise: yirouInmortal
+  Equipment:
+  - IRON_SWORD HAND
+  Skills:
+  - sound{s=entity.ravager.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.8
+  - variableadd{var=world.YirouInmortal;amount=1} @self ~onSpawn
+  - variableadd{var=world.YirouInmortalBar;amount=1} @self ~onDeath
+  - variablesubtract{var=world.YirouInmortal;amount=1} @self ~onDeath
+  - sendtitle{title="&c&l<world.var.YirouInmortal>";subtitle="Mobs Left!";d=10} @PlayersInRadius{r=10} ~onDeath
+  - signal{s=barCreateSchange} @Parent ~onDeath
+  - skill{s=yirouNoDamageOff} @Parent ~onDeath
+
+#################
+## Dummy Test   ##
+#################
+yirouInvoque:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false 
+  Skills:
+  - teleportto{location=144.5,46,-238.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouSpawnAnimation} ~onSpawn
+
+yirouMinionsInvoqueLeft:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false
+    HasGravity: false 
+  Skills:
+  - teleportto{location=170.5,35,-211.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouMinionsParticlesTest} ~onSpawn
+
+yirouMinionsInvoqueRight:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false 
+    HasGravity: false
+  Skills:
+  - teleportto{location=174.5,35,-264.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouMinionsParticlesTest2} ~onSpawn
+
+yirouInvoqueSecondPhase:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false 
+    HasGravity: false
+  Skills:
+  - teleportto{location=144.5,55,-238.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouSecondPhaseChargeAnimation} ~onSpawn
+
+yirouInvoqueSecondPhaseN:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false 
+    HasGravity: false
+  Skills:
+  - teleportto{location=144.5,100,-277.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouSecondPhaseShootAnimation} ~onSpawn
+
+yirouInvoqueSecondPhaseS:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false 
+    HasGravity: false
+  Skills:
+  - teleportto{location=144.5,100,-199.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouSecondPhaseShootAnimation} ~onSpawn
+
+yirouInvoqueSecondPhaseE:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false 
+    HasGravity: false
+  Skills:
+  - teleportto{location=183.5,100,-238.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouSecondPhaseShootAnimation} ~onSpawn
+
+yirouInvoqueSecondPhaseO:
+  Type: ARMOR_STAND
+  Health: 100
+  Options:
+    CanMove: false
+    Invisible: true
+    Collidable: false 
+    HasGravity: false
+  Skills:
+  - teleportto{location=105.5,100,-238.5;yaw=0;pitch=0} @self ~onSpawn
+  - delay 10
+  - skill{s=yirouSecondPhaseShootAnimation} ~onSpawn
+
+yirouTotemRayOfLight:
+  Type: SKELETON
+  Health: 1000
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+  Skills:
+  - sound{s=entity.elder_guardian.hurt;v=1;p=2} @PIR{r=10} ~onDamaged 
+  - sound{s=block.anvil.use;v=1;p=2} @PIR{r=10} ~onDamaged 
+  - effect:particles{p=crimson_spore;amount=30;hs=1;vs=1;s=0} @self ~onDamaged
+  - effect:particles{p=crit;amount=50;hs=0.4;vs=0.4;s=0;y=+1} @self ~onDamaged
+  - effect:particles{p=warped_spore;amount=50;hs=1;vs=1;s=0;y=+1} @self ~onDamaged
+  - stun{d=12000;f=true;ia=false} @self ~onSpawn
+  - potion{type=INVISIBILITY;duration=2000;level=1;p=false} @self ~onSpawn
+  - setvariable{var=caster.KillMe;type=INTEGER;value=11} @self ~onSpawn
+  - skill{s=yirouRayOfLightStart} ~onSpawn
+  - skill{s=KillMePlease} ~onDamaged
+
+yirouElectricTotem:
+  Type: SKELETON
+  Health: 300
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+  Skills:
+  - sound{s=entity.bee.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 
+  - effect:particles{p=crit_magic;amount=50;hs=1;vs=1;s=0} @self ~onDamaged
+  - effect:particles{p=soul_fire_flame;amount=20;hs=1;vs=1;s=0} @self ~onDamaged
+  - skill{s=yirouElectricTotemBorn} ~onSpawn
+  - skill{s=yirouElectricTotemWillDie} ~onDamaged
+  - potion{type=INVISIBILITY;duration=8000;level=2;p=false} @self ~onSpawn
+  - skill{s=yirouElectricTotemStart} ~onSpawn
+  
+ 

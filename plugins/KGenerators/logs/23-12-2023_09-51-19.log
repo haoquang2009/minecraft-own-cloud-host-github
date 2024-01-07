@@ -1,0 +1,119 @@
+[23-12-2023 09:25:26] Settings: Loading settings
+[23-12-2023 09:25:26] WorldGuard: Registering kgenerators-pick-up flag
+[23-12-2023 09:25:26] WorldGuard: Registering kgenerators-only-gen-break flag
+[23-12-2023 09:25:38] !!! WARNING !!! KGenerators will be loaded in post init check, check for more informations futher in this log
+[23-12-2023 09:25:41] [Debug] Dependencies: Setting up dependencies
+[23-12-2023 09:25:41] [Debug] Dependencies: Detected Vault economy. Hooked into it.
+[23-12-2023 09:25:41] [Debug] Dependencies: Detected Vault permissions. Hooked into it.
+[23-12-2023 09:25:41] [Debug] Dependencies: Detected plugin WorldEdit. Hooking into it.
+[23-12-2023 09:25:41] [Debug] Dependencies: Detected plugin PlaceholderAPI. Hooking into it.
+[23-12-2023 09:25:41] [Debug] Dependencies: Detected plugin WorldGuard. Hooked into it.
+[23-12-2023 09:25:41] [Debug] Dependencies: Detected plugin HolographicDisplays. Hooked holograms into it.
+[23-12-2023 09:25:41] [Debug] GeneratorsManager: Setting up manager
+[23-12-2023 09:25:41] [Debug] GeneratedObjectsManager: Loaded GeneratedBlock with type block
+[23-12-2023 09:25:41] [Debug] GeneratedObjectsManager: Loaded GeneratedItem with type item
+[23-12-2023 09:25:41] [Debug] GeneratedObjectsManager: Loaded GeneratedEntity with type entity
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_1 generating variety of 1 objects every 40 ticks
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_2 generating variety of 1 objects every 20 ticks
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{LOG x 1}
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded properly SINGLE wood_generator generating variety of 4 objects every 20 ticks
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: STONE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{COAL x 1} ItemFortune: true
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 10.0 | Material: STONE | CustomDrops: RemoveDefaults: true
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{DIAMOND x 1} ItemFortune: true
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{EMERALD x 1} ItemFortune: true, Commands: [say <player> dropped emerald from Ores from stone generator!]
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded properly SINGLE ores_from_stone_generator generating variety of 6 objects every 80 ticks
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: COAL_ORE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 25.0 | Material: IRON_ORE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: GOLD_ORE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: DIAMOND_ORE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: EMERALD_ORE
+[23-12-2023 09:25:41] [Debug] Generators file: Loaded properly SINGLE ores_generator generating variety of 5 objects every 80 ticks
+[23-12-2023 09:25:41] Generators file: Loaded 5 generators!
+[23-12-2023 09:25:41] [Debug] Lang: Loading lang files
+[23-12-2023 09:25:41] Lang: Messages and Guis file loaded with lang: en
+[23-12-2023 09:25:41] [Debug] RecipesManager: Setting up manager
+[23-12-2023 09:25:41] Recipes file: Recipes are disabled. You can enable them in recipes.yml
+[23-12-2023 09:25:41] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostMoney
+[23-12-2023 09:25:41] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExp
+[23-12-2023 09:25:41] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExpLevel
+[23-12-2023 09:25:41] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostItems
+[23-12-2023 09:25:41] [Debug] UpgradesManager: Setting up manager
+[23-12-2023 09:25:41] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[23-12-2023 09:25:41] [Debug] LimitsManager: Setting up manager
+[23-12-2023 09:25:41] Limits file: Limits are disabled. You can enable them in limits.yml!
+[23-12-2023 09:25:41] [Debug] DatabaseManager: Setting up manager
+[23-12-2023 09:25:41] Database SQLITE: Connected to SQLITE database
+[23-12-2023 09:25:41] [Debug] HologramsManager: Setting up manager
+[23-12-2023 09:25:41] [Debug] Holograms: Enabling HolographicDisplaysProvider
+[23-12-2023 09:25:41] [Debug] SchedulesManager: Setting up manager
+[23-12-2023 09:25:41] [Debug] MenusManager: Setting up manager
+[23-12-2023 09:25:41] [Debug] PlacedGenerators: Starting chunk management task
+[23-12-2023 09:25:41] [Debug] PlacedGenerators: Loading generators from already loaded chunks
+[23-12-2023 09:25:41] [Debug] PlacedGenerators: Loaded 0 generators from world ASkyBlock_nether (289 chunks)
+[23-12-2023 09:25:41] [Debug] PlacedGenerators: Loaded 0 generators from world world_nether (289 chunks)
+[23-12-2023 09:25:41] [Debug] PlacedGenerators: Loaded 0 generators from world ASkyBlock (289 chunks)
+[23-12-2023 09:25:41] [Debug] PlacedGenerators: Loaded 0 generators from world world (289 chunks)
+[23-12-2023 09:25:41] [Debug] PlacedGenerators: Loaded 0 generators from world world_the_end (289 chunks)
+[23-12-2023 09:25:41] [Debug] MainManager: Loading listeners
+[23-12-2023 09:25:41] [Debug] MainManager: Loading Metrix
+[23-12-2023 09:25:41] MainManager: KGenerators loaded successfully
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -8, -11 took more than 500ms! (725ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -8, -10 took more than 500ms! (725ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -8, -9 took more than 500ms! (725ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -7, -11 took more than 500ms! (714ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -7, -10 took more than 500ms! (713ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -7, -9 took more than 500ms! (712ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -6, -11 took more than 500ms! (696ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -6, -10 took more than 500ms! (696ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -6, -9 took more than 500ms! (695ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -5, -11 took more than 500ms! (681ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -5, -10 took more than 500ms! (680ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -5, -9 took more than 500ms! (679ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -4, -11 took more than 500ms! (663ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -4, -10 took more than 500ms! (663ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -4, -9 took more than 500ms! (663ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -3, -11 took more than 500ms! (652ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -3, -10 took more than 500ms! (660ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -3, -9 took more than 500ms! (659ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -2, -11 took more than 500ms! (646ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -2, -10 took more than 500ms! (645ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -2, -9 took more than 500ms! (644ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -1, -11 took more than 500ms! (633ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -1, -10 took more than 500ms! (632ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, -1, -9 took more than 500ms! (631ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 0, -11 took more than 500ms! (614ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 0, -10 took more than 500ms! (614ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 0, -9 took more than 500ms! (613ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 1, -11 took more than 500ms! (601ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 1, -10 took more than 500ms! (600ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 1, -9 took more than 500ms! (600ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 2, -11 took more than 500ms! (585ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 2, -10 took more than 500ms! (588ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 2, -9 took more than 500ms! (587ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 3, -11 took more than 500ms! (576ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 3, -10 took more than 500ms! (575ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 3, -9 took more than 500ms! (574ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 4, -11 took more than 500ms! (559ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 4, -10 took more than 500ms! (558ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 4, -9 took more than 500ms! (557ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 5, -11 took more than 500ms! (544ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 5, -10 took more than 500ms! (543ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 5, -9 took more than 500ms! (542ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 6, -11 took more than 500ms! (527ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 6, -10 took more than 500ms! (527ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 6, -9 took more than 500ms! (526ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 7, -11 took more than 500ms! (512ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 7, -10 took more than 500ms! (512ms) Is the server overloaded?
+[23-12-2023 09:48:36] [Debug] PlacedGeneratorsManager: Waiting for chunk load ChunkInfo: world_nether, 7, -9 took more than 500ms! (510ms) Is the server overloaded?
+[23-12-2023 09:50:57] Disabling KGenerators
+[23-12-2023 09:50:57] Safely closing menus.
+[23-12-2023 09:50:57] Saving 0 running generators.
+[23-12-2023 09:50:57] Safely shutting down database.
+[23-12-2023 09:50:57] Database SQLITE: Connection closed

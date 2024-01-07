@@ -1,0 +1,21 @@
+RenegadeDarkBeam:
+  Cooldown: 0.25
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{ticks=200}
+  - projectile{onTick=RenegadeDarkBeamEffect;onHit=RenegadeDarkBeamDamage;i=1;hR=0.75;md=400;vR=0.75;v=20;hnp=true;}
+  - effect:sound{s=entity.endermen.teleport;v=1;p=0.5} @Self
+RenegadeDarkBeamEffect:
+  Cooldown: 0.05
+  Skills:
+  - effect:particles{p=smoke;a=25;vs=0.2;hs=0.2;s=0;y=1} @Origin
+  - effect:particles{p=explosion;a=25;vs=0.2;hs=0.2;s=0;y=1} @Origin
+RenegadeDarkBeamDamage:
+  Cooldown: 0.05
+  Skills:
+  - effect:particles{p=smoke;a=25;vs=1;hs=1;s=0.2;y=1}
+  - potion{t=WITHER;d=100;l=1}
+  - potion{t=HUNGER;d=300;l=0}
+  - throw{velocity=5;velocityY=5}
+  - damage{a=4;pkb=true;i=false}

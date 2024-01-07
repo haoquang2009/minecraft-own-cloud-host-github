@@ -1,0 +1,161 @@
+menu_title: '%gpextention_title% &7(&2/trust&7)'
+open_command:
+- 'trust'
+register_command: true
+args:
+- "claimid"
+- "player"
+update_interval: 1
+size: 54
+data:
+  version: 1.1
+open_requirement:
+  requirements:
+    req:
+      type: string equals
+      input: "%gpextention_getbyid_editaccess_{claimid}_{player_uuid}%"
+      output: "true" 
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴇᴅɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴏꜰ ᴛʜɪꜱ ᴄʟᴀɪᴍ.</red></gray> "
+items:
+  'blue_glass_pane':
+    priority: 3
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 0-44
+  'white_glass_pane':
+    priority: 3
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 1
+    - 3
+    - 4
+    - 17
+    - 18
+  'white_glass':
+    priority: 3
+    material: WHITE_STAINED_GLASS
+    display_name: " &r "
+    slots:
+    - 0
+    - 2
+    - 8
+    - 9
+  'tall_grass':
+    priority: 3
+    material: TALL_GRASS
+    display_name: " &r "
+    slots:
+    - 45
+    - 47
+    - 48
+    - 49
+    - 51
+    - 52
+    - 53
+  'rose':
+    priority: 3
+    material: ROSE_BUSH
+    display_name: " &r "
+    slots:
+    - 46
+  'dark_oak':
+    priority: 3
+    material: DARK_OAK_SAPLING
+    display_name: " &r "
+    slots:
+    - 50
+  'goback':
+    material: OAK_DOOR
+    display_name: "&7⟰ &aɢᴏ ʙᴀᴄᴋ"
+    click_commands:
+      - "[sound] BLOCK_WOODEN_DOOR_OPEN"
+      - "[player] claiminfo {claimid}"
+    slot: 45
+  '2':
+    material: BEACON
+    priority: 1
+    display_name: "&7ᴍᴀɴᴀɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ &7(&aʙᴜɪʟᴅ&2&l|&aɪɴᴠᴇɴᴛᴏʀʏ&2&l|&aᴇᴅɪᴛ&2&l|&aᴜᴘɢʀᴀᴅᴇ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɢɪᴠᴇꜱ &a{player}&7 ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '   &7ᴛᴏ ᴇᴅɪᴛ ᴛʀᴜꜱᴛ ᴀɴᴅ ꜰʟᴀɢꜱ.'
+      - ''
+      - '    &8• &7ᴘʟᴀʏᴇʀ: &f{player}'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_otherplayer_uuid_{player}}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] gptrust set {player} {claimid} permission"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[close]"
+      - "[player] trust {player} {claimid}<delay=20>"
+    slot: 20
+  '4':
+    material: GRASS_BLOCK
+    priority: 1
+    display_name: "&7ᴛʀᴜꜱᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ &7(&aʙᴜɪʟᴅ&2&l|&aɪɴᴠᴇɴᴛᴏʀʏ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɢɪᴠᴇꜱ &a{player}&7 ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '   &7ᴛᴏ ᴇᴅɪᴛ ɪɴ ʏᴏᴜʀ ᴄʟᴀɪᴍ.'
+      - ''
+      - '    &8• &7ᴘʟᴀʏᴇʀ: &f{player}'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_otherplayer_uuid_{player}}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] gptrust set {player} {claimid} trust"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[close]"
+      - "[player] trust {player} {claimid}<delay=20>"
+    slot: 22
+  '6':
+    material: CHEST
+    priority: 1
+    display_name: "&7ɪɴᴠᴇɴᴛᴏʀʏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ &7(&aɪɴᴠᴇɴᴛᴏʀʏ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɢɪᴠᴇꜱ &a{player}&7 ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '   &7ᴛᴏ ᴜꜱᴇ ʏᴏᴜʀ ʙᴜᴛᴛᴏɴꜱ, ʟᴇᴠᴇʀꜱ, ʙᴇᴅꜱ,'
+      - '   &7ᴄʀᴀꜰᴛɪɴɢ ɢᴇᴀʀ, ᴄᴏɴᴛᴀɪɴᴇʀꜱ, ᴀɴᴅ ᴀɴɪᴍᴀʟꜱ.'
+      - ''
+      - '    &8• &7ᴘʟᴀʏᴇʀ: &f{player}'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_otherplayer_uuid_{player}}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] gptrust set {player} {claimid} inventory"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[close]"
+      - "[player] trust {player} {claimid}<delay=20>"
+    slot: 24
+  '7':
+    material: OAK_PRESSURE_PLATE
+    priority: 1
+    display_name: "&7ᴀᴄᴄᴇꜱꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴ &7(&aᴜꜱᴇ)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɢɪᴠᴇꜱ &a{player}&7 ᴘᴇʀᴍɪꜱꜱɪᴏɴ'
+      - '   &7ᴛᴏ ᴜꜱᴇ ʏᴏᴜʀ ʙᴜᴛᴛᴏɴꜱ, ʟᴇᴠᴇʀꜱ, ᴀɴᴅ ʙᴇᴅꜱ.'
+      - ''
+      - '    &8• &7ᴘʟᴀʏᴇʀ: &f{player}'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_permission_{claimid}_{gpextention_otherplayer_uuid_{player}}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+      - "[player] gptrust set {player} {claimid} access"
+      - "[sound] UI_BUTTON_CLICK"
+      - "[close]"
+      - "[player] trust {player} {claimid}<delay=20>"
+    slot: 31
+
+# Downloaded from https://nullforums.net/resources/grief-prevention-gui-addon.6973/
+# 70228A6Y7ZUCF909N1MW4N3HJK94N6

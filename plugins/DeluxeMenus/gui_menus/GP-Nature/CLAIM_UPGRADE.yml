@@ -1,0 +1,1012 @@
+menu_title: '%gpextention_title% &7(&2ꜱᴇᴛᴛɪɴɢꜱ&7)'
+open_command: 'cupgrade'
+register_command: true
+args:
+- "claimid"
+update_interval: 1
+size: 54
+data:
+  version: 1.1
+open_requirement:
+  requirements:
+    req:
+      type: string equals
+      input: "%gpextention_getbyid_editaccess_{claimid}_{player_uuid}%"
+      output: "true" 
+      deny_commands:
+        - "[sound] ITEM_SHIELD_BLOCK"
+        - "[minimessage] <dark_green>●</dark_green> <gray>ᴄʟᴀɪᴍ ꜱʏꜱᴛᴇᴍ <dark_gray>»</dark_gray> <red>ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴜᴘɢʀᴀᴅᴇ ᴄʟᴀɪᴍ</red></gray> "
+items:
+  'blue_glass_pane':
+    priority: 3
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 0-44
+  'white_glass_pane':
+    priority: 3
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: " &r "
+    slots:
+    - 1
+    - 3
+    - 4
+    - 17
+    - 18
+  'white_glass':
+    priority: 3
+    material: WHITE_STAINED_GLASS
+    display_name: " &r "
+    slots:
+    - 0
+    - 2
+    - 8
+    - 9
+  'tall_grass':
+    priority: 3
+    material: TALL_GRASS
+    display_name: " &r "
+    slots:
+    - 45
+    - 47
+    - 48
+    - 49
+    - 51
+    - 52
+    - 53
+  'rose':
+    priority: 3
+    material: ROSE_BUSH
+    display_name: " &r "
+    slots:
+    - 46
+  'dark_oak':
+    priority: 3
+    material: DARK_OAK_SAPLING
+    display_name: " &r "
+    slots:
+    - 50
+  'goback':
+    material: OAK_DOOR
+    display_name: "&7⟰ &aɢᴏ ʙᴀᴄᴋ"
+    click_commands:
+      - "[sound] BLOCK_WOODEN_DOOR_OPEN"
+      - "[player] claiminfo {claimid}"
+    slot: 45
+  'info':
+    material: MAP
+    display_name: "&7ᴄʟᴀɪᴍ ɪɴꜰᴏ &7(&aᴠɪᴇᴡ&7)"
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - ''
+      - '&8• &7ᴇɴᴛᴇʀ ᴍᴇꜱꜱᴀɢᴇ: &f%gpextention_getbyid_flags_parma_entermessage_{claimid}%'
+      - '&8• &7ʟᴇᴀᴠᴇ ᴍᴇꜱꜱᴀɢᴇ: &f%gpextention_getbyid_flags_parma_ExitMessage_{claimid}%'
+      - '&8• &7ᴇʟʏᴛʀᴀ ᴜꜱᴀɢᴇ: &f%gpextention_getbyid_flags_parma_noelytra_{claimid}%'
+      - '&8• &7ɴᴏ ᴇɴᴛʀʏ: &f%gpextention_getbyid_flags_parma_noenter_{claimid}%'
+      - '&8• &7ʟᴇᴀᴠᴇꜱ ᴅᴇᴄᴀʏ: &f%gpextention_getbyid_flags_parma_NoLeafDecay_{claimid}%'
+      - '&8• &7ᴍᴏʙ ᴅᴀᴍᴀɢᴇ: &f%gpextention_getbyid_flags_parma_NoMobDamage_{claimid}%'
+      - '&8• &7ᴘᴇᴛ ᴅᴀᴍᴀɢᴇ: &f%gpextention_getbyid_flags_parma_NoPetDamage_{claimid}%'
+      - '&8• &7ᴇɴᴛʀʏ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ: &f%gpextention_getbyid_flags_parma_NotifyEnter_{claimid}%'
+      - '&8• &7ʟᴇᴀᴠᴇ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ: &f%gpextention_getbyid_flags_parma_NotifyExit_{claimid}%'
+      - '&8• &7ᴄʟᴀɪᴍ ꜰʟʏ: &f%gpextention_getbyid_flags_parma_OwnerMemberFly_{claimid}%'
+      - '&8• &7ᴄᴜꜱᴛᴏᴍ ᴡᴇᴀᴛʜᴇʀ: &f%gpextention_getbyid_flags_parma_PlayerWeather_{claimid}%'
+      - '&8• &7ᴄᴜꜱᴛᴏᴍ ᴛɪᴍᴇ: &f%gpextention_getbyid_flags_parma_PlayerTime_{claimid}%'
+      - '&8• &7ᴄʟᴀɪᴍ ɴᴀᴍᴇ: &f%gpextention_getbyid_flags_parma_ClaimName_{claimid}%'
+      - '&8• &7ᴄʟᴀɪᴍ ɪᴄᴏɴ: &f%gpextention_getbyid_flags_parma_ClaimIcon_{claimid}%'
+      - '&8• &7ᴄʟᴀɪᴍ ᴡᴀʀᴘ: &f%gpextention_getbyid_flags_parma_ClaimWarp_{claimid}%'
+      - '&8• &7ᴄʟᴀɪᴍ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: &f%gpextention_getbyid_flags_parma_ClaimDescription_{claimid}%'
+    slot: 49
+    left_click_commands:
+      - '[refresh]'
+    right_click_commands:
+      - '[refresh]'
+  '2':
+    material: 'OAK_SIGN'
+    slot: 10
+    priority: 1
+    update: true
+    display_name: '&7ᴇɴᴛᴇʀ ᴍᴇꜱꜱᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀᴅᴅ ᴍᴇꜱꜱᴀɢᴇ ᴏɴ ᴘʟᴀʏᴇʀ ᴄʟᴀɪᴍ ᴇɴᴛʀʏ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_entermessage_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} EnterMessage <anvilreply>'
+    view_requirement:
+      requirements:
+        hasentermessage:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_entermessage_{claimid}%"
+          output: "false"
+  '2_2':
+    material: 'OAK_SIGN'
+    slot: 10
+    priority: 2
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    update: true
+    display_name: '&7ᴇɴᴛᴇʀ ᴍᴇꜱꜱᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀᴅᴅ ᴍᴇꜱꜱᴀɢᴇ ᴏɴ ᴘʟᴀʏᴇʀ ᴄʟᴀɪᴍ ᴇɴᴛʀʏ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_entermessage_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_flags_parma_entermessage_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} EnterMessage <anvilreply>'
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} EnterMessage true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '3':
+    material: 'OAK_SIGN'
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&7ʟᴇᴀᴠᴇ ᴍᴇꜱꜱᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀᴅᴅ ᴍᴇꜱꜱᴀɢᴇ ᴏɴ ᴘʟᴀʏᴇʀ ᴄʟᴀɪᴍ ʟᴇᴀᴠᴇ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_exitmessage_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} exitmessage <anvilreply>'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_exitmessage_{claimid}%"
+          output: "false"
+  '3_2':
+    material: 'OAK_SIGN'
+    slot: 11
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ʟᴇᴀᴠᴇ ᴍᴇꜱꜱᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀᴅᴅ ᴍᴇꜱꜱᴀɢᴇ ᴏɴ ᴘʟᴀʏᴇʀ ᴄʟᴀɪᴍ ʟᴇᴀᴠᴇ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_exitmessage_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_flags_parma_exitmessage_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} exitmessage <anvilreply>'
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} exitmessage true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '4':
+    material: 'ELYTRA'
+    slot: 12
+    priority: 1
+    update: true
+    display_name: '&7ᴇʟʏᴛʀᴀ ᴜꜱᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴛᴏɢɢʟᴇ ᴇʟʏᴛʀᴀ ᴜꜱᴀɢᴇ ɪɴ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_noelytra_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} noelytra true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_noelytra_{claimid}%"
+          output: "false"
+  '4_2':
+    material: 'ELYTRA'
+    slot: 12
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴇʟʏᴛʀᴀ ᴜꜱᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴛᴏɢɢʟᴇ ᴇʟʏᴛʀᴀ ᴜꜱᴀɢᴇ ɪɴ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_noelytra_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags unset {claimid} noelytra true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '5':
+    material: 'BARRIER'
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&7ɴᴏ ᴇɴᴛʀʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴘʀᴇᴠᴇɴᴛ ᴘʟᴀʏᴇʀꜱ ꜰʀᴏᴍ ᴇɴᴛᴇʀɪɴɢ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - '   &7By left clicking you can manage whitelisted/blacklisted players'
+      - '   &7By right clicking you can block all players from entering'
+      - '   &7Whitelisted players can enter even if the flag is active'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_noenter_{claimid}%'
+      - ''
+      - '&a&l| &2left ᴄʟɪᴄᴋ ᴛᴏ manage'
+      - '&a&l| &2ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ enable'
+    left_click_commands:
+      - '[close]'
+      - "[sound] UI_BUTTON_CLICK"
+      - '[player] cupgradenoenter {claimid}'
+    right_click_commands:
+      - '[player] gpguiflags set {claimid} noenter true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_noenter_{claimid}%"
+          output: "false"
+  '5_2':
+    material: 'BARRIER'
+    slot: 13
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ɴᴏ ᴇɴᴛʀʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴘʀᴇᴠᴇɴᴛ ᴘʟᴀʏᴇʀꜱ ꜰʀᴏᴍ ᴇɴᴛᴇʀɪɴɢ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - '   &7By left clicking you can manage whitelisted/blacklisted players'
+      - '   &7By right clicking you can block all players from entering'
+      - '   &7Whitelisted players can enter even if the flag is active'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_noenter_{claimid}%'
+      - ''
+      - '&a&l| &2left ᴄʟɪᴄᴋ ᴛᴏ manage'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ disable'
+    left_click_commands:
+      - '[close]'
+      - "[sound] UI_BUTTON_CLICK"
+      - '[player] cupgradenoenter {claimid}'
+    right_click_commands:
+      - '[player] gpguiflags set {claimid} noenter false'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '7':
+    material: 'OAK_LEAVES'
+    slot: 14
+    priority: 1
+    update: true
+    display_name: '&7ʟᴇᴀᴠᴇꜱ ᴅᴇᴄᴀʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴘʀᴇᴠᴇɴᴛ ʟᴇᴀᴠᴇꜱ ꜰʀᴏᴍ ᴅᴇᴄᴀʏɪɴɢ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NoLeafDecay_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} NoLeafDecay true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_NoLeafDecay_{claimid}%"
+          output: "false"
+  '7_2':
+    material: 'OAK_LEAVES'
+    slot: 14
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ʟᴇᴀᴠᴇꜱ ᴅᴇᴄᴀʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴘʀᴇᴠᴇɴᴛ ʟᴇᴀᴠᴇꜱ ꜰʀᴏᴍ ᴅᴇᴄᴀʏɪɴɢ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NoLeafDecay_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags unset {claimid} NoLeafDecay true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '8':
+    material: 'CLOCK'
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴛɪᴍᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴛɪᴍᴇ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_Playertime_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} PlayerTime day'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_Playertime_{claimid}%"
+          output: "false"
+  '8_2':
+    material: 'CLOCK'
+    slot: 15
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴛɪᴍᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴛɪᴍᴇ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_Playertime_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: %gpextention_getbyid_flags_parma_Playertime_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛɪᴍᴇ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} PlayerTime noon'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} PlayerTime false'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_parma_Playertime_{claimid}%"
+          output: "day"
+  '8_3':
+    material: 'CLOCK'
+    slot: 15
+    priority: 3
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴛɪᴍᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴛɪᴍᴇ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_Playertime_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: %gpextention_getbyid_flags_parma_Playertime_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛɪᴍᴇ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} PlayerTime night'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} PlayerTime false'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_parma_Playertime_{claimid}%"
+          output: "noon"
+  '8_4':
+    material: 'CLOCK'
+    slot: 15
+    priority: 4
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴛɪᴍᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴛɪᴍᴇ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_Playertime_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: %gpextention_getbyid_flags_parma_Playertime_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛɪᴍᴇ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} PlayerTime midnight'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} PlayerTime false'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_parma_Playertime_{claimid}%"
+          output: "night"
+  '8_5':
+    material: 'CLOCK'
+    slot: 15
+    priority: 5
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴛɪᴍᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴛɪᴍᴇ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_Playertime_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: %gpextention_getbyid_flags_parma_Playertime_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛɪᴍᴇ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} PlayerTime day'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} PlayerTime false'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_parma_Playertime_{claimid}%"
+          output: "midnight"
+  '9':
+    material: 'DIAMOND_HORSE_ARMOR'
+    slot: 16
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴘᴇᴛ ᴅᴀᴍᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʟʟᴏᴡꜱ ᴘᴇᴛꜱ ᴛᴏ ɢᴇᴛ ᴅᴀᴍᴀɢᴇᴅ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NoPetDamage_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags unset {claimid} NoPetDamage true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '9_1':
+    material: 'DIAMOND_HORSE_ARMOR'
+    slot: 16
+    priority: 1
+    update: true
+    display_name: '&7ᴘᴇᴛ ᴅᴀᴍᴀɢᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʟʟᴏᴡꜱ ᴘᴇᴛꜱ ᴛᴏ ɢᴇᴛ ᴅᴀᴍᴀɢᴇᴅ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NoPetDamage_{claimid}%'
+      - ''
+      - '&a&l| &aᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} NoPetDamage true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_NoPetDamage_{claimid}%"
+          output: "false"
+  '10':
+    material: 'PAPER'
+    slot: 19
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴇɴᴛʀʏ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɴᴏᴛɪꜰʏ ᴡʜᴇɴ ᴘʟᴀʏᴇʀ ᴇɴᴛᴇʀꜱ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NotifyEnter_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags unset {claimid} NotifyEnter true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '10_1':
+    material: 'PAPER'
+    slot: 19
+    priority: 1
+    update: true
+    display_name: '&7ᴇɴᴛʀʏ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɴᴏᴛɪꜰʏ ᴡʜᴇɴ ᴘʟᴀʏᴇʀ ᴇɴᴛᴇʀꜱ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NotifyEnter_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} NotifyEnter true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_NotifyEnter_{claimid}%"
+          output: "false"
+  '11':
+    material: 'PAPER'
+    slot: 20
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴇxɪᴛ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɴᴏᴛɪꜰʏ ᴡʜᴇɴ ᴘʟᴀʏᴇʀ ᴇxɪᴛ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NotifyExit_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags unset {claimid} NotifyExit true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '11_1':
+    material: 'PAPER'
+    slot: 20
+    priority: 1
+    update: true
+    display_name: '&7ᴇxɪᴛ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ɴᴏᴛɪꜰʏ ᴡʜᴇɴ ᴘʟᴀʏᴇʀ ᴇxɪᴛ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_NotifyExit_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} NotifyExit true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_NotifyExit_{claimid}%"
+          output: "false"
+  '12':
+    material: 'FEATHER'
+    slot: 21
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄʟᴀɪᴍ ꜰʟʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴛᴏ ꜰʟʏ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_OwnerMemberFly_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags unset {claimid} OwnerMemberFly true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+  '12_1':
+    material: 'FEATHER'
+    slot: 21
+    priority: 1
+    update: true
+    display_name: '&7ᴄʟᴀɪᴍ ꜰʟʏ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴛᴏ ꜰʟʏ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_OwnerMemberFly_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} OwnerMemberFly true'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_OwnerMemberFly_{claimid}%"
+          output: "false"
+  '13':
+    material: 'BONE_MEAL'
+    slot: 22
+    priority: 1
+    update: true
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴡᴇᴀᴛʜᴇʀ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴡᴇᴀᴛʜᴇʀ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_PlayerWeather_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} PlayerWeather rain'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_PlayerWeather_{claimid}%"
+          output: "false"
+  '13_1':
+    material: 'BONE_MEAL'
+    slot: 22
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴡᴇᴀᴛʜᴇʀ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴡᴇᴀᴛʜᴇʀ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_PlayerWeather_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: %gpextention_getbyid_flags_parma_PlayerWeather_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴡᴇᴀᴛʜᴇʀ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} PlayerWeather sun'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} PlayerWeather false'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_parma_PlayerWeather_{claimid}%"
+          output: "rain"
+  '13_2':
+    material: 'BONE_MEAL'
+    slot: 22
+    priority: 3
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄᴜꜱᴛᴏᴍ ᴡᴇᴀᴛʜᴇʀ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴄʜᴀɴɢᴇ ᴡᴏʀʟᴅ ᴡᴇᴀᴛʜᴇʀ ɪɴ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_PlayerWeather_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: %gpextention_getbyid_flags_parma_PlayerWeather_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ᴡᴇᴀᴛʜᴇʀ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} PlayerWeather rain'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    right_click_commands:
+      - '[player] gpguiflags unset {claimid} PlayerWeather false'
+      - '[close]'
+      - "[player] cupgrade {claimid}<delay=20>"
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_parma_PlayerWeather_{claimid}%"
+          output: "sun"
+  '14':
+    material: 'NAME_TAG'
+    slot: 23
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄʟᴀɪᴍ ɴᴀᴍᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴛᴏ ᴄʜᴀɴɢᴇ ɴᴀᴍᴇ ᴏꜰ'
+      - '   &7ᴛʜᴇ ᴄʟᴀɪᴍ. ᴛʜᴀᴛ ᴡɪʟʟ ʙᴇ ᴅɪꜱᴘʟᴀʏᴇᴅ'
+      - '   &7ᴏɴ ᴡᴀʀᴘ ʟɪꜱᴛ ɪꜰ ᴇɴᴀʙʟᴇᴅ. ᴛʜᴇ ɴᴀᴍᴇ ꜱʜᴏᴜʟᴅ ʙᴇ ᴜɴɪQᴜᴇ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimName_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_claimname_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} ClaimName clear'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimName_{claimid}%"
+          output: "true"
+  '14_1':
+    material: 'NAME_TAG'
+    slot: 23
+    priority: 1
+    update: true
+    display_name: '&7ᴄʟᴀɪᴍ ɴᴀᴍᴇ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴛᴏ ᴄʜᴀɴɢᴇ ɴᴀᴍᴇ ᴏꜰ'
+      - '   &7ᴛʜᴇ ᴄʟᴀɪᴍ. ᴛʜᴀᴛ ᴡɪʟʟ ʙᴇ ᴅɪꜱᴘʟᴀʏᴇᴅ'
+      - '   &7ᴏɴ ᴡᴀʀᴘ ʟɪꜱᴛ ɪꜰ ᴇɴᴀʙʟᴇᴅ. ᴛʜᴇ ɴᴀᴍᴇ ꜱʜᴏᴜʟᴅ ʙᴇ ᴜɴɪQᴜᴇ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimName_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} ClaimName <anvilreply>'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimName_{claimid}%"
+          output: "false"
+  '15':
+    material: 'PAINTING'
+    slot: 24
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄʟᴀɪᴍ ɪᴄᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴛᴏ ᴄʜᴀɴɢᴇ '
+      - '   &7ᴛʜᴇ ɪᴄᴏɴ ᴏꜰ ᴛʜᴇ ᴄʟᴀɪᴍ ᴅɪꜱᴘʟᴀʏᴇᴅ ɪɴ ɢᴜɪ.'
+      - '   &7ɪᴄᴏɴ ꜱʜᴏᴜʟᴅ ʙᴇ ᴀ ᴠᴀᴜʟɪᴅ ᴍᴀᴛᴇʀɪᴀʟ ɴᴀᴍᴇ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimIcon_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_claimicon_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} ClaimIcon clear'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimIcon_{claimid}%"
+          output: "true"
+  '15_1':
+    material: 'PAINTING'
+    slot: 24
+    priority: 1
+    update: true
+    display_name: '&7ᴄʟᴀɪᴍ ɪᴄᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴛᴏ ᴄʜᴀɴɢᴇ '
+      - '   &7ᴛʜᴇ ɪᴄᴏɴ ᴏꜰ ᴛʜᴇ ᴄʟᴀɪᴍ ᴅɪꜱᴘʟᴀʏᴇᴅ ɪɴ ɢᴜɪ.'
+      - '   &7ɪᴄᴏɴ ꜱʜᴏᴜʟᴅ ʙᴇ ᴀ ᴠᴀᴜʟɪᴅ ᴍᴀᴛᴇʀɪᴀʟ ɴᴀᴍᴇ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimIcon_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} ClaimIcon <anvilreply>'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimIcon_{claimid}%"
+          output: "false"
+  '16':
+    material: 'ENDER_PEARL'
+    slot: 25
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄʟᴀɪᴍ ᴡᴀʀᴘ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀᴅᴅ ᴛʜᴇ ᴄʟᴀɪᴍ ᴛᴏ ᴛʜᴇ ᴘᴜʙʟɪᴄ ᴡᴀʀᴘ.'
+      - '   &7ᴀɴʏᴏɴᴇ ᴄᴀɴ ᴛᴇʟᴇᴘᴏʀᴛ ᴛᴏ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimWarp_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_warplocation_{claimid}%'
+      - ''
+      - '&a&l| &2ʟᴇꜰᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ʟᴏᴄᴀᴛɪᴏɴ'
+      - '&a&l| &cʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    left_click_commands:
+      - '[player] gpguiflags set {claimid} ClaimWarp here'
+      - '[close]'
+    right_click_commands:
+      - '[player] gpguiflags set {claimid} ClaimWarp false'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimWarp_{claimid}%"
+          output: "true"
+  '16_1':
+    material: 'ENDER_PEARL'
+    slot: 25
+    priority: 1
+    update: true
+    display_name: '&7ᴄʟᴀɪᴍ ᴡᴀʀᴘ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀᴅᴅ ᴛʜᴇ ᴄʟᴀɪᴍ ᴛᴏ ᴛʜᴇ ᴘᴜʙʟɪᴄ ᴡᴀʀᴘ.'
+      - '   &7ᴀɴʏᴏɴᴇ ᴄᴀɴ ᴛᴇʟᴇᴘᴏʀᴛ ᴛᴏ ᴛʜᴇ ᴄʟᴀɪᴍ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimWarp_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} ClaimWarp true'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimWarp_{claimid}%"
+          output: "false"
+  '17':
+    material: 'FILLED_MAP'
+    slot: 28
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - 'DURABILITY;1'
+    display_name: '&7ᴄʟᴀɪᴍ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴀᴅᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ ᴛᴏ'
+      - '   &7ᴛʜᴇ ᴄʟᴀɪᴍ. ᴛʜᴀᴛ ᴡɪʟʟ ʙᴇ ᴅɪꜱᴘʟᴀʏᴇᴅ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimDescription_{claimid}%'
+      - '    &8• &7ᴄᴜʀʀᴇɴᴛ: &f%gpextention_getbyid_ClaimDescription_{claimid}%'
+      - ''
+      - '&a&l| &cᴄʟɪᴄᴋ ᴛᴏ ᴅɪꜱᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} ClaimDescription clear'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimDescription_{claimid}%"
+          output: "true"
+  '17_1':
+    material: 'FILLED_MAP'
+    slot: 28
+    priority: 1
+    update: true
+    display_name: '&7ᴄʟᴀɪᴍ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&2ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ'
+      - '   &7ᴀʙɪʟɪᴛʏ ᴀᴅᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ ᴛᴏ'
+      - '   &7ᴛʜᴇ ᴄʟᴀɪᴍ. ᴛʜᴀᴛ ᴡɪʟʟ ʙᴇ ᴅɪꜱᴘʟᴀʏᴇᴅ'
+      - ''
+      - '    &8• &7ꜱᴛᴀᴛᴜꜱ: &f%gpextention_getbyid_flags_isactive_ClaimDescription_{claimid}%'
+      - ''
+      - '&a&l| &2ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴀʙʟᴇ'
+    click_commands:
+      - '[player] gpguiflags set {claimid} ClaimDescription <anvilreply>'
+      - '[close]'
+    view_requirement:
+      requirements:
+        hastogglepvp:
+          type: string equals
+          input: "%gpextention_getbyid_flags_isactive_ClaimDescription_{claimid}%"
+          output: "false"
+
+# Downloaded from https://nullforums.net/resources/grief-prevention-gui-addon.6973/
+# 70228A6Y7ZUCF909N1MW4N3HJK94N6

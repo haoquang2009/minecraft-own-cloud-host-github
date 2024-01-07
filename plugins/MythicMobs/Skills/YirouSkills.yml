@@ -1,0 +1,1579 @@
+##############################################################
+##############################################################
+###                              Yirou Boss Skills                                        ###
+###                                 by Akyrion                                           ###
+###                                   v.  0.1                                                 ###
+##############################################################
+##############################################################
+
+yirouSpawnAnimation:
+  Skills:
+  - orbital{onTick=yirouSpawnCircleParticles;points=16;interval=1;duration=400;charges=0;r=4;Charges=100;oy=+1;rx=1.6;ry=1.6} @self
+  - delay 1
+  - orbital{onTick=yirouSpawnCircleParticles;points=16;interval=1;duration=400;charges=0;r=4;Charges=100;oy=+1;rx=1.6;ry=-1.6} @self
+  - delay 1
+  - sound{s=ambient.cave;v=20;p=0.3;repeat=10;repeatInterval=20} @PIR{r=100}
+  - projectile{onStart=yirouBallOfEnergy;onTick=yirouSpawnEnergyParticles;onEnd=yirouSpawnEnergyGoal;v=6;i=1;hR=2;vR=2;d=65;syo=+6;sso=+13.3;sfo=13.3;hnp=true;repeat=4;repeatInterval=70} @self
+  - projectile{onStart=yirouBallOfEnergy;onTick=yirouSpawnEnergyParticles;onEnd=yirouSpawnEnergyGoal;v=6;i=1;hR=2;vR=2;d=66;syo=+5;sso=-13.1;sfo=13.3;hnp=true;repeat=4;repeatInterval=70} @self
+  - projectile{onStart=yirouBallOfEnergy;onTick=yirouSpawnEnergyParticles;onEnd=yirouSpawnEnergyGoal;v=6;i=1;hR=2;vR=2;d=65;syo=+6;sso=+13.3;sfo=-13.3;hnp=true;repeat=4;repeatInterval=70} @self
+  - projectile{onStart=yirouBallOfEnergy;onTick=yirouSpawnEnergyParticles;onEnd=yirouSpawnEnergyGoal;v=6;i=1;hR=2;vR=2;d=65;syo=+5;sso=-13.1;sfo=-13.3;hnp=true;repeat=4;repeatInterval=70} @self
+  - delay 350
+  - effect:lightning{repeat=3;repeatInterval=10} @self
+  - delay 30
+  - summon{type=YirouBoss;amount=1;radius=1} @self
+  - remove @self
+
+yirouSpawnCircleParticles:
+  Skills:
+  - effect:particles{p=reddust;color=#3edbf0;amount=40;Size=1;hs=0.5;vs=0.5} @origin
+  - effect:particles{p=reddust;color=#88e0ef;amount=40;Size=1;hs=0.5;vs=0.5} @origin
+
+yirouSpawnEnergyParticles:
+  Skills:
+  - effect:particles{p=reddust;color=#99ddcc;amount=10;Size=0.5;hs=0.2;vs=0.1} @origin
+  - effect:particles{p=reddust;color=#77acf1;amount=10;Size=0.5;hs=0.2;vs=0.1} @origin
+
+yirouSpawnEnergyGoal:
+  Skills:
+  - effect:particlesphere{particle=reddust;color=#ffffff;amount=100;radius=1;fromorigin=true} 
+  - effect:particlesphere{particle=reddust;color=#04009a;amount=20;radius=0.5;fromorigin=true;repeat=16;repeatInterval=4}
+
+yirouBallOfEnergy:
+  Skills:
+  - sound{s=entity.blaze.shoot;v=20;p=0.1} @PIR{r=100}
+  - effect:particlesphere{particle=reddust;color=#ffffff;amount=20;radius=1;fromorigin=true;fromorigin=true;repeat=12;repeatInterval=5} @origin
+  - effect:particlesphere{particle=reddust;color=#3edbf0;amount=20;radius=1;fromorigin=true;fromorigin=true;repeat=12;repeatInterval=5} @origin
+
+###########################
+###       First Attack           ###
+###########################
+yirouFirstAttack:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=40}
+  - throw{velocity=10;velocityY=2} @PlayersInRadius{r=15}
+  - delay 20
+  - sound{s=entity.fox.teleport;v=10;p=0.2} @PIR{r=100}
+  - projectile{onEnd=yirouFirstAttackEnd;onTick=yirouFirstAttackParticles;onHit=yirouFirstAttackHit;v=40;i=1;hR=3;vR=3;tyo=-1;hnp=true} @target
+
+yirouFirstAttackParticles:
+  Skills:
+  - effect:particleorbital{r=2;points=32;t=60;i=1;particle=reddust;color=#77acf1;Size=0.5;amount=20;hs=0.1;vs=0.1;oy=+1;vz=3;vx=3} @origin
+  - teleport @origin
+
+yirouFirstAttackHit:
+  Skills:
+  - sound{s=block.scaffolding.place;v=10;p=0.5} @PIR{r=100}
+  - throw{velocity=0;velocityY=20} @EntitiesNearOrigin{r=5}
+  - effect:particleline{particle=reddust;color=#3edbf0;amount=50;fromOrigin=true;hs=1;vs=1;Size0.5} @Forward{f=0;y=20.0;sideOffset=0.0}
+  - effect:particleline{particle=reddust;color=#04009a;amount=50;fromOrigin=true;hs=1;vs=1;Size=0.5} @Forward{f=0;y=20.0;sideOffset=0.0}
+
+yirouFirstAttackEnd:
+  Skills:
+  - delay 20
+  - teleportto{location=144.5,36,-238.5;yaw=0;pitch=0} @self
+
+###########################
+###     Second Attack          ###
+###########################
+yirouSecondAttack:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=140}
+  - teleport @target
+  - effect:spin{duration=140;velocity=40} @self
+  - sound{s=entity.firework_rocket.blast;v=10;p=0.1;repeat=12;repeatInterval=10} @PIR{r=100}
+  - projectile{onTick=yirouSecondAttackParticles;onHit=yirouSecondAttackHit;v=40;i=1;hR=1;vR=1;hn=2;vn=2;d=10;repeat=65;repeatInterval=2;hnp=true} @Forward{f=4;y=1.0;sideOffset=0.0}
+  - delay 135
+  - projectile{onTick=yirouSecondAttackParticles;onHit=yirouSecondAttackHit;v=40;i=1;hR=2;vR=1;d=10} @Ring{radius=10;points=64;yoffset=0.5}
+
+yirouSecondAttackParticles:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=40;Size=1;hs=0.5;vs=0.2} @origin
+  - effect:particles{p=reddust;color=#88e0ef;amount=40;Size=1;hs=0.5;vs=0.2} @origin
+
+yirouSecondAttackHit:
+  Skills:
+  - effect:lightning @EntitiesNearOrigin{r=5}
+  - damage{amount=10;ignoreArmor=true} @EntitiesNearOrigin{r=5}
+
+
+###########################
+###      Third Attack           ###
+###########################
+yirouThirdAttack:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=150}
+  - stun{d=150;f=false;ai=true} @self
+  - throw{velocity=20;velocityY=3} @EntitiesNearOrigin{r=30}
+  - potion{type=SLOW;duration=140;level=3} @EntitiesNearOrigin{r=30}
+  - skill{s=yirouLightShield} @self
+  - delay 10
+  - sound{s=entity.firework_rocket.twinkle;v=10;p=0.2;repeat=2;repeatInterval=1} @PIR{r=100}
+  - skill{s=yirouThirdAttackE1}
+  - skill{s=yirouThirdAttackE2}
+  - delay 40
+  - sound{s=entity.firework_rocket.twinkle;v=10;p=0.2;repeat=2;repeatInterval=1} @PIR{r=100}
+  - skill{s=yirouThirdAttackE3}
+  - skill{s=yirouThirdAttackE4}
+  - delay 20
+  - sound{s=entity.firework_rocket.launch;v=10;p=0.2;repeat=2;repeatInterval=1} @PIR{r=100}
+  - delay 20
+  - sound{s=entity.firework_rocket.twinkle;v=10;p=0.2} @PIR{r=100}
+  - skill{s=yirouThirdAttackE5}
+  - delay 20
+  - sound{s=entity.firework_rocket.launch;v=10;p=0.2;repeat=2;repeatInterval=1} @PIR{r=100}
+  - delay 40
+  - sound{s=entity.firework_rocket.launch;v=10;p=0.2} @PIR{r=100}
+
+yirouThirdAttackE1:
+  Skills:
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2;syo=3} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.2;syo=3.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.4;syo=3.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.6;syo=3.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.8;syo=3.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=3.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.8;syo=4.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.6;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.4;syo=4.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.2;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=5.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.8;syo=4.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.6;syo=4.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.4;syo=4.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.2;syo=4.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.2;syo=3.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.4;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.6;syo=3.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.8;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=3.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.8;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.6;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.2;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.4;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.6} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=3.4} @self
+  
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.4;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.2;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.6;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.8;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.2} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=2.0;syo=3.8} @self
+
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=40;sE=false;sB=false;sfo=-1;sso=2.0;syo=4.0} @self
+  - delay 30
+  - projectile{onTick=yirouThirdAttackParticleThird;onHit=yirouThirdAttackProjectileDamage;v=20;;i=1;hR=1;vR=1;d=60;sE=true;sB=true;sfo=-1;sso=2.0;syo=4.0} @PlayersNearOrigin{r=50}
+
+yirouThirdAttackE2:
+  Skills:
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2;syo=3} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.2;syo=3.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.4;syo=3.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.6;syo=3.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.8;syo=3.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-3.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.8;syo=4.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.6;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.4;syo=4.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.2;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=5.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.8;syo=4.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.6;syo=4.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.4;syo=4.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.2;syo=4.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.2;syo=3.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.4;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.6;syo=3.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.8;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=3.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.8;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.6;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.2;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.4;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.6} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=3.4} @self
+  
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.4;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.2;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.6;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.8;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.2} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-2.0;syo=3.8} @self
+
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=40;sE=false;sB=false;sfo=-1;sso=-2.0;syo=4.0} @self
+  - delay 30
+  - projectile{onTick=yirouThirdAttackParticleThird;onHit=yirouThirdAttackProjectileDamage;v=20;;i=1;hR=1;vR=1;d=60;sE=true;sB=true;sfo=-1;sso=-2.0;syo=4.0} @PlayersNearOrigin{r=50}
+
+yirouThirdAttackE3:
+  Skills:
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5;syo=3} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.2;syo=3.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.4;syo=3.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.6;syo=3.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.8;syo=3.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=6.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.8;syo=4.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.6;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.4;syo=4.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.2;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=5.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.8;syo=4.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.6;syo=4.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.4;syo=4.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.2;syo=4.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.2;syo=3.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.4;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.6;syo=3.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.8;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=3.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.8;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.6;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.2;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.4;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.6} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=3.4} @self
+  
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.4;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.2;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.6;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=4.8;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.2} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=5.0;syo=3.8} @self
+
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=40;sE=false;sB=false;sfo=-1;sso=5.0;syo=4.0} @self
+  - delay 30
+  - projectile{onTick=yirouThirdAttackParticleThird;onHit=yirouThirdAttackProjectileDamage;v=20;;i=1;hR=1;vR=1;d=60;sE=true;sB=true;sfo=-1;sso=5.0;syo=4.0} @PlayersNearOrigin{r=50}
+
+yirouThirdAttackE4:
+  Skills:
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5;syo=3} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.2;syo=3.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.4;syo=3.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.6;syo=3.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.8;syo=3.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-6.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.8;syo=4.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.6;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.4;syo=4.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.2;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=5.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.8;syo=4.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.6;syo=4.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.4;syo=4.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.2;syo=4.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.2;syo=3.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.4;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.6;syo=3.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.8;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=3.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.8;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.6;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.2;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.4;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.6} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=3.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=3.4} @self
+  
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.4;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.2;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.6;syo=4.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-4.8;syo=4.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.2} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=3.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-5.0;syo=3.8} @self
+
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=40;sE=false;sB=false;sfo=-1;sso=-5.0;syo=4.0} @self
+  - delay 30
+  - projectile{onTick=yirouThirdAttackParticleThird;onHit=yirouThirdAttackProjectileDamage;v=20;;i=1;hR=1;vR=1;d=60;sE=true;sB=true;sfo=-1;sso=-5.0;syo=4.0} @PlayersNearOrigin{r=50}
+
+yirouThirdAttackE5:
+  Skills:
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0;syo=4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.2;syo=4.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.4;syo=4.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.6;syo=4.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.8;syo=4.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=1.0;syo=5.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.8;syo=5.2} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.6;syo=5.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.4;syo=5.6} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.2;syo=5.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=6.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.2;syo=5.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.4;syo=5.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.6;syo=5.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.8;syo=5.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-1.0;syo=5.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.8;syo=4.8} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.6;syo=4.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.4;syo=4.4} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.2;syo=4.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.0;syo=4.0} @self
+  - delay 1
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.8;syo=5.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.6;syo=5.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.8;syo=5.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.6;syo=5.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.8} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.6} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=4.2} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=4.4} @self
+  
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.4;syo=5.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.2;syo=5.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.4;syo=5.0} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=-0.2;syo=5.0} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.4} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.2} @self
+
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=4.6} @self
+  - projectile{onTick=yirouThirdAttackParticleOne;v=0;i=1;hR=1;vR=1;d=60;sE=false;sB=false;sfo=-1;sso=0.0;syo=4.8} @self
+
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=10;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.0} @self
+  - delay 5
+  - projectile{onTick=yirouThirdAttackParticleSecond;v=0;i=1;hR=1;vR=1;d=40;sE=false;sB=false;sfo=-1;sso=0.0;syo=5.0} @self
+  - delay 30
+  - projectile{onTick=yirouThirdAttackParticleThird;onHit=yirouThirdAttackProjectileDamage;v=20;;i=1;hR=1;vR=1;d=60;sE=true;sB=true;sfo=-1;sso=0.0;syo=5.0} @PlayersNearOrigin{r=50}
+
+yirouLightShield:
+  Skills:
+  - orbital{onTick=yirouLightShieldParticle;onHit=yirouLightShieldHit;points=8;interval=1;duration=200;vr=3;hr=3;charges=100}
+yirouLightShieldParticle:
+  Skills:
+  - effect:particles{p=reddust;amount=10;color=#88e0ef;speed=0;hS=0.2;vS=0.2;y=+1} @origin
+  - effect:particles{p=reddust;amount=10;color=#ffffff;speed=0;hS=0.2;vS=0.2;y=+1} @origin
+
+yirouLightShieldHit:
+  Skills:
+  - throw{velocity=30;velocityY=3} @EntitiesNearOrigin{r=10}
+
+yirouThirdAttackParticleOne:
+  Skills:
+  - effect:particles{p=reddust;color=#88e0ef;amount=10;Size=0.5;hs=0;vs=0} @origin
+
+yirouThirdAttackParticleSecond:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=20;Size=0.7;hs=0.1;vs=0.1} @origin
+
+yirouThirdAttackParticleThird:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=10;Size=0.5;hs=0;vs=0} @origin
+  - effect:particles{p=reddust;color=#04009a;amount=10;Size=0.3;hs=0.02;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#04009a;amount=10;Size=0.3;hs=0.04;vs=0} @origin
+  - effect:particles{p=reddust;color=#04009a;amount=20;Size=0.3;hs=0.04;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#04009a;amount=15;Size=0.3;hs=0.08;vs=0} @origin
+  - effect:particles{p=reddust;color=#88e0ef;amount=15;Size=0.3;hs=0.08;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#88e0ef;amount=30;Size=0.3;hs=0.14;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#88e0ef;amount=40;Size=0.3;hs=0.18;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#88e0ef;amount=50;Size=0.3;hs=0.22;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#88e0ef;amount=50;Size=0.3;hs=0.24;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#88e0ef;amount=50;Size=0.3;hs=0.28;vs=0} @origin
+  - delay 1
+  - effect:particles{p=reddust;color=#88e0ef;amount=50;Size=0.3;hs=0.32;vs=0} @origin
+
+yirouThirdAttackProjectileDamage:
+  Skills:
+  - sound{s= entity.chicken.egg;v=1;p=2} @PlayersNearOrigin{r=2}
+  - damage{amount=30} @PlayersNearOrigin{r=2}
+
+########################
+### Yirou Second Phase  ###
+########################
+yirouSecondPhase:
+  Skills:
+  - effect:particles{p=reddust;color=#88e0ef;amount=60;Size=1;hs=2;vs=2;fromorigin=true} @Sphere{radius=5;points=63;yoffset=1}
+  - potion{type=INVISIBILITY;duration=1460;level=1;p=false} @self
+  - teleportto{location=144.5,46,-238.5;yaw=0;pitch=0} @self 
+  - stun{d=800;f=true;ia=true} @self
+  - delay 2
+  - summon{type=yirouMinionsInvoqueLeft;amount=1;radius=1} @SelfLocation{y=5.0}
+  - summon{type=yirouMinionsInvoqueRight;amount=1;radius=1} @SelfLocation{y=5.0}
+  - delay 2
+  - skill{s=yirouMinionsParticlesTest3} @self
+  - sound{s=ambient.nether_wastes.additions;v=20;p=0.3;repeat=17;repeatInterval=20} @PIR{r=100}
+  - delay 140
+  - summon{type=yirouInvoqueSecondPhase;amount=1;radius=1} @origin
+  - delay 400
+  - potionclear{} @self
+  - delay 1
+  - projectile{onTick=yirouSecondPhaseEndingShootMain;onEnd=yirouSecondPhaseEndingFirstMain;v=20;i=1;hR=1;vR=1;d=260;g=0;sE=false;sB=true;sfo=0;sso=0.0;syo=0;mr=200} @Location{c=144.5,100,-238.5,0,0}
+  - delay 1
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary;onEnd=yirouSecondPhaseEndingFirst2;v=20;i=1;hR=1;vR=1;d=260;g=0;sE=false;sB=true;sfo=0;sso=20.0;syo=0;mr=200} @Location{c=108,100,-238.5,0,0}
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary;onEnd=yirouSecondPhaseEndingFirst3;v=20;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=0;sso=-20.0;syo=0;mr=200} @Location{c=180,100,-238.5,0,0}
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary;onEnd=yirouSecondPhaseEndingFirst4;v=20;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=20;sso=0.0;syo=0;mr=200} @Location{c=144.5,100,-202.5,0,0}
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary;onEnd=yirouSecondPhaseEndingFirst5;v=20;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=-20;sso=0.0;syo=0;mr=200} @Location{c=144.5,100,-275,0,0}
+  - delay 160
+  - effect:lightning @self
+  - summon{type=YirouBossTwo;amount=1;radius=1} @Self
+  - remove @self
+
+yirouSecondPhaseEndingShootMain:
+  Skills:
+  - teleport{} @origin
+  - effect:particles{p=reddust;color=#88e0ef;amount=10;Size=1;hs=0.2;vs=0.2} @origin
+  - effect:particles{p=reddust;color=#3edbf0;amount=10;Size=1;hs=0.2;vs=0.2} @origin
+  
+yirouSecondPhaseEndingShootSecondary:
+  Skills:
+  - effect:particles{p=reddust;color=#88e0ef;amount=1;Size=1;hs=0;vs=0} @origin
+  - effect:particles{p=reddust;color=#3edbf0;amount=1;Size=1;hs=0;vs=0} @origin
+
+yirouSecondPhaseEndingShootSecondary2:
+  Skills:
+  - effect:particles{p=reddust;color=#88e0ef;amount=10;Size=1;hs=0.5;vs=0.5} @origin
+  - effect:particles{p=reddust;color=#3edbf0;amount=10;Size=1;hs=0.5;vs=0.5} @origin
+
+yirouSecondPhaseEndingFirstMain:
+  Skills:
+  - projectile{onTick=yirouSecondPhaseEndingShootMain;onEnd=yirouSecondPhaseEndingSecond;v=20;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=0;sso=0.0;syo=0;mr=200} @Location{c=144.5,34,-238.5,0,0}
+
+yirouSecondPhaseEndingFirst2:
+  Skills:
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary2;onEnd=yirouSecondPhaseEndingSecond;v=40;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=0;sso=0.0;syo=0;mr=200} @Location{c=108.5,34,-238.5,0,0}
+
+yirouSecondPhaseEndingFirst3:
+  Skills:
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary2;onEnd=yirouSecondPhaseEndingSecond;v=40;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=0;sso=0.0;syo=0;mr=200} @Location{c=180.5,34,-238.5,0,0}
+
+yirouSecondPhaseEndingFirst4:
+  Skills:
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary2;onEnd=yirouSecondPhaseEndingSecond;v=40;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=0;sso=0.0;syo=0;mr=200} @Location{c=144.5,34,-202.5,0,0}
+
+yirouSecondPhaseEndingFirst5:
+  Skills:
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary2;onEnd=yirouSecondPhaseEndingSecond;v=40;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=true;sfo=0;sso=0.0;syo=0;mr=200} @Location{c=144.5,34,-275.5,0,0}
+
+yirouSecondPhaseEndingSecond:
+  Skills:
+  - projectile{onTick=yirouSecondPhaseEndingShootSecondary;v=10;i=1;hR=1;vR=1;d=160;g=0;sE=false;sB=false;sfo=0;sso=0.0;syo=0;fromorigin=true} @Ring{radius=10;points=64;yoffset=0}
+
+yirouMinionsParticlesTest:
+  Skills:
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=-6;y=15.0;sideOffset=0.0}
+  - delay 40
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=-8;y=15.0;sideOffset=0.0}
+  - delay 40
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=-10;y=15.0;sideOffset=0.0}
+  - delay 100
+  - remove @self
+
+yirouMinionsParticlesTest2:
+  Skills:
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=6;y=15.0;sideOffset=0.0}
+  - delay 40
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=8;y=15.0;sideOffset=0.0}
+  - delay 40
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=10;y=15.0;sideOffset=0.0}
+  - delay 100
+  - remove @self
+
+yirouMinionsParticlesTest3:
+  Skills:
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest2;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=6;y=10.0;sideOffset=0.0}
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest2;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=-6;y=10.0;sideOffset=0.0}
+  - delay 40
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest2;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=8;y=10.0;sideOffset=0.0}
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest2;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=-8;y=10.0;sideOffset=0.0}
+  - delay 40
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest2;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=10;y=10.0;sideOffset=0.0}
+  - projectile{onTick=yirouMinionsTestParticles;onEnd=yirouMinionsParticlesEndTest2;v=9;i=1;hR=1;vR=1;d=160;g=0.2;sE=false;sB=true;sfo=0;sso=0.0;syo=0.5} @Forward{f=-10;y=10.0;sideOffset=0.0}
+
+yirouMinionsTestParticles:
+  Skills:
+  - effect:particles{p=reddust;color=#88e0ef;amount=10;Size=0.5;hs=0.1;vs=0} @origin
+
+yirouMinionsTestParticles2:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=10;Size=0.5;hs=0.1;vs=0} @origin
+
+yirouMinionsParticlesEndTest:
+  Skills:
+  - summon{type=yirouArcher;amount=1;radius=1} @origin
+
+yirouMinionsParticlesEndTest2:
+  Skills:
+  - summon{type=yirouWarrior;amount=1;radius=1} @origin
+
+yirouMinionsAppearFirst:
+  Skills:
+  - projectile{onTick=yirouMinionsTestParticles;v=4;i=1;hR=2;vR=1;d=20;syo=0;fromorigin=true} @Ring{radius=2;points=32;yoffset=0}
+
+yirouMinionsAppearFirst2:
+  Skills:
+  - projectile{onTick=yirouMinionsTestParticles2;v=4;i=1;hR=2;vR=1;d=20;syo=0;fromorigin=true} @Ring{radius=2;points=32;yoffset=0}
+
+yirouSecondPhaseChargeAnimation:
+  Skills:
+  - orbital{onTick=yirouSpawnCircleParticles;points=16;interval=1;duration=400;charges=0;r=4;Charges=100;oy=+1;rx=1.6;ry=0.8} @self
+  - delay 1
+  - orbital{onTick=yirouSpawnCircleParticles;points=16;interval=1;duration=400;charges=0;r=4;Charges=100;oy=+1;rx=-1.6;ry=-0.8} @self
+  - delay 1
+  - orbital{onTick=yirouSpawnCircleParticles;points=16;interval=1;duration=400;charges=0;r=4;Charges=100;oy=+1;rx=0;ry=0} @self
+  - delay 1
+  - summon{type=yirouInvoqueSecondPhaseN;amount=1;radius=1} @origin
+  - summon{type=yirouInvoqueSecondPhaseS;amount=1;radius=1} @origin
+  - summon{type=yirouInvoqueSecondPhaseE;amount=1;radius=1} @origin
+  - summon{type=yirouInvoqueSecondPhaseO;amount=1;radius=1} @origin
+
+yirouSecondPhaseShootAnimation:
+  Skills:
+  - effect:particlesphere{particle=reddust;color=#3edbf0;amount=40;radius=1;repeat=20;repeatInterval=20} @self
+  - effect:particlesphere{particle=reddust;color=#ffffff;amount=20;radius=0.5;repeat=20;repeatInterval=20} @self
+  - delay 10
+  - sound{s=entity.generic.extinguish_fire;v=20;p=0.3;repeat=9;repeatInterval=40} @PIR{r=100}
+  - effect:particleline{particle=reddust;color=#3edbf0;amount=1;repeat=19;repeatInterval=20} @Parent
+
+#############################
+###      Yirou Fourth Attack     ###
+#############################
+yirouFourthAttack:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=100}
+  - stun{d=10;f=false;ia=true} @self
+  - delay 10
+  - jump{velocity=2} @self
+  - delay 20
+  - setgravity{g=false} @self
+  - delay 1
+  - stun{d=98;f=false;ia=true} @self
+  
+  - delay 10
+  - sound{s=block.bubble_column.bubble_pop;v=20;p=1;repeat=20;repeatInterval=1} @PIR{r=100}
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=5.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-5.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=6.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-4.0} @self
+  
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=4.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-4.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=5.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-3.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=4.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-4.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=5.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-3.0} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=3.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-3.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=4.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-2.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=3.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-3.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=4.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-2.0} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=2.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-2.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=3.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-1.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=2.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-2.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=3.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-1.0} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=1.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-1.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=2.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=-0.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=1.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-1.0;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=2.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=0.0} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=-0.5;syo=1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=1.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=0.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=80;sE=false;sB=false;sfo=2;sso=0.0;syo=1.0} @self
+  
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=0.5;syo=-2.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=1.0;syo=-1.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=1.5;syo=-1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=2.0;syo=-0.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=2.5;syo=0.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=3.0;syo=0.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-0.5;syo=-2.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-1.0;syo=-1.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-1.5;syo=-1.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-2.0;syo=-0.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-2.5;syo=0.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-3.0;syo=0.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=0.5;syo=4.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=1.0;syo=3.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=1.5;syo=3.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=2.0;syo=2.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=2.5;syo=2.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=3.0;syo=1.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-0.5;syo=4.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-1.0;syo=3.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-1.5;syo=3.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-2.0;syo=2.5} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-2.5;syo=2.0} @self
+  - projectile{onTick=yirouFourthAttackParticleOne;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=-3.0;syo=1.5} @self
+
+  - delay 1
+  - projectile{onTick=yirouFourthAttackParticleCore;v=0;i=1;hR=1;vR=1;d=76;sE=false;sB=false;sfo=2;sso=0.0;syo=1.0} @self
+  - delay 10
+  - sound{s=entity.ghast.shoot;v=20;p=0.7;repeat=3;repeatInterval=20} @PIR{r=100}
+  - projectile{onTick=yirouFourthAttackParticleSecond;onHit=yirouFourthAttackArrowHit;v=20;i=1;hnp=true;hR=1;vR=1;d=120;mr=120;sE=true;sB=true;sfo=2;sso=0.0;syo=1.0;repeat=3;repeatInterval=20} @PlayerLocationsInRadius{r=50}
+
+  - delay 100
+  - setgravity{g=true} @self
+  - fly{duration=60} @self
+  
+  - delay 1
+  - sound{s=entity.horse.gallop;v=20;p=0.5} @PIR{r=100}
+  - projectile{onTick=yirouFourthAttackParticleEnd;onHit=yirouFourthAttackArrowHit;v=30;i=1;hnp=true;hR=1;vR=1;d=120;mr=120;sE=true} @PlayersInRadius{r=50;limit=1;sort=NEAREST}
+
+yirouFourthAttackParticleOne:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=4;Size=0.7;hs=0.1;vs=0.1} @origin
+  - effect:particles{p=reddust;color=#88e0ef;amount=8;Size=0.7;hs=0.1;vs=0.1} @origin
+
+yirouFourthAttackParticleEnd:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=4;Size=0.7;hs=0.1;vs=0.1} @origin
+  - effect:particles{p=reddust;color=#88e0ef;amount=8;Size=0.7;hs=0.1;vs=0.1} @origin
+  - teleport{} @origin
+
+yirouFourthAttackParticleCore:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=20;Size=1;hs=0.3;vs=0.3} @origin
+
+yirouFourthAttackParticleSecond:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=20;Size=1;hs=0.1;vs=0.1} @origin
+
+yirouFourthAttackArrowHit:
+  Skills:
+  - explosion{yield=8} @Trigger
+  - effect:smoke @Trigger
+  - effect:particles{particle=flame;amount=200;hS=4;vS=4;speed=5;fromorigin=true} @Trigger
+  - effect:particles{particle=crimson_spore;amount=200;hS=4;vS=4;speed=5;fromorigin=true} @Trigger
+
+############################
+###      Yirou Fifth Attack     ###
+############################
+yirouFifthAttack:
+  Skills:
+  - stun{d=10;f=false;ia=true} @self
+  - delay 10
+  - sound{s=entity.ender_dragon.shoot;v=20;p=0.1;repeat=2;repeatInterval=40} @PIR{r=100}
+  - projectile{onTick=yirouFifthAttackParticleOne;onHit=yirouFifthAttackChain;v=6;i=1;hR=2;vR=2;d=120;mr=120;sE=true;repeat=2;repeatInterval=40;syo=1;tyo=1} @PlayersInRadius{r=50;limit=1;sort=NEAREST}
+
+yirouFifthAttackParticleOne:
+  Skills:
+  - effect:particlesphere{particle=reddust;color=#ffffff;radius=1;amount=40} @origin
+
+yirouFifthAttackChain:
+  Skills:
+  - projectile{onTick=yirouFifthAttackParticleTwo;onHit=yirouFifthAttackChainHit;v=40;i=1;hR=1;vR=1;d=120;mr=120;sE=true} @trigger
+
+yirouFifthAttackParticleTwo:
+  Skills:
+  - effect:particles{p=reddust;color=#04009a;amount=40;Size=1;hs=0.3;vs=0.3} @origin
+
+yirouFifthAttackChainHit:
+  Skills:
+  - explosion{yield=10} @Trigger
+
+#############################
+###        Yirou Sixth Attack     ###
+#############################
+yirouSixthAttack:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=150}
+  - stun{d=150;f=false} @self
+  - delay 1
+  - effect:particleorbital{r=10;points=128;t=200;i=1;particle=flame;amount=2} @self
+  - delay 1
+  - sound{s=entity.experience_orb.pickup;v=20;p=2;repeat=53;repeatInterval=4} @PIR{r=100}
+  - projectile{onTick=yirouSixthAttackParticleOne;onHit=yirouSixthAttackHit;v=7;i=1;hR=1;vR=1;d=120;mr=120;sE=true;sB=true;hnp=true;repeat=6;repeatInterval=20;syo=1;g=0.15;tyo=10} @Sphere{radius=3;points=6;yoffset=2}
+
+yirouSixthAttackParticleOne:
+  Skills:
+  - effect:particles{p=reddust;color=#88e0ef;amount=10;Size=0.5;hs=0;vs=0} @origin
+
+yirouSixthAttackHit:
+  Skills:
+  - explosion{yield=3} @Trigger
+  - effect:smoke @Trigger
+  - effect:particles{particle=soul_fire_flame;amount=200;hS=4;vS=4;speed=5;fromorigin=true} @Trigger
+  - effect:particles{particle=crimson_spore;amount=200;hS=4;vS=4;speed=5;fromorigin=true} @Trigger
+
+###############################
+###    Yirou Seventh Attack        ###
+###############################
+yirouSeventhAttack:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=200}
+  - setgravity{g=false} @self
+  - delay 20
+  - teleportto{location=95.5,63,-238.5;yaw=0;pitch=0} @self
+  - delay 1
+  - effect:lightning @self
+  - delay 10
+  - stun{d=200;f=false} @self
+  - summon{type=yirouMinionsInvoqueLeft;amount=1;radius=1} @forward{f=5}
+  - summon{type=yirouMinionsInvoqueRight;amount=1;radius=1} @forward{f=5}
+  - effect:lightning{repeat=6;repeatInterval=40} @self
+  - delay 1
+  - projectile{onTick=yirouSeventhAttackParticles;onHit=yirouSeventhAttackHit;v=12;i=1;hR=2;vR=2;d=120;mr=120;sE=true;repeat=6;repeatInterval=40;syo=1;tyo=1;g=0.3} @Location{c=145.5,100,-261.5,0,0}
+  - delay 1
+  - projectile{onTick=yirouSeventhAttackParticles;onHit=yirouSeventhAttackHit;v=12;i=1;hR=2;vR=2;d=120;mr=120;sE=true;repeat=6;repeatInterval=40;syo=1;tyo=1;g=0.3} @Location{c=128.5,100,-238.5,0,0}
+  - delay 1
+  - projectile{onTick=yirouSeventhAttackParticles;onHit=yirouSeventhAttackHit;v=12;i=1;hR=2;vR=2;d=120;mr=120;sE=true;repeat=6;repeatInterval=40;syo=1;tyo=1;g=0.3} @Location{c=144.5,100,-218.5,0,0}
+  - delay 1
+  - projectile{onTick=yirouSeventhAttackParticles;onHit=yirouSeventhAttackHit;v=12;i=1;hR=2;vR=2;d=120;mr=120;sE=true;repeat=6;repeatInterval=40;syo=1;tyo=1;g=0.3} @Location{c=161.5,100,-232.5,0,0}
+  - delay 1
+  - projectile{onTick=yirouSeventhAttackParticles;onHit=yirouSeventhAttackHit;v=12;i=1;hR=2;vR=2;d=120;mr=120;sE=true;repeat=6;repeatInterval=40;syo=1;tyo=1;g=0.3} @Location{c=163.5,100,-249.5,0,0}
+  - delay 1
+  - projectile{onTick=yirouSeventhAttackParticles;onHit=yirouSeventhAttackHit;v=12;i=1;hR=2;vR=2;d=120;mr=120;sE=true;repeat=6;repeatInterval=40;syo=1;tyo=1;g=0.3} @target
+  - delay 220
+  - teleportto{location=108.5,35,-238.5;yaw=0;pitch=0} @self
+  - delay 10
+  - setgravity{g=true} @self
+  - effect:lightning @self
+  
+yirouSeventhAttackParticles:
+  Skills:
+  - effect:particlesphere{particle=reddust;color=#ffffff;radius=1;amount=20} @origin
+  - effect:particlesphere{particle=reddust;color=#88e0ef;radius=1;amount=20} @origin
+
+yirouSeventhAttackHit:
+  Skills:
+  - potion{type=SLOW;duration=100;level=4} @Trigger
+  - potion{type=BLINDNESS;duration=200;level=1} @Trigger
+  - explosion{yield=8} @Trigger
+  - effect:smoke @Trigger
+  - effect:particles{particle=flame;amount=200;hS=4;vS=4;speed=5;fromorigin=true} @Trigger
+  - effect:particles{particle=crimson_spore;amount=200;hS=4;vS=4;speed=5;fromorigin=true} @Trigger
+  - summon{type=yirouWarrior;amount=3;radius=2} @Trigger
+
+yirouBasicLongAttack1:
+  Conditions:
+    - playersinradius{a=>1;r=3} false
+  Skills:
+  - sound{s=entity.witch.throw;v=10;p=0.2} @PIR{r=100}
+  - projectile{onTick=yirouLongAttackParticles;onHit=yirouLongAttackHit;v=16;i=1;hR=1;vR=1;d=120;mr=120;sE=true;syo=2;sso=1;g=0.1} @PlayersInRadius{r=20;limit=1;sort=NEAREST}
+
+yirouBasicLongAttack2:
+  Conditions:
+    - playersinradius{a=>1;r=3} false
+  Skills:
+  - sound{s=entity.witch.throw;v=10;p=0.2} @PIR{r=100}
+  - projectile{onTick=yirouLongAttackParticles;onHit=yirouLongAttackHit;v=26;i=1;hR=1;vR=1;d=120;mr=120;sE=true;syo=2;sso=-1;g=0.1} @PlayersInRadius{r=30;limit=2;sort=NEAREST}
+
+yirouBasicLongAttack3:
+  Conditions:
+    - playersinradius{a=>1;r=3} false
+  Skills:
+  - sound{s=entity.witch.throw;v=10;p=0.2} @PIR{r=100}
+  - projectile{onTick=yirouLongAttackParticles;onHit=yirouLongAttackHit;v=36;i=1;hR=1;vR=1;d=120;mr=120;sE=true;syo=3;sso=0;g=0.1} @PlayersInRadius{r=50;limit=3;sort=NEAREST}
+
+yirouLongAttackParticles:
+  Skills:
+  - effect:particles{particle=reddust;color=#88e0ef;amount=5;Size=0.5;hS=0.1;vS=0.1} @Origin
+  - effect:particles{particle=reddust;color=#ffffff;amount=5;Size=0.5;hS=0.1;vS=0.2} @Origin
+
+yirouLongAttackHit:
+  Skills:
+  - damagepercent{percent=0.5}
+  - potion{type=SLOW;duration=60;level=4}
+
+########################
+###    Skills Phase II      ###
+########################
+
+########################
+### Yiroun Stun Bounce  ###
+########################
+yirouChainStun:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=20}
+  - chain{
+      bounces=5;
+      bounceRadius=20;
+      bounceDelay=1;
+      hitSelf=false;
+      hitPlayers=true; 
+      hitNonPlayers=true;
+      hitTarget=true;
+      onBounce=[
+        - effect:particleline{p=reddust;color=#54B7E9;hs=0.5;vs=0.5;fromOrigin=true}
+        - effect:particleline{p=reddust;color=#04009a;hs=0.5;vs=0.5;fromOrigin=true}
+        - teleport
+        - stun{d=200;f=false}
+        - effect:particleorbital{r=2;points=16;t=200;i=1;vy=20;particle=reddust;color=#54B7E9;y=+1}
+      ];
+      bounceConditions=[
+        - inlineofsight
+      ];
+    } @target
+
+#########################
+### Yirou Totem Of Light  ###
+#########################
+yirouRayOfLight:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=20}
+  - summon{type=yirouTotemRayOfLight;amount=1;radius=1} @Location{c=144.5,34,-226.5,0,0}
+  - summon{type=yirouTotemRayOfLight;amount=1;radius=1} @Location{c=144.5,34,-250.5,0,0}
+
+yirouRayOfLightStart:
+  Skills:
+  - orbital{onTick=yirouRayOfLightDraw;onEnd=yirouRayOfLightEnd;points=8;interval=1;duration=400;vr=0;hr=0;charges=0;r=2} @self
+  - setvariable{var=caster.RayOfLightBarProgress;type=INTEGER;value=0} @self
+  - barCreate{name="RayOfLightOrb";display="Orb Objective:&f&l 0 / 10";value=0.0;color=PURPLE;style=SOLID;range=5} @self
+
+yirouRayOfLightDraw:
+  Skills:
+  - effect:particles{p=reddust;color=#FF00FF;amount=20;speed=4;hs=0.2;vs=0.2;y=+1.5} @self
+  - effect:particles{p=reddust;color=#54B7E9;amount=20;speed=4;hs=0.2;vs=0.2;y=+1.5}  @self
+  - effect:particlering{p=reddust;color=#54B7E9;radius=2;points=64;amount=1;hS=0;vS=0;cd=0.2} @self
+  
+yirouRayOfLightEnd:
+  Skills:
+  - projectile{oT=yirouLightOfEndCircle;oH=yirouLightOfEndCircleHit;i=1;hR=3;vR=0.5;d=120;mr=50;v=24;syo=0.1;sfo=0;hp=true;hnp=false;sE=false;sB=false;hs=true;hfs=0.1} @Ring{radius=10;points=64;yoffset=0}
+  - delay 140
+  - barRemove{name="RayOfLightOrb"} @self
+  - remove @self
+  
+
+yirouLightOfEndCircleHit:
+  Skills:
+  - blackscreen{d=60} 
+  - damage{a=20}
+  - potion{type=CONFUSION;duration=400;level=4} 
+
+yirouLightOfEndCircle:
+  Skills:
+  - effect:particles{p=reddust;color=#54B7E9;amount=25;Size=0.4;hs=1;vs=0} @origin
+  
+KillMePlease:
+  Skills:
+  - variablesubtract{var=caster.KillMe;amount=1} @self
+  - sendtitle{title="&c&l<caster.var.KillMe>";subtitle="Hits Left!";d=10} @PlayersInRadius{r=10}
+  - skill{s=canYouKillMe}
+  - variableadd{var=caster.RayOfLightBarProgress;amount=1} @self
+  - delay 1
+  - skill{s=laestupidabarranofuncionaP2}
+
+canYouKillMe:
+  Conditions:
+  - variableEquals{var=caster.KillMe;value=0} true
+  Skills:
+  - barRemove{name="RayOfLightOrb"} @self
+  - sound{s=entity.generic.explode;v=1;p=2} @PIR{r=10}
+  - effect:particles{p=reddust;color=#FF00FF;amount=10;speed=1;hs=2;vs=2;y=+0.5;fromorigin=true} @Sphere{radius=2;points=64;yoffset=1}
+  - effect:particles{p=reddust;color=#54B7E9;amount=10;speed=1;hs=2;vs=2;y=+0.5;fromorigin=true} @Sphere{radius=2;points=64;yoffset=1}
+  - remove @self
+
+laestupidabarranofuncionaP2:
+  Skills:
+  - skill{s=2laestupidabarracarga1} 
+  - skill{s=2laestupidabarracarga2} 
+  - skill{s=2laestupidabarracarga3} 
+  - skill{s=2laestupidabarracarga4} 
+  - skill{s=2laestupidabarracarga5} 
+  - skill{s=2laestupidabarracarga6} 
+  - skill{s=2laestupidabarracarga7} 
+  - skill{s=2laestupidabarracarga8} 
+  - skill{s=2laestupidabarracarga9} 
+  - skill{s=2laestupidabarracarga10} 
+
+2laestupidabarracarga1:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=1} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.1;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga2:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=2} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.2;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga3:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=3} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.3;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga4:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=4} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.4;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga5:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=5} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.5;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga6:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=6} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.6;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga7:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=7} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.7;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga8:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=8} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.8;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga9:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=9} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=0.9;color=PURPLE;Style=SOLID} @self
+
+2laestupidabarracarga10:
+  Conditions:
+  - variableEquals{var=caster.RayOfLightBarProgress;value=10} true
+  Skills:
+  - barSet{name="RayOfLightOrb";display="Orb Objective:&f&l <caster.var.RayOfLightBarProgress> / 10";value=1.0;color=PURPLE;Style=SOLID} @self
+######################
+###   Yirou Invincible   ###
+######################
+yirouFlowerOfThunder:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=40}
+  - teleportto{location=144.5,46,-238.5;yaw=0;pitch=0} @self 
+  - stun{d=40} @self
+  - sendtitle{title="&c&lKill them!";subtitle="or you won't kill me";d=40} @PlayersInRadius{r=100}
+  - delay 1
+  - projectile{oT=[- particles{particle=reddust;color=#54B7E9;Size=0.5;a=20;hs=0.2;vs=0.1;s=0;y=0} @origin - skill{s=FlowerOfThunderLeaf;cd=1.5} ];i=1;v=8;d=60;mr=100;g=-0.1;syo=16} @Forward{f=100;y=0.0;sideOffset=0.0}
+  - projectile{oT=[- particles{particle=reddust;color=#54B7E9;Size=0.5;a=20;hs=0.2;vs=0.1;s=0;y=0} @origin - skill{s=FlowerOfThunderLeaf;cd=1.5} ];i=1;v=8;d=60;mr=100;g=-0.1;syo=16} @Forward{f=-100;y=0.0;sideOffset=0.0}
+  - projectile{oT=[- particles{particle=reddust;color=#54B7E9;Size=0.5;a=20;hs=0.2;vs=0.1;s=0;y=0} @origin - skill{s=FlowerOfThunderLeaf;cd=1.5} ];i=1;v=8;d=60;mr=100;g=-0.1;syo=16} @Forward{f=0;y=0.0;sideOffset=100.0}
+  - projectile{oT=[- particles{particle=reddust;color=#54B7E9;Size=0.5;a=20;hs=0.2;vs=0.1;s=0;y=0} @origin - skill{s=FlowerOfThunderLeaf;cd=1.5} ];i=1;v=8;d=60;mr=100;g=-0.1;syo=16} @Forward{f=0;y=0.0;sideOffset=-100.0}
+  - summon{type=yirouInmortalControl;amount=1;radius=1} @self
+  - delay 80
+  - teleport @PIR{r=100;limit=1;sort=NEAREST}
+  
+
+FlowerOfThunderLeaf:
+  Skills:
+  - projectile{oT=[- particles{particle=reddust;color=#54B7E9;a=20;Size=0.5;hs=0.2;vs=0.1;s=0;y=0} @origin ];i=1;v=2;d=200;mr=100;g=0.1;syo=0;fromOrigin=true;hp=true;hR=1;vr=2;onEnd=[ -effect:lightning @origin -summon{type=yirouInmortal;amount=1;radius=1;sip=true} @origin ]} @origin{y=-20} 
+
+yirouNoDamageOn:
+  Skills:
+  - setNoDamageTicks{ticks=20000;delay=1} @Parent
+
+yirouNoDamageOff:
+  Conditions:
+   - variableEquals{var=world.YirouInmortal;value=0} true
+  Skills:
+  - setNoDamageTicks{ticks=10;delay=1} @Parent
+  - signal{s=barSRemove} @Parent
+
+laestupidabarranofunciona3:
+  Skills:
+  - skill{s=3laestupidabarracarga1} 
+  - skill{s=3laestupidabarracarga2} 
+  - skill{s=3laestupidabarracarga3} 
+  - skill{s=3laestupidabarracarga4} 
+  - skill{s=3laestupidabarracarga5} 
+  - skill{s=3laestupidabarracarga6} 
+  - skill{s=3laestupidabarracarga7} 
+  - skill{s=3laestupidabarracarga8} 
+  - skill{s=3laestupidabarracarga9} 
+ 
+
+3laestupidabarracarga1:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=1} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.2;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga2:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=2} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.3;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga3:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=3} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.4;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga4:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=4} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.5;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga5:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=5} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.6;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga6:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=6} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.7;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga7:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=7} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.8;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga8:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=8} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=0.9;color=RED;Style=SOLID} @Self
+
+3laestupidabarracarga9:
+  Conditions:
+  - variableEquals{var=world.YirouInmortalBar;value=9} true
+  Skills:
+  -  barSet{name="ServantsCountBar";display="Servants Killed :&f&l <world.var.YirouInmortalBar> / 9";value=1.0;color=RED;Style=SOLID} @Self
+
+########################
+### Yirou Electric Totem ###
+########################
+yirouElectricTotemBorn:
+  Skills:
+  - setvariable{var=caster.ElectricHits;type=INTEGER;value=26} @self
+  - setvariable{var=caster.ElectricHitsBarProgress;type=INTEGER;value=0} @self
+  - barCreate{name="ElectricTotemLife";display="Totem Objective :&f&l 0 / 25";value=0.0;color=GREEN;style=SOLID;range=5} @self
+  - stun{d=2400} @self
+  - delay 2400
+  - barRemove{name="ElectricTotemLife"} @self
+  - remove @self
+
+yirouElectricTotemWillDie:
+  Skills:
+  - variablesubtract{var=caster.ElectricHits;amount=1} @self
+  - delay 1
+  - variableadd{var=caster.ElectricHitsBarProgress;amount=1} @self
+  - delay 1
+  - skill{s=laestupidabarranofunciona}
+  - sendtitle{title="&b&l<caster.var.ElectricHits>";subtitle="Hits Left!";d=10} @PlayersInRadius{r=10}
+  - skill{s=canYouKillMeElectric}
+
+canYouKillMeElectric:
+  Conditions:
+  - variableEquals{var=caster.ElectricHits;value=0} true
+  Skills:
+  - barRemove{name="ElectricTotemLife"} @self
+  - sound{s=item.totem.use;v=1;p=0.1} @PIR{r=10}
+  - effect:particles{p=reddust;color=#04009a;amount=10;speed=1;hs=2;vs=2;y=+0.5;fromorigin=true} @Sphere{radius=3;points=64;yoffset=1}
+  - effect:particles{p=reddust;color=#54B7E9;amount=10;speed=1;hs=2;vs=2;y=+0.5;fromorigin=true} @Sphere{radius=3;points=64;yoffset=1}
+  - remove @self
+
+yirouElectricTotemStart:
+  Skills:
+  - orbital{onTick=yirouElectricTotemDraw;points=8;interval=1;duration=2400;vr=0;hr=0;charges=0;r=2} @self
+
+yirouElectricTotemDraw:
+  Skills:
+  - pull{v=1;to=true} @PIR{r=7}
+  - effect:particles{p=reddust;color=#04009a;amount=20;hs=0.4;vs=0.4;y=+3} @self
+  - effect:particles{p=reddust;color=#54B7E9;amount=20;hs=0.4;vs=0.4;y=+3} @self
+  - effect:particles{p=reddust;color=#04009a;Size=0.8;amount=40;hs=0.1;vs=0.8;y=+1.5} @self
+  - effect:particlering{p=reddust;color=#54B7E9;radius=6;points=64;amount=1;hS=0;vS=0;cd=0.3} @self
+  - sound{s=item.trident.thunder;v=1;p=2;cd=2} @PIR{r=8}
+  - skill{s=yirouElectricTotemThorns;cd=2}
+  - potion{type=SLOW;duration=2;level=2} @PIR{r=60}
+  - potion{type=CONFUSION;duration=2;level=5} @PIR{r=60}
+
+laestupidabarranofunciona:
+  Skills:
+  - skill{s=laestupidabarracarga1} 
+  - skill{s=laestupidabarracarga2} 
+  - skill{s=laestupidabarracarga3} 
+  - skill{s=laestupidabarracarga4} 
+  - skill{s=laestupidabarracarga5} 
+  - skill{s=laestupidabarracarga6} 
+  - skill{s=laestupidabarracarga7} 
+  - skill{s=laestupidabarracarga8} 
+  - skill{s=laestupidabarracarga9} 
+  - skill{s=laestupidabarracarga10} 
+  - skill{s=laestupidabarracarga11} 
+  - skill{s=laestupidabarracarga12} 
+  - skill{s=laestupidabarracarga13} 
+  - skill{s=laestupidabarracarga14} 
+  - skill{s=laestupidabarracarga15} 
+  - skill{s=laestupidabarracarga16} 
+  - skill{s=laestupidabarracarga17} 
+  - skill{s=laestupidabarracarga18} 
+  - skill{s=laestupidabarracarga19} 
+  - skill{s=laestupidabarracarga20} 
+  - skill{s=laestupidabarracarga21} 
+  - skill{s=laestupidabarracarga22} 
+  - skill{s=laestupidabarracarga23} 
+  - skill{s=laestupidabarracarga24} 
+  - skill{s=laestupidabarracarga25} 
+
+laestupidabarracarga1:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=1} true
+  Skills:
+  -  barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.04;color=GREEN;Style=SOLID} @Parent
+
+laestupidabarracarga2:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=2} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.08;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga3:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=3} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.12;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga4:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=4} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.16;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga5:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=5} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.2;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga6:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=6} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.24;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga7:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=7} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.28;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga8:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=8} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.32;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga9:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=9} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.36;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga10:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=10} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.4;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga11:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=11} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.44;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga12:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=12} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.48;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga13:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=13} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.52;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga14:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=14} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.56;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga15:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=15} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.6;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga16:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=16} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.64;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga17:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=17} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.68;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga18:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=18} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.72;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga19:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=19} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.76;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga20:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=20} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.8;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga21:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=21} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.84;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga22:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=22} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.88;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga23:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=23} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.92;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga24:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=24} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=0.96;color=GREEN;Style=SOLID} @self
+
+laestupidabarracarga25:
+  Conditions:
+  - variableEquals{var=caster.ElectricHitsBarProgress;value=25} true
+  Skills:
+  - barSet{name="ElectricTotemLife";display="Totem Objective :&f&l <caster.var.ElectricHitsBarProgress> / 25";value=1.0;color=GREEN;Style=SOLID} @self
+
+yirouElectricTotemThorns:
+  Skills:
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=1;sso=0;syo=1} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=1.5;sso=0;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=2;sso=0;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=2.5;sso=0;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=3;sso=0;syo=2.2} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=3.5;sso=0;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=4;sso=0;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=4.5;sso=0;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=5;sso=0;syo=1.3} @self
+
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-1;sso=0;syo=1} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-1.5;sso=0;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-2;sso=0;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-2.5;sso=0;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-3;sso=0;syo=2.2} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-3.5;sso=0;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-4;sso=0;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-4.5;sso=0;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=-5;sso=0;syo=1.3} @self
+
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=1;syo=2.2} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=1.5;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=2;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=2.5;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=3;syo=1} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=3.5;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=4;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=5.5;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=5;syo=1.9} @self
+
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-1;syo=2.2} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-1.5;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-2;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-2.5;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-3;syo=1} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-3.5;syo=1.3} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-4;syo=1.6} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-4.5;syo=1.9} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=3;hs=0.1;vs=0} @origin ];onHit=[ - potion{type=SLOW;duration=100;level=2} - potion{type=CONFUSION;duration=100;level=2} - damage{amount=4} ];v=0;i=1;hR=1;vR=1;d=20;sE=false;sB=false;sfo=0;sso=-5;syo=1.9} @self
+
+yirouInvoqueElectricTotem:
+  Conditions:
+  - mobsInRadius{types=yirouElectricTotem;amount=0to3;radius=100} true
+  Skills:
+  - summon{type=yirouElectricTotem;amount=1;radius=1} @Location{c=144.5,34,-214.5,0,0}
+  - summon{type=yirouElectricTotem;amount=1;radius=1} @Location{c=144.5,34,-262.5,0,0}
+  - summon{type=yirouElectricTotem;amount=1;radius=1} @Location{c=120.5,34,-238.5,0,0}
+
+###########################
+### Yirou Charge Instakill    ###
+###########################
+yirouInstantKill:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=120}
+  - sendtitle{title="&c&lHit Me";subtitle="if you can!";d=20} @PlayersInRadius{r=100}
+  - delay 20
+  - Aura{auraName=ElectroShock;onStart=ElectroShockStart;onTick=ElectroShockTick;onEnd=ElectroShockCast;interval=20;duration=140;CancelOnTakeDamage=true} @self
+  - delay 160
+  - teleportto{location=144.5,36,-238.5;yaw=0;pitch=0} @self
+
+ElectroShockStart:
+  Skills:
+  - setvariable{var=caster.IllKillYou;type=INTEGER;value=0} @self 
+  - setvariable{var=caster.IllKillYouTwo;type=INTEGER;value=6} @self 
+  - teleportto{location=144.5,46,-238.5;yaw=0;pitch=0} @self 
+  - delay 1
+  - stun{d=160;f=false} @self
+
+ElectroShockCast:
+  Skills:
+  - skill{s=yirouSavedYou}
+  - skill{s=yirouKillEveryThing}
+
+yirouSavedYou:
+  Conditions:
+  - variableInRange{var=caster.IllKillYou;value=<6} true
+  Skills:
+  - sendtitle{title="&c&lYou Saved";subtitle="for now...";d=10} @PlayersInRadius{r=100}
+
+yirouKillEveryThing:
+  Conditions:
+  - variableEquals{var=caster.IllKillYou;value=6} true
+  Skills:
+  - damage{amount=200;ia=true} @PIR{r=100}
+  - effect:lightning @PIR{r=100}
+
+ElectroShockTick:
+  Skills:
+  - variableadd{var=caster.IllKillYou;amount=1} @self
+  - variablesubtract{var=caster.IllKillYouTwo;amount=1} @self
+  - sendtitle{title="&c&l<caster.var.IllKillYouTwo>";subtitle="";d=10} @PlayersInRadius{r=100}
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=1;hs=0.1;vs=0} @origin ];v=4;i=1;hR=1;vR=1;d=50;sE=true;sB=false;sfo=10;sso=0;syo=5} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=1;hs=0.1;vs=0} @origin ];v=4;i=1;hR=1;vR=1;d=50;sE=true;sB=false;sfo=-10;sso=0;syo=5} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=1;hs=0.1;vs=0} @origin ];v=4;i=1;hR=1;vR=1;d=50;sE=true;sB=false;sfo=0;sso=10;syo=5} @self
+  - projectile{onTick=[ - effect:particles{p=reddust;color=#54B7E9;amount=1;hs=0.1;vs=0} @origin ];v=4;i=1;hR=1;vR=1;d=50;sE=true;sB=false;sfo=0;sso=-10;syo=5} @self
+
+######################
+###   Yirou Missile       ###
+######################
+yirouLightMissile:
+  Skills:
+  - missile{ot=yirouLightMissileTick;oh=YirouLightMissileHit;v=4;i=1;hR=1;vR=1;mr=100;md=160;in=0.75;syo=20;repeat=2;repeatInterval=40} @PIR{r=50;limit=3}
+
+yirouLightMissileTick:
+  Skills:
+  - effect:particles{p=reddust;color=#54B7E9;a=1} @origin
+  - effect:particles{p=reddust;color=#04009a;amount=1;hs=0;vs=0} @origin
+
+YirouLightMissileHit:
+  Skills:
+  - effect:particles{particle=reddust;color=#04009a;a=50;hS=1;vS=1}
+  - effect:sound{s=entity.generic.explode;v=1;p=0}
+  - damage{a=100;i=false}

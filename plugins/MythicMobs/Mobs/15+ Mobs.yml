@@ -1,0 +1,379 @@
+Elf_nho:
+  Type: BABY_ZOMBIE
+  Health: 80
+  Display: '&aElf Nhỏ &7[&6Level. <caster.level>&7]'
+  Faction: Elf City
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - Young_ElfHEAD HEAD
+  - Young_ElfCHEST CHEST
+  - Young_ElfFEET FEET
+  - Young_ElfLEGS LEGS
+  Options:
+    FollowRange: 20
+    MovementSpeed: 0.22
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  Skills:
+  - setlevel{a=set;l=1-15} @self ~onSpawn
+  - sound{s=entity.witch.ambient;v=0.8;p=2} @self ~onTimer:120 0.7
+  - sound{s=entity.witch.hurt;v=0.8;p=2} @self ~onDamaged
+  - sound{s=entity.witch.death;v=0.8;p=2} @self ~onDeath
+  - damage{a=10} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 1"} @trigger ~onDeath
+
+sat_thu_phuong_dong:
+  Type: SKELETON
+  Health: 80
+  Damage: 5
+  Display: '&cSát Thủ Phương Đông &7[&6Level. <caster.level>&7]'
+  Faction: Medieval City
+  Equipment:
+  - Oriental_AssassinHEAD HEAD
+  - Oriental_AssassinCHEST CHEST
+  - Oriental_AssassinLEGS LEGS
+  - Oriental_AssassinFEET FEET
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  Options:
+    MovementSpeed: 0.25
+    FollowRange: 20
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  
+  Skills:
+  - setlevel{a=set;l=5-20} @self ~onSpawn
+  - skill{s=Iron_WeaponsPick2} @self ~onSpawn
+  - sound{s=entity.pillager.ambient;v=0.2;p=1.3} @self ~onTimer:120 0.7
+  - sound{s=entity.pillager.hurt;v=0.2;p=1.3} @self ~onDamaged
+  - sound{s=entity.pillager.death;v=0.2;p=1.3} @self ~onDeath
+  - damage{a=15} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 2"} @trigger ~onDeath
+vua_elf:
+  Type: ZOMBIE
+  Health: 80
+  Damage: 5
+  Display: '&6Vua Elf &7[&6Level. <caster.level>&7]'
+  Faction: Elf City
+  Disguise: Elf_King
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - GREEN_BANNER HEAD
+  - DIAMOND_SWORD HAND
+  Options:
+    FollowRange: 20
+    MovementSpeed: 0.22
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+    Damage: 3
+  Skills:
+  - setlevel{a=set;l=10-25} @self ~onSpawn
+  - sound{s=entity.vindicator.ambient;v=0.8;p=1.5} @self ~onTimer:120 0.7
+  - sound{s=entity.vindicator.hurt;v=0.8;p=1.5} @self ~onDamaged
+  - sound{s=entity.vindicator.death;v=0.8;p=1.5} @self ~onDeath
+  - sound{s=block.iron_trapdoor.open;v=0.1;p=0.6} @self ~onDamaged
+  - sound{s=block.iron_trapdoor.close;v=0.1;p=0.6} @self ~onDamaged
+  - sound{s=block.chain.break;v=0.1;p=0.8} @self ~onDamaged
+  - damage{a=25} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 3"} @trigger ~onDeath
+
+linhdanhthue:
+  Type: SKELETON
+  Health: 450
+  Display: '&4Lính Đánh Thuê &7[&6Level. <caster.level>&7]'
+  Faction: Mesa Town
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - GOLD_INGOT OFFHAND
+  - MercenaryHEAD HEAD
+  - MercenaryCHEST CHEST
+  - MercenaryFEET FEET
+  - MercenaryLEGS LEGS
+  Options:
+    FollowRange: 20
+    MovementSpeed: 0.22
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  Skills:
+  - setlevel{a=set;l=15-30} @self ~onSpawn
+  - skill{s=Iron_WeaponsPick2} @self ~onSpawn
+  - sound{s=entity.evoker.ambient;v=0.8;p=1} @self ~onTimer:120 0.7
+  - sound{s=entity.evoker.hurt;v=0.8;p=1} @self ~onDamaged
+  - sound{s=entity.evoker.death;v=0.8;p=1} @self ~onDeath
+  - sound{s=block.basalt.break;v=0.8;p=0.8} @self ~onDamaged
+  - sound{s=block.nether_bricks.break;v=0.8;p=0.8} @self ~onDamaged
+  - sound{s=item.armor.equip_gold;v=0.8;p=0.8} @self ~onDamaged
+  - damage{a=40} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 4"} @trigger ~onDeath
+
+daituongdatnung:
+  Type: WITHER_SKELETON
+  Health: 500
+  Display: '&6Đại Tướng Đất Nung &7[&6Level. <caster.level>&7]'
+  Faction: Oriental City
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - Terracotta_GeneralHEAD HEAD
+  - Terracotta_GeneralCHEST CHEST
+  - Terracotta_GeneralLEGS LEGS
+  - Terracotta_GeneralFEET FEET
+  Options:
+    FollowRange: 20
+    MovementSpeed: 0.22
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  Skills:
+  - setlevel{a=set;l=20-40} @self ~onSpawn
+  - skill{s=Gold_WeaponsPick2} @self ~onSpawn
+  - equip{i="SHIELD OFFHAND"} @self ~onSpawn 0.5
+  - sound{s=entity.iron_golem.hurt;v=0.15;p=0.8} @self ~onDamaged
+  - sound{s=block.basalt.break;v=0.8;p=0.8} @self ~onDamaged
+  - sound{s=block.nether_bricks.break;v=0.8;p=0.8} @self ~onDamaged
+  - sound{s=block.gravel.break;v=0.8;p=0.7} @self ~onDamaged
+  - damage{a=45} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 5"} @trigger ~onDeath
+
+conmattuthan:
+  Type: SKELETON
+  Health: 750
+  Display: '&1Con Mắt tử thần &7[&6Level. <caster.level>&7]'
+  Faction: End
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - AIR HAND
+  - Obsidian_WatcherHEAD HEAD
+  - ObsidianCHEST CHEST
+  - ObsidianLEGS LEGS
+  - ObsidianFEET FEET
+  Options:
+    FollowRange: 20
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  Skills:
+  - setlevel{a=set;l=25-45} @self ~onSpawn
+  - damage{a=45} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 6"} @trigger ~onDeath
+
+caygiandu:
+  Type: HUSK
+  Health: 900
+  Display: '&2Cây Giận Dữ &7[&6Level. <caster.level>&7]'
+  Faction: BigTrees
+  Disguise: Enraged_Tree
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - AIR HEAD
+  - TreantCHEST CHEST
+  - TreantLEGS LEGS
+  - TreantFEET FEET
+  Options:
+    FollowRange: 20
+    MovementSpeed: 0.34
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  Skills:
+  - setlevel{a=set;l=30-55} @self ~onSpawn
+  - randomskill{s=Stone_WeaponsPick,Iron_WeaponsPick} @self ~onSpawn
+  - sound{s=entity.zombie.attack_wooden_door;v=0.2} @self ~onDamaged
+  - sound{s=entity.zombie.break_wooden_door;v=0.1} @self ~onDeath
+  - sound{s=block.grass.break;v=1.0;p=0.9} @self ~onDeath
+  - sound{s=block.grass.place;v=0.5;p=1.1} @self ~onDamaged
+  - damage{a=50} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 7"} @trigger ~onDeath
+
+phapsubotoc:
+  Type: ZOMBIE
+  Health: 1050
+  Display: '&9Pháp Sư Bộ Tộc &7[&6Level. <caster.level>&7]'
+  Disguise: Tribal_Shaman
+  Faction: Jungle
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - AIR HEAD
+  - AIR CHEST
+  - AIR LEGS
+  - AIR FEET
+  Options:
+    MovementSpeed: 0.18
+    FollowRange: 20
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  Skills:
+  - skill{s=Magic_Projectile} ~onTimer:100 0.7
+  - equip{i="STICK HAND"} @self ~onSpawn 0.5
+  - equip{i="TOTEM_OF_UNDYING HAND"} @self ~onSpawn 0.5
+  - setlevel{a=set;l=35-60} @self ~onSpawn
+  - sound{s=entity.pillager.ambient;p=2} @self ~onTimer:120 0.7
+  - sound{s=entity.pillager.hurt;p=2} @self ~onDamaged
+  - sound{s=entity.pillager.death;p=2} @self ~onDeath
+  - damage{a=50} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 8"} @trigger ~onDeath
+
+bongdemannap:
+  Type: ENDERMAN
+  Health: 1200
+  Display: '&0Bóng Đêm Ẩn Nấp &7[&6Level. <caster.level>&7]'
+  Faction: Purple City
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    PreventTeleport: true
+    FollowRange: 20
+    MovementSpeed: 0.26
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    KnockbackResistance: 0.2
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 30
+  Skills:
+  - potion{type=POISON;d=1;force=true} @self ~onTimer:10 ?haspotioneffect{t=POISON}
+  - setlevel{a=set;l=40-65} @self ~onSpawn
+  - sound{s=entity.witch.hurt;v=0.7;p=0.8} @self ~onDamaged
+  - sound{s=entity.witch.death;v=0.7;p=0.8} @self ~onDeath
+  - sound{s=entity.enderman.ambient;v=0.7;p=0.8} @self ~onTimer:120 0.7
+  - sound{s=entity.enderman.hurt;v=0.7;p=0.8} @self ~onDamaged
+  - sound{s=entity.enderman.death;v=0.7;p=0.8} @self ~onDeath
+  - damage{a=60} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 9"} @trigger ~onDeath
+
+thosandienthach:
+  Type: SKELETON
+  Health: 1200
+  Display: '&dThợ Săn Diện Thạch &7[&6Level. <caster.level>&7]'
+  Faction: End
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Equipment:
+  - Obsidian_SeekerHEAD HEAD
+  - ObsidianCHEST CHEST
+  - ObsidianLEGS LEGS
+  - ObsidianFEET FEET
+  Options:
+    FollowRange: 20
+    PreventSunburn: true
+    PreventItemPickup: true
+    PreventRenaming: true
+    PreventLeashing: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+  Modules:
+    ThreatTable: true
+  Drops: []
+  LevelModifiers:
+    Health: 300
+  Skills:
+  - setlevel{a=set;l=45-70} @self ~onSpawn
+  - damage{a=60} @target ~onAttack
+  - cancelevent{sync=true} ~onAttack
+  - command{c="tokens give <target.name> 10"} @trigger ~onDeath

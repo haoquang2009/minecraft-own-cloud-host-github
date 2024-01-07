@@ -1,0 +1,30 @@
+setting:
+  priority: 1
+  advanced: false
+
+# Scoreboard criteria, see the wiki for more information.
+criteria:
+  default-permissions:
+    type: PERMISSION
+    permission: "kiteboard.group.default"
+    default: true
+
+# Scoreboard content, configured simply
+# Adding "100|" sets the refresh rate for this line.
+content:
+  - "&f&l亗&4&lWirez&3&lServer&f&l亗"
+  - "&f&l卍&7%server_time_dd/MM/yyyy HH:&7mm:ss%&f&l卍"
+  - "   &f&L卍&2&l▼ Thông Tin&f&L卍"
+  - "&b&l✠ &cTên: &f%player_name%"
+  - "&b&l✠ &cTiền: &f%vault_eco_balance_formatted%"
+  - "&b&l✠ &cXu: &f%playerpoints_points%"
+  - "&b&l✠ &cRank: &f%vault_ranksuffix%"
+  - "   &f&L卍&2&l▼ Đảo&f&L卍"
+  - "&b&l✠ &dCấp đảo: &f%askyblock_level%"
+  - "&b&l✠ &dChủ đảo: &f%askyblock_owner%"
+  - "   &f&L卍&2&l▼ Server&f&L卍"
+  - "&b&l✠ &aOnline:  &b%server_online%/&b%server_max_players%"
+  - "&b&l✠ &aPing: &e%player_ping%"
+  - "&b&l✠ &aTPS: &f%server_tps_1% %server_tps_5% %server_tps_5%"
+  - "&7Wirezserver.com"
+  - "&f&l&k|||&9&lwirez.falix.gg"

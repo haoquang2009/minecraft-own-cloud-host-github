@@ -1,0 +1,149 @@
+Will Power: 
+  name: 'Will Power'
+  type: 'Dynamic'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'false'
+  attributes: 
+    level-base: '20'
+    level-scale: '1'
+    cost-base: '1'
+    cost-scale: '1'
+    cooldown-base: '25'
+    cooldown-scale: '-1'
+    mana-base: '45'
+    mana-scale: '5'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{skill}'
+  icon: 'IRON_SWORD'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'False'
+            check-name: 'True'
+            name: 'Katana'
+            regex: 'False'
+          children: 
+            Repeat-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                repetitions-base: '10'
+                repetitions-scale: '0'
+                period: '0.5'
+                delay: '0'
+                stop-on-fail: 'False'
+              children: 
+                Sound-n: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    sound: 'Entity player attack sweep'
+                    volume-base: '50'
+                    volume-scale: '0'
+                    pitch-base: '1.5'
+                    pitch-scale: '0'
+                  children:  {}
+                Particle Animation-d: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '1'
+                    frequency: '0.05'
+                    angle: '0'
+                    start: '0'
+                    duration-base: '0.5'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '0'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Sweep attack'
+                    arrangement: 'Sphere'
+                    radius-base: '5'
+                    radius-scale: '0'
+                    particles-base: '5'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '0'
+                    speed: '0.3'
+                    forward: '0.5'
+                    upward: '1.5'
+                    right: '0'
+                    -with-rotation: 'False'
+                  children:  {}
+                Heal-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Health'
+                    value-base: '0.25'
+                    value-scale: '0.25'
+                  children:  {}
+                Area-f: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    radius-base: '4'
+                    radius-scale: '0'
+                    group: 'Both'
+                    wall: 'False'
+                    caster: 'False'
+                    max-base: '1'
+                    max-scale: '1'
+                    random: 'False'
+                  children: 
+                    Damage-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: '0.75'
+                        value-scale: '0.25'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'False'
+                      children:  {}
